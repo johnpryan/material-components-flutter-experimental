@@ -36,6 +36,8 @@ void main() {
   line('library google_fonts_test;');
   newline();
   line('import \'package:flutter/material.dart\';');
+  line("import 'package:http/http.dart' as http;");
+  line("import 'package:flutter/services.dart';");
   newline();
   line('part \'google_fonts_base.dart\';');
   newline();
@@ -47,9 +49,10 @@ void main() {
     for (final variant in item['variants']) {
       final upperVariant = variant == 'regular' ? '' : variant[0].toLowerCase() + variant.substring(1);
       final fullFamily = '${family}${upperVariant}';
+      final fontUrl = item['files'][variant];
       line('static TextStyle ${lowerFamily}${upperVariant}(TextStyle textStyle) {');
       indent();
-      line('_loadFont(\'${fullFamily}\');');
+      line("_loadFont('$fullFamily', '$fontUrl');");
       line('return textStyle.copyWith(');
       indent();
       line('fontFamily: \'${fullFamily}\',');
