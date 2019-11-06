@@ -36,10 +36,7 @@ void main() {
   line('library google_fonts_test;');
   newline();
   line('import \'package:flutter/material.dart\';');
-  line("import 'package:http/http.dart' as http;");
-  line("import 'package:flutter/services.dart';");
-  newline();
-  line('part \'google_fonts_base.dart\';');
+  line("import 'google_fonts_base.dart';");
   newline();
   line('class GoogleFonts {');
   indent();
@@ -47,12 +44,13 @@ void main() {
     final family = item['family'].toString().replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
     for (final variant in item['variants']) {
+      // TODO: s/italic/Italic
       final upperVariant = variant == 'regular' ? '' : variant[0].toLowerCase() + variant.substring(1);
       final fullFamily = '${family}${upperVariant}';
       final fontUrl = item['files'][variant];
       line('static TextStyle ${lowerFamily}${upperVariant}(TextStyle textStyle) {');
       indent();
-      line("_loadFont('$fullFamily', '$fontUrl');");
+      line("loadFont('$fullFamily', '$fontUrl');");
       line('return textStyle.copyWith(');
       indent();
       line('fontFamily: \'${fullFamily}\',');
