@@ -5,6 +5,8 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 
+Set<String> _loadedFonts = {};
+
 Future<ByteData> fetchFont(String fontName, String fontUrl) async {
   print('fetchFont: $fontName');
   final response = await http.get(Uri.parse(fontUrl));
@@ -19,6 +21,11 @@ Future<ByteData> fetchFont(String fontName, String fontUrl) async {
 }
 
 Future<void> loadFont(String fontName, String fontUrl) async {
+  if (_loadedFonts.contains(fontName)) {
+    return;
+  }
+
+  _loadedFonts.add(fontName);
   final fontLoader = FontLoader(fontName);
   var byteData = readLocalFont(fontName);
   if (await byteData == null) {
