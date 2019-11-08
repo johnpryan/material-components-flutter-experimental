@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:typed_data';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
@@ -32,7 +33,10 @@ Future<void> loadFont(String fontName, String fontUrl) async {
     byteData = fetchFont(fontName, fontUrl);
   }
   fontLoader.addFont(byteData);
-  fontLoader.load();
+  await fontLoader.load();
+  print('loaded $fontName');
+  // TODO: remove this once it is done automatically after loading a font.
+  PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
 Future<String> get _localPath async {
