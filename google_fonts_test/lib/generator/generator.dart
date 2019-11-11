@@ -13,24 +13,19 @@ void main() {
     final family = item['family'].toString().replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
 
-    for (final variant in item['variants']) {
-      // TODO: s/italic/Italic
-      final upperVariant = variant == 'regular'
-          ? ''
-          : '${variant[0].toLowerCase()}${variant.substring(1)}';
-      final fullFamily = '$family$upperVariant';
-      final fontUrl = item['files'][variant];
-
-      methods.add({
-        'methodName': '$lowerFamily$upperVariant',
-        'fontFamily': fullFamily,
-        'fontUrl': '$fontUrl',
-      });
-    }
+    methods.add({
+      'methodName': '$lowerFamily',
+      'fontFamily': family,
+      'fontUrls': [
+        for(final variant in item['variants'])
+          {'variant': variant, 'url': item['files'][variant]}
+      ],
+    });
   }
 
   final template = Template(
     File('lib/generator/google_fonts.tmpl').readAsStringSync(),
+    htmlEscapeValues: false,
   );
   final result = template.renderString({'method': methods});
 

@@ -64,9 +64,7 @@ Future<ByteData> readLocalFont(String name) async {
       List<int> contents = await file.readAsBytes();
       if (contents != null && contents.isNotEmpty) {
         print('readLocalFont: $name EXISTS AND RETURNING');
-        return ByteData.view(Uint8List
-            .fromList(contents)
-            .buffer);
+        return ByteData.view(Uint8List.fromList(contents).buffer);
       }
     }
   } catch (e) {
@@ -78,30 +76,47 @@ Future<ByteData> readLocalFont(String name) async {
 }
 
 
-// TODO: this might not be uniform for all fonts, and we might just have to
-// name our files with weight numbers and styles the same way that the variants
-// are listed. Alternativly, this could return a list of all possible filenames.
-String _fileName(String regularFontFamily, FontWeight weight, FontStyle style) {
-  final styleChunk = style == FontStyle.italic ? 'Italic' : '';
-  var weightChunk = '';
-  if (weight == FontWeight.w100) {
-    weightChunk = 'Light';
-  } else if (weight == FontWeight.w200) {
-    weightChunk = 'Thin';
-  } else if (weight == FontWeight.w300) {
-    weightChunk = 'Thin';
-  } else if (weight == null || weight == FontWeight.w400) {
-    weightChunk = 'Regular';
-  } else if (weight == FontWeight.w500) {
-    weightChunk = 'SemiBold';
-  } else if (weight == FontWeight.w600) {
-    weightChunk = 'SemiBold';
-  } else if (weight == FontWeight.w700) {
-    weightChunk = 'Bold';
-  } else if (weight == FontWeight.w800) {
-    weightChunk = 'ExtraBold';
-  } else if (weight == FontWeight.w900) {
-    weightChunk = 'ExtraBold';
+/// Function used to convert a [TextStyle] to a [String] that can be used to key
+/// into results from the Google Fonts api.
+///
+/// For example:
+///
+///   fontUrlKey(
+///     TextStyle(fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
+///   )
+///
+/// Will yield
+///
+///   500italic
+///
+/// This will then be used to key into a json object like this:
+///
+/// "files": {
+///   "regular": "http://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o05E5abe_.ttf",
+///   "italic": "http://fonts.gstatic.com/s/alegreyasc/v11/taiMGmRtCJ62-O0HhNEa-Z6q2ZUbbKe_DGs.ttf",
+///   "500": "http://fonts.gstatic.com/s/alegreyasc/v11/taiTGmRtCJ62-O0HhNEa-ZZc-rUxQqu2FXKD.ttf",
+///   "500italic": "http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4WEySK-UEGKDBz4.ttf",
+///   "700": "http://fonts.gstatic.com/s/alegreyasc/v11/taiTGmRtCJ62-O0HhNEa-ZYU_LUxQqu2FXKD.ttf",
+///   "700italic": "http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4Sk0SK-UEGKDBz4.ttf",
+/// }
+String fontUrlKey(TextStyle textStyle) {
+  if (textStyle == null) {
+    return 'regular';
   }
-  return '${regularFontFamily}-${weightChunk}${styleChunk}';
+  return '${_fontWeightString(textStyle.fontWeight)}'
+      '${_fontStyleString(textStyle.fontStyle)}';
+}
+
+String _fontWeightString(FontWeight fontWeight) {
+  if (fontWeight == null) {
+    return '400';
+  }
+  return fontWeight.toString().replaceAll('FontWeight.w', '');
+}
+
+String _fontStyleString(FontStyle fontstyle) {
+  if (fontstyle == FontStyle.italic) {
+    return 'italic';
+  }
+  return '';
 }

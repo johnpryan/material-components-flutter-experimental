@@ -11,10 +11,20 @@ import 'src/google_fonts_base.dart';
 
 class GoogleFonts {
   {{#method}}
-  static TextStyle {{methodName}}(TextStyle textStyle) {
-    loadFont('{{fontFamily}}', '{{{fontUrl}}}');
+  static TextStyle {{methodName}}({TextStyle textStyle}) {
+    textStyle ??= TextStyle();
+    final fontUrls = {
+      {{#fontUrls}}
+      '{{variant}}' : '{{url}}',
+      {{/fontUrls}}
+    };
+    final key = fontUrlKey(textStyle);
+    final fontUrl = fontUrls[key] ?? fontUrls['regular'];
+
+    final fontFamily = '{{fontFamily}}$key';
+    loadFont(fontFamily, fontUrl);
     return textStyle.copyWith(
-      fontFamily: '{{fontFamily}}',
+      fontFamily: fontFamily,
     );
   }
 
