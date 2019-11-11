@@ -1,9 +1,13 @@
 // GENERATED CODE - DO NOT EDIT
 
+// Copyright 2019 The Flutter team. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 library google_fonts_test;
 
 import 'package:flutter/material.dart';
-import 'google_fonts_base.dart';
+import 'src/google_fonts_base.dart';
 
 class GoogleFonts {
   static TextStyle aBeeZee(TextStyle textStyle) {
