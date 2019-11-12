@@ -18,11 +18,14 @@ class GoogleFonts {
       '{{variant}}' : '{{url}}',
       {{/fontUrls}}
     };
-    final key = fontUrlKey(textStyle);
-    final fontUrl = fontUrls[key] ?? fontUrls['regular'];
+
+    String key = fontUrlKey(textStyle);
+    if (!fontUrls.containsKey(key)) {
+      key = 'regular';
+    }
 
     final fontFamily = '{{fontFamily}}$key';
-    loadFont(fontFamily, fontUrl);
+    loadFont(fontFamily, fontUrls[key]);
     return textStyle.copyWith(
       fontFamily: fontFamily,
     );
