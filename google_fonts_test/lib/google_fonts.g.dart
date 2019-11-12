@@ -10,14 +10,20 @@ import 'package:flutter/material.dart';
 import 'src/google_fonts_base.dart';
 
 class GoogleFonts {
-  static TextStyle aBeeZee({TextStyle textStyle}) {
+  static TextStyle aBeeZee({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/abeezee/v13/esDR31xSG-6AGleN6tKukbcHCpE.ttf',
       'italic' : 'http://fonts.gstatic.com/s/abeezee/v13/esDT31xSG-6AGleN2tCklZUCGpG-GQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -29,13 +35,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle abel({TextStyle textStyle}) {
+  static TextStyle abel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE6VhLPJp6qGI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -47,7 +59,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle abhayaLibre({TextStyle textStyle}) {
+  static TextStyle abhayaLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/abhayalibre/v5/e3tmeuGtX-Co5MNzeAOqinEge0PWovdU4w.ttf',
@@ -57,7 +73,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/abhayalibre/v5/e3t5euGtX-Co5MNzeAOqinEY22_yqtxI6oYtBA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -69,13 +87,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle abrilFatface({TextStyle textStyle}) {
+  static TextStyle abrilFatface({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/abrilfatface/v11/zOL64pLDlL1D99S8g8PtiKchm-BsjOLhZBY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -87,13 +111,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aclonica({TextStyle textStyle}) {
+  static TextStyle aclonica({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/aclonica/v10/K2FyfZJVlfNNSEBXGb7TCI6oBjLz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -105,13 +135,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle acme({TextStyle textStyle}) {
+  static TextStyle acme({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_bx3Lb23lzLk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -123,13 +159,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle actor({TextStyle textStyle}) {
+  static TextStyle actor({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO3ekXygtUMIO.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -141,13 +183,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle adamina({TextStyle textStyle}) {
+  static TextStyle adamina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/adamina/v13/j8_r6-DH1bjoc-dwu-reETl4Bno.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -159,7 +207,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle adventPro({TextStyle textStyle}) {
+  static TextStyle adventPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/adventpro/v10/V8mCoQfxVT4Dvddr_yOwjVmtLZxcBtItFw.ttf',
@@ -171,7 +223,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/adventpro/v10/V8mDoQfxVT4Dvddr_yOwjYGIDbZyCts0DqQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -183,13 +237,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aguafinaScript({TextStyle textStyle}) {
+  static TextStyle aguafinaScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/aguafinascript/v8/If2QXTv_ZzSxGIO30LemWEOmt1bHqs4pgicOrg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -201,13 +261,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle akronim({TextStyle textStyle}) {
+  static TextStyle akronim({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/akronim/v9/fdN-9sqWtWZZlHRp-gBxkFYN-a8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -219,13 +285,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aladin({TextStyle textStyle}) {
+  static TextStyle aladin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/aladin/v8/ZgNSjPJFPrvJV5f16Sf4pGT2Ng.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -237,13 +309,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aldrich({TextStyle textStyle}) {
+  static TextStyle aldrich({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/aldrich/v10/MCoTzAn-1s3IGyJMZaAS3pP5H_E.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -255,14 +333,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alef({TextStyle textStyle}) {
+  static TextStyle alef({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alef/v11/FeVfS0NQpLYgrjJbC5FxxbU.ttf',
       '700' : 'http://fonts.gstatic.com/s/alef/v11/FeVQS0NQpLYglo50L5la2bxii28.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -274,7 +358,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alegreya({TextStyle textStyle}) {
+  static TextStyle alegreya({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alegreya/v13/4UaBrEBBsBhlBjvfkRLmzanB44N1.ttf',
@@ -289,7 +377,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/alegreya/v13/4UaErEBBsBhlBjvfkSLk_ynOwpteLwtHJlc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -301,7 +391,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alegreyaSC({TextStyle textStyle}) {
+  static TextStyle alegreyaSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alegreyasc/v11/taiOGmRtCJ62-O0HhNEa-a6o05E5abe_.ttf',
@@ -316,7 +410,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4RE2SK-UEGKDBz4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -328,7 +424,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alegreyaSans({TextStyle textStyle}) {
+  static TextStyle alegreyaSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/alegreyasans/v10/5aUt9_-1phKLFgshYDvh6Vwt5TltuGdShm5bsg.ttf',
@@ -347,7 +447,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/alegreyasans/v10/5aUo9_-1phKLFgshYDvh6Vwt7V9VPEp2jkVHuxKiBA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -359,7 +461,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alegreyaSansSC({TextStyle textStyle}) {
+  static TextStyle alegreyaSansSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/alegreyasanssc/v9/mtGn4-RGJqfMvt7P8FUr0Q1j-Hf1Dipl8g5FPYtmMg.ttf',
@@ -378,7 +484,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/alegreyasanssc/v9/mtGk4-RGJqfMvt7P8FUr0Q1j-Hf1BkxddiNhNaB6O-51OA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -390,7 +498,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aleo({TextStyle textStyle}) {
+  static TextStyle aleo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/aleo/v3/c4mg1nF8G8_syKbr9DVDno985KM.ttf',
@@ -401,7 +513,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/aleo/v3/c4mi1nF8G8_swAjxaDBJmq159KOnWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -413,13 +527,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alexBrush({TextStyle textStyle}) {
+  static TextStyle alexBrush({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alexbrush/v11/SZc83FzrJKuqFbwMKk6EtUL57DtOmCc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -431,13 +551,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alfaSlabOne({TextStyle textStyle}) {
+  static TextStyle alfaSlabOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alfaslabone/v9/6NUQ8FmMKwSEKjnm5-4v-4Jh6dVretWvYmE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -449,13 +575,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alice({TextStyle textStyle}) {
+  static TextStyle alice({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alice/v11/OpNCnoEEmtHa6FcJpA_chzJ0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -467,13 +599,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alike({TextStyle textStyle}) {
+  static TextStyle alike({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alike/v12/HI_EiYEYI6BIoEjBSZXAQ4-d.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -485,13 +623,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle alikeAngular({TextStyle textStyle}) {
+  static TextStyle alikeAngular({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/alikeangular/v10/3qTrojWunjGQtEBlIcwMbSoI3kM6bB7FKjE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -503,14 +647,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle allan({TextStyle textStyle}) {
+  static TextStyle allan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/allan/v12/ea8XadU7WuTxEtb2P9SF8nZE.ttf',
       '700' : 'http://fonts.gstatic.com/s/allan/v12/ea8aadU7WuTxEu5KEPCN2WpNgEKU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -522,13 +672,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle allerta({TextStyle textStyle}) {
+  static TextStyle allerta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/allerta/v10/TwMO-IAHRlkbx940UnEdSQqO5uY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -540,13 +696,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle allertaStencil({TextStyle textStyle}) {
+  static TextStyle allertaStencil({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/allertastencil/v10/HTx0L209KT-LmIE9N7OR6eiycOeF-zz313DuvQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -558,13 +720,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle allura({TextStyle textStyle}) {
+  static TextStyle allura({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/allura/v8/9oRPNYsQpS4zjuAPjAIXPtrrGA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -576,7 +744,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle almarai({TextStyle textStyle}) {
+  static TextStyle almarai({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/almarai/v2/tssoApxBaigK_hnnS_anhnicoq72sXg.ttf',
@@ -585,7 +757,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/almarai/v2/tssoApxBaigK_hnnS_qjhnicoq72sXg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -597,7 +771,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle almendra({TextStyle textStyle}) {
+  static TextStyle almendra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/almendra/v12/H4ckBXKAlMnTn0CskyY6wr-wg763.ttf',
@@ -606,7 +784,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/almendra/v12/H4chBXKAlMnTn0CskxY48Ae9oqacbzhqDtg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -618,13 +798,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle almendraDisplay({TextStyle textStyle}) {
+  static TextStyle almendraDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/almendradisplay/v10/0FlPVOGWl1Sb4O3tETtADHRRlZhzXS_eTyer338.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -636,13 +822,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle almendraSC({TextStyle textStyle}) {
+  static TextStyle almendraSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/almendrasc/v10/Iure6Yx284eebowr7hbyTZZJprVA4XQ0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -654,13 +846,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amarante({TextStyle textStyle}) {
+  static TextStyle amarante({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amarante/v7/xMQXuF1KTa6EvGx9bq-3C3rAmD-b.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -672,7 +870,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amaranth({TextStyle textStyle}) {
+  static TextStyle amaranth({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amaranth/v10/KtkuALODe433f0j1zPnCF9GqwnzW.ttf',
@@ -681,7 +883,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/amaranth/v10/KtkrALODe433f0j1zMnAJWmn42T9E4ucRY8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -693,14 +897,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amaticSC({TextStyle textStyle}) {
+  static TextStyle amaticSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vO0De6ecZQf1A.ttf',
       '700' : 'http://fonts.gstatic.com/s/amaticsc/v13/TUZ3zwprpvBS1izr_vOMscG6eb8D3WTy-A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -712,13 +922,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amethysta({TextStyle textStyle}) {
+  static TextStyle amethysta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amethysta/v8/rP2Fp2K15kgb_F3ibfWIGDWCBl0O8Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -730,7 +946,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amiko({TextStyle textStyle}) {
+  static TextStyle amiko({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amiko/v4/WwkQxPq1DFK04tqlc17MMZgJ.ttf',
@@ -738,7 +958,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/amiko/v4/WwkdxPq1DFK04uIZXHrEGoQAUco5.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -750,7 +972,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amiri({TextStyle textStyle}) {
+  static TextStyle amiri({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amiri/v13/J7aRnpd8CGxBHqUpvrIw74NL.ttf',
@@ -759,7 +985,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/amiri/v13/J7aanpd8CGxBHpUrjAo9zptgHjAavCA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -771,14 +999,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle amita({TextStyle textStyle}) {
+  static TextStyle amita({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/amita/v5/HhyaU5si9Om7PQlvAfSKEZZL.ttf',
       '700' : 'http://fonts.gstatic.com/s/amita/v5/HhyXU5si9Om7PTHTLtCCOopCTKkI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -790,13 +1024,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle anaheim({TextStyle textStyle}) {
+  static TextStyle anaheim({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/anaheim/v7/8vII7w042Wp87g4G0UTUEE5eK_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -808,13 +1048,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle andada({TextStyle textStyle}) {
+  static TextStyle andada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/andada/v11/uK_y4riWaego3w9RCh0TMv6EXw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -826,13 +1072,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle andika({TextStyle textStyle}) {
+  static TextStyle andika({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/andika/v11/mem_Ya6iyW-LwqgAbbwRWrwGVA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -844,13 +1096,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle angkor({TextStyle textStyle}) {
+  static TextStyle angkor({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/angkor/v12/H4cmBXyAlsPdnlb-8iw-4Lqggw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -862,13 +1120,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle annieUseYourTelescope({TextStyle textStyle}) {
+  static TextStyle annieUseYourTelescope({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/annieuseyourtelescope/v10/daaLSS4tI2qYYl3Jq9s_Hu74xwktnlKxH6osGVGjlDfB3UUVZA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -880,7 +1144,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle anonymousPro({TextStyle textStyle}) {
+  static TextStyle anonymousPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/anonymouspro/v13/rP2Bp2a15UIB7Un-bOeISG3pLlw89CH98Ko.ttf',
@@ -889,7 +1157,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/anonymouspro/v13/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzc6IG30KqB9Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -901,13 +1171,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle antic({TextStyle textStyle}) {
+  static TextStyle antic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/antic/v11/TuGfUVB8XY5DRaZLodgzydtk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -919,13 +1195,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle anticDidone({TextStyle textStyle}) {
+  static TextStyle anticDidone({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/anticdidone/v8/RWmPoKKX6u8sp8fIWdnDKqDiqYsGBGBzCw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -937,13 +1219,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle anticSlab({TextStyle textStyle}) {
+  static TextStyle anticSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/anticslab/v8/bWt97fPFfRzkCa9Jlp6IWcJWXW5p5Qo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -955,13 +1243,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle anton({TextStyle textStyle}) {
+  static TextStyle anton({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm0K08i4gS7lu.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -973,14 +1267,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arapey({TextStyle textStyle}) {
+  static TextStyle arapey({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arapey/v8/-W__XJn-UDDA2RC6Z9AcZkIzeg.ttf',
       'italic' : 'http://fonts.gstatic.com/s/arapey/v8/-W_9XJn-UDDA2RCKZdoYREcjeo0k.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -992,13 +1292,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arbutus({TextStyle textStyle}) {
+  static TextStyle arbutus({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arbutus/v9/NaPYcZ7dG_5J3poob9JtryO8fMU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1010,13 +1316,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arbutusSlab({TextStyle textStyle}) {
+  static TextStyle arbutusSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arbutusslab/v8/oY1Z8e7OuLXkJGbXtr5ba7ZVa68dJlaFAQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1028,13 +1340,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle architectsDaughter({TextStyle textStyle}) {
+  static TextStyle architectsDaughter({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/architectsdaughter/v10/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvfY5q4szgE-Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1046,7 +1364,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle archivo({TextStyle textStyle}) {
+  static TextStyle archivo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/archivo/v6/k3kQo8UDI-1M0wlSTd7iL0nAMaM.ttf',
@@ -1059,7 +1381,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/archivo/v6/k3kXo8UDI-1M0wlSfdzQl0ThKYiJ-Q7m8w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1071,13 +1395,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle archivoBlack({TextStyle textStyle}) {
+  static TextStyle archivoBlack({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6OYuP_x7yx3A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1089,7 +1419,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle archivoNarrow({TextStyle textStyle}) {
+  static TextStyle archivoNarrow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/archivonarrow/v11/tss0ApVBdCYD5Q7hcxTE1ArZ0Yb3g31S2s8p.ttf',
@@ -1102,7 +1436,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/archivonarrow/v11/tssxApVBdCYD5Q7hcxTE1ArZ0bb1scVf-9cCOxBu_BM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1114,14 +1450,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arefRuqaa({TextStyle textStyle}) {
+  static TextStyle arefRuqaa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arefruqaa/v8/WwkbxPW1E165rajQKDulEIAiVNo5xNY.ttf',
       '700' : 'http://fonts.gstatic.com/s/arefruqaa/v8/WwkYxPW1E165rajQKDulKDwNcNIS2N_7Bdk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1133,7 +1475,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arimaMadurai({TextStyle textStyle}) {
+  static TextStyle arimaMadurai({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/arimamadurai/v5/t5t4IRoeKYORG0WNMgnC3seB1V3PqrGCch4Drg.ttf',
@@ -1146,7 +1492,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/arimamadurai/v5/t5t7IRoeKYORG0WNMgnC3seB1b3oipusfhcat2c.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1158,7 +1506,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arimo({TextStyle textStyle}) {
+  static TextStyle arimo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arimo/v13/P5sMzZCDf9_T_20eziBMjI-u.ttf',
@@ -1167,7 +1519,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/arimo/v13/P5sHzZCDf9_T_10c_JhBrZeF1dE2PY4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1179,13 +1533,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arizonia({TextStyle textStyle}) {
+  static TextStyle arizonia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arizonia/v10/neIIzCemt4A5qa7mv6WGHK06UY30.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1197,13 +1557,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle armata({TextStyle textStyle}) {
+  static TextStyle armata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/armata/v11/gokvH63_HV5jQ-E9lD53Q2u_mQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1215,7 +1581,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arsenal({TextStyle textStyle}) {
+  static TextStyle arsenal({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arsenal/v4/wXKrE3kQtZQ4pF3D11_WAewrhXY.ttf',
@@ -1224,7 +1594,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/arsenal/v4/wXKsE3kQtZQ4pF3D513kueEKnV03vdnKjw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1236,13 +1608,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle artifika({TextStyle textStyle}) {
+  static TextStyle artifika({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/artifika/v10/VEMyRoxzronptCuxu6Wt5jDtreOL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1254,7 +1632,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arvo({TextStyle textStyle}) {
+  static TextStyle arvo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arvo/v13/tDbD2oWUg0MKmSAa7Lzr7vs.ttf',
@@ -1263,7 +1645,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/arvo/v13/tDbO2oWUg0MKqSIoVLHK9tD-hAHkGg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1275,14 +1659,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle arya({TextStyle textStyle}) {
+  static TextStyle arya({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/arya/v5/ga6CawNG-HJd9Ub1-beqdFE.ttf',
       '700' : 'http://fonts.gstatic.com/s/arya/v5/ga6NawNG-HJdzfra3b-BaFg3dRE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1294,7 +1684,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle asap({TextStyle textStyle}) {
+  static TextStyle asap({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/asap/v11/KFOoCniXp96a-zwU4UROGzY.ttf',
@@ -1307,7 +1701,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/asap/v11/KFOlCniXp96ayz4mWUlvAx05IsDqlA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1319,7 +1715,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle asapCondensed({TextStyle textStyle}) {
+  static TextStyle asapCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/asapcondensed/v5/pxidypY1o9NHyXh3WvSbGSggdNeLYk1Mq3ap.ttf',
@@ -1332,7 +1732,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/asapcondensed/v5/pxiYypY1o9NHyXh3WvSbGSggdOeJUPVBim6CovpOkXA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1344,13 +1746,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle asar({TextStyle textStyle}) {
+  static TextStyle asar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/asar/v7/sZlLdRyI6TBIXkYQDLlTW6E.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1362,13 +1770,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle asset({TextStyle textStyle}) {
+  static TextStyle asset({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/asset/v10/SLXGc1na-mM4cWImRJqExst1.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1380,7 +1794,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle assistant({TextStyle textStyle}) {
+  static TextStyle assistant({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/assistant/v4/2sDZZGJYnIjSi6H75xk7p0ScA5cZbCjItw.ttf',
@@ -1391,7 +1809,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/assistant/v4/2sDZZGJYnIjSi6H75xk7z0OcA5cZbCjItw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1403,14 +1823,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle astloch({TextStyle textStyle}) {
+  static TextStyle astloch({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/astloch/v11/TuGRUVJ8QI5GSeUjq9wRzMtkH1Q.ttf',
       '700' : 'http://fonts.gstatic.com/s/astloch/v11/TuGUUVJ8QI5GSeUjk2A-6MNPA10xLMQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1422,14 +1848,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle asul({TextStyle textStyle}) {
+  static TextStyle asul({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/asul/v9/VuJ-dNjKxYr46fMFXK78JIg.ttf',
       '700' : 'http://fonts.gstatic.com/s/asul/v9/VuJxdNjKxYr40U8qeKbXOIFneRo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1441,7 +1873,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle athiti({TextStyle textStyle}) {
+  static TextStyle athiti({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/athiti/v4/pe0sMISdLIZIv1wAxDNyAv2-C99ycg.ttf',
@@ -1452,7 +1888,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/athiti/v4/pe0sMISdLIZIv1wAsDdyAv2-C99ycg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1464,7 +1902,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle atma({TextStyle textStyle}) {
+  static TextStyle atma({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/atma/v5/uK_z4rqWc-Eoo8JzKjc9PvedRkM.ttf',
@@ -1474,7 +1916,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/atma/v5/uK_z4rqWc-Eoo9J0Kjc9PvedRkM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1486,13 +1930,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle atomicAge({TextStyle textStyle}) {
+  static TextStyle atomicAge({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/atomicage/v12/f0Xz0eug6sdmRFkYZZGL58Ht9a8GYeA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1504,13 +1954,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle aubrey({TextStyle textStyle}) {
+  static TextStyle aubrey({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/aubrey/v12/q5uGsou7NPBw-p7vugNsCxVEgA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1522,13 +1978,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle audiowide({TextStyle textStyle}) {
+  static TextStyle audiowide({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/audiowide/v8/l7gdbjpo0cum0ckerWCtkQXPExpQBw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1540,13 +2002,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle autourOne({TextStyle textStyle}) {
+  static TextStyle autourOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/autourone/v9/UqyVK80cP25l3fJgbdfbk5lWVscxdKE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1558,13 +2026,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle average({TextStyle textStyle}) {
+  static TextStyle average({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/average/v8/fC1hPYBHe23MxA7rIeJwVWytTyk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1576,13 +2050,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle averageSans({TextStyle textStyle}) {
+  static TextStyle averageSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/averagesans/v8/1Ptpg8fLXP2dlAXR-HlJJNJPBdqazVoK4A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1594,13 +2074,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle averiaGruesaLibre({TextStyle textStyle}) {
+  static TextStyle averiaGruesaLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/averiagruesalibre/v8/NGSov4nEGEktOaDRKsY-1dhh8eEtIx3ZUmmJw0SLRA8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1612,7 +2098,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle averiaLibre({TextStyle textStyle}) {
+  static TextStyle averiaLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/averialibre/v8/2V0FKIcMGZEnV6xygz7eNjEarovtb07t-pQgTw.ttf',
@@ -1623,7 +2113,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/averialibre/v8/2V0HKIcMGZEnV6xygz7eNjESAJFxakTp2JEwT4Sk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1635,7 +2127,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle averiaSansLibre({TextStyle textStyle}) {
+  static TextStyle averiaSansLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/averiasanslibre/v8/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd3lMKcQJZP1LmD9.ttf',
@@ -1646,7 +2142,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKjsVL5fXK3D9qtg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1658,7 +2156,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle averiaSerifLibre({TextStyle textStyle}) {
+  static TextStyle averiaSerifLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/averiaseriflibre/v9/neIVzD2ms4wxr6GvjeD0X88SHPyX2xYGCSmqwacqdrKvbQ.ttf',
@@ -1669,7 +2171,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/averiaseriflibre/v9/neIbzD2ms4wxr6GvjeD0X88SHPyX2xYOpzM2xK0uVLe_bXHq.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1681,7 +2185,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle b612({TextStyle textStyle}) {
+  static TextStyle b612({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/b612/v4/3JnySDDxiSz32jm4GDigUXw.ttf',
@@ -1690,7 +2198,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/b612/v4/3Jn_SDDxiSz36juKoDWBSVcBXuFb0Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1702,7 +2212,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle b612Mono({TextStyle textStyle}) {
+  static TextStyle b612Mono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/b612mono/v4/kmK_Zq85QVWbN1eW6lJl1wTcquRTtg.ttf',
@@ -1711,7 +2225,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/b612mono/v4/kmKkZq85QVWbN1eW6lJV1TZkp8VLnbdWSg4x.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1723,13 +2239,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle badScript({TextStyle textStyle}) {
+  static TextStyle badScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7lOwuzd1AZtw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1741,13 +2263,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bahiana({TextStyle textStyle}) {
+  static TextStyle bahiana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bahiana/v4/uU9PCBUV4YenPWJU7xPb3vyHmlI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1759,13 +2287,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bahianita({TextStyle textStyle}) {
+  static TextStyle bahianita({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bahianita/v2/yYLr0hTb3vuqqsBUgxWtxTvV2NJPcA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1777,7 +2311,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle baiJamjuree({TextStyle textStyle}) {
+  static TextStyle baiJamjuree({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/baijamjuree/v3/LDIqapSCOBt_aeQQ7ftydoa0kePuk5A1-yiSgA.ttf',
@@ -1794,7 +2332,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/baijamjuree/v3/LDIoapSCOBt_aeQQ7ftydoa8W_pylpox2S2CgOva.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1806,13 +2346,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle baloo({TextStyle textStyle}) {
+  static TextStyle baloo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloo/v5/6xKhdSpJJ92I9PWIAG_5LWwJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1824,13 +2370,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooBhai({TextStyle textStyle}) {
+  static TextStyle balooBhai({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVjGXEM4COoE4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1842,13 +2394,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooBhaijaan({TextStyle textStyle}) {
+  static TextStyle balooBhaijaan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloobhaijaan/v6/RWmRoKCU5fcqq8fOWNzFLqSjx4ECJmVjC0-V.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1860,13 +2418,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooBhaina({TextStyle textStyle}) {
+  static TextStyle balooBhaina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloobhaina/v5/Noa16Uzzzp2FIkfhq5vm9thxPAR9mhHobg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1878,13 +2442,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooChettan({TextStyle textStyle}) {
+  static TextStyle balooChettan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloochettan/v5/0QImMXRN8o2gTC2YTr4665DA07z8_ApHqqk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1896,13 +2466,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooDa({TextStyle textStyle}) {
+  static TextStyle balooDa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/balooda/v5/LhWmMVnXOfIZO795FXkfSvtVM8mZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1914,13 +2490,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooPaaji({TextStyle textStyle}) {
+  static TextStyle balooPaaji({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloopaaji/v6/8AttGsyxM5KQQU-Y4MTwVZnToxvQBiot.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1932,13 +2514,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooTamma({TextStyle textStyle}) {
+  static TextStyle balooTamma({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/balootamma/v6/JTUTjIk68Cy27gWhOWIghE5B5Arr-s50.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1950,13 +2538,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooTammudu({TextStyle textStyle}) {
+  static TextStyle balooTammudu({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/balootammudu/v6/mFT3Wb8Qza7c_Z5HTsC_5nxW8EpQl9RWxD8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1968,13 +2562,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balooThambi({TextStyle textStyle}) {
+  static TextStyle balooThambi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baloothambi/v5/va9B4kXJzNhTFoA7CYcS8sHuQR37fF3Wlg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -1986,13 +2586,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle balthazar({TextStyle textStyle}) {
+  static TextStyle balthazar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/balthazar/v9/d6lKkaajS8Gm4CVQjFEvyRTo39l8hw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2004,13 +2610,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bangers({TextStyle textStyle}) {
+  static TextStyle bangers({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACL5la2bxii28.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2022,7 +2634,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle barlow({TextStyle textStyle}) {
+  static TextStyle barlow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/barlow/v4/7cHrv4kjgoGqM7E3b8s8yn4hnCci.ttf',
@@ -2045,7 +2661,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/barlow/v4/7cHsv4kjgoGqM7E_CfO451optzsrd6m9.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2057,7 +2675,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle barlowCondensed({TextStyle textStyle}) {
+  static TextStyle barlowCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/barlowcondensed/v4/HTxxL3I-JCGChYJ8VI-L6OO_au7B43LT31vytKgbaw.ttf',
@@ -2080,7 +2702,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrW3bWvIMHYrtUxg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2092,7 +2716,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle barlowSemiCondensed({TextStyle textStyle}) {
+  static TextStyle barlowSemiCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/barlowsemicondensed/v5/wlphgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfG4qvKk8ogoSP.ttf',
@@ -2115,7 +2743,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/barlowsemicondensed/v5/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbIrB2sgqZiGfHK5.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2127,13 +2757,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle barriecito({TextStyle textStyle}) {
+  static TextStyle barriecito({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/barriecito/v2/WWXXlj-CbBOSLY2QTuY_KdUiYwTO0MU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2145,13 +2781,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle barrio({TextStyle textStyle}) {
+  static TextStyle barrio({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/barrio/v4/wEO8EBXBk8hBIDiEdQYhWdsX1Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2163,13 +2805,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle basic({TextStyle textStyle}) {
+  static TextStyle basic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/basic/v9/xfu_0WLxV2_XKQN34lDVyR7D.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2181,14 +2829,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle battambang({TextStyle textStyle}) {
+  static TextStyle battambang({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/battambang/v13/uk-mEGe7raEw-HjkzZabDnWj4yxx7o8.ttf',
       '700' : 'http://fonts.gstatic.com/s/battambang/v13/uk-lEGe7raEw-HjkzZabNsmMxyRa8oZK9I0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2200,13 +2854,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle baumans({TextStyle textStyle}) {
+  static TextStyle baumans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/baumans/v9/-W_-XJj9QyTd3QfpR_oyaksqY5Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2218,13 +2878,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bayon({TextStyle textStyle}) {
+  static TextStyle bayon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bayon/v13/9XUrlJNmn0LPFl-pOhYEd2NJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2236,7 +2902,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle beVietnam({TextStyle textStyle}) {
+  static TextStyle beVietnam({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/bevietnam/v1/FBVxdDflz-iPfoPuIC2iKsUn7W1hK2czPg.ttf',
@@ -2255,7 +2925,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/bevietnam/v1/FBVudDflz-iPfoPuIC2iIqMfTUFFI0wvNzdwXQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2267,13 +2939,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle belgrano({TextStyle textStyle}) {
+  static TextStyle belgrano({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/belgrano/v10/55xvey5tM9rwKWrJZcMFirl08KDJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2285,13 +2963,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bellefair({TextStyle textStyle}) {
+  static TextStyle bellefair({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bellefair/v5/kJExBuYY6AAuhiXUxG19__A2pOdvDA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2303,13 +2987,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle belleza({TextStyle textStyle}) {
+  static TextStyle belleza({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/belleza/v8/0nkoC9_pNeMfhX4BtcbyawzruP8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2321,7 +3011,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle benchNine({TextStyle textStyle}) {
+  static TextStyle benchNine({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/benchnine/v8/ahcev8612zF4jxrwMosT--tRhWa8q0v8ag.ttf',
@@ -2329,7 +3023,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/benchnine/v8/ahcev8612zF4jxrwMosT6-xRhWa8q0v8ag.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2341,13 +3037,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bentham({TextStyle textStyle}) {
+  static TextStyle bentham({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bentham/v10/VdGeAZQPEpYfmHglKWw7CJaK_y4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2359,13 +3061,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle berkshireSwash({TextStyle textStyle}) {
+  static TextStyle berkshireSwash({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/berkshireswash/v8/ptRRTi-cavZOGqCvnNJDl5m5XmNPrcQybX4pQA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2377,13 +3085,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bethEllen({TextStyle textStyle}) {
+  static TextStyle bethEllen({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bethellen/v1/WwkbxPW2BE-3rb_JNT-qEIAiVNo5xNY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2395,13 +3109,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bevan({TextStyle textStyle}) {
+  static TextStyle bevan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bevan/v11/4iCj6KZ0a9NXjF8aUir7tlSJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2413,7 +3133,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bigShouldersDisplay({TextStyle textStyle}) {
+  static TextStyle bigShouldersDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/bigshouldersdisplay/v1/fC1xPZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1Ur9DrDJYM2lAZ.ttf',
@@ -2426,7 +3150,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/bigshouldersdisplay/v1/fC1yPZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1UT_fLJrgA00kAdA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2438,7 +3164,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bigShouldersText({TextStyle textStyle}) {
+  static TextStyle bigShouldersText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/bigshoulderstext/v1/55xzezRtP9G3CGPIf49hxc8P0eytUxBU-IZ_YscCdXQB.ttf',
@@ -2451,7 +3181,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/bigshoulderstext/v1/55xyezRtP9G3CGPIf49hxc8P0eytUxBUGKFfSOkOfG0Y3A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2463,13 +3195,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bigelowRules({TextStyle textStyle}) {
+  static TextStyle bigelowRules({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bigelowrules/v8/RrQWboly8iR_I3KWSzeRuN0zT4cCH8WAJVk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2481,13 +3219,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bigshotOne({TextStyle textStyle}) {
+  static TextStyle bigshotOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bigshotone/v10/u-470qukhRkkO6BD_7cM_gxuUQJBXv_-.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2499,13 +3243,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bilbo({TextStyle textStyle}) {
+  static TextStyle bilbo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bilbo/v9/o-0EIpgpwWwZ210hpIRz4wxE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2517,13 +3267,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bilboSwashCaps({TextStyle textStyle}) {
+  static TextStyle bilboSwashCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bilboswashcaps/v12/zrf-0GXbz-H3Wb4XBsGrTgq2PVmdqAPopiRfKp8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2535,7 +3291,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bioRhyme({TextStyle textStyle}) {
+  static TextStyle bioRhyme({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/biorhyme/v4/1cX3aULHBpDMsHYW_ESOjnGAq8Sk1PoH.ttf',
@@ -2545,7 +3305,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/biorhyme/v4/1cX3aULHBpDMsHYW_ETmiXGAq8Sk1PoH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2557,7 +3319,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bioRhymeExpanded({TextStyle textStyle}) {
+  static TextStyle bioRhymeExpanded({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/biorhymeexpanded/v5/i7dVIE1zZzytGswgU577CDY9LjbffxxcblSHSdTXrb_z.ttf',
@@ -2567,7 +3333,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/biorhymeexpanded/v5/i7dVIE1zZzytGswgU577CDY9Ljbffxw0aVSHSdTXrb_z.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2579,7 +3347,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle biryani({TextStyle textStyle}) {
+  static TextStyle biryani({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/biryani/v5/hv-TlzNxIFoO84YddYQyGTBSU-J-RxQ.ttf',
@@ -2591,7 +3363,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/biryani/v5/hv-TlzNxIFoO84Yddcg0GTBSU-J-RxQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2603,7 +3377,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bitter({TextStyle textStyle}) {
+  static TextStyle bitter({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmnLeIZoDDlCmg.ttf',
@@ -2611,7 +3389,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/bitter/v15/rax_HiqOu8IVPmnzxKlMBBJek0vA8A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2623,13 +3403,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle blackAndWhitePicture({TextStyle textStyle}) {
+  static TextStyle blackAndWhitePicture({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/blackandwhitepicture/v8/TwMe-JAERlQd3ooUHBUXGmrmioKjjnRSFO-NqI5HbcMi-yWY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2641,13 +3427,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle blackHanSans({TextStyle textStyle}) {
+  static TextStyle blackHanSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/blackhansans/v8/ea8Aad44WunzF9a-dL6toA8r8nqVIXSkH-Hc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2659,13 +3451,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle blackOpsOne({TextStyle textStyle}) {
+  static TextStyle blackOpsOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/blackopsone/v11/qWcsB6-ypo7xBdr6Xshe96H3WDzRtjkho4M.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2677,7 +3475,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle blinker({TextStyle textStyle}) {
+  static TextStyle blinker({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/blinker/v2/cIf_MaFatEE-VTaP_E2hZEsCkIt9QQ.ttf',
@@ -2690,7 +3492,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_K2GRGEsnIJkWL4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2702,13 +3506,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bokor({TextStyle textStyle}) {
+  static TextStyle bokor({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bokor/v12/m8JcjfpeeaqTiR2WdInbcaxE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2720,13 +3530,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bonbon({TextStyle textStyle}) {
+  static TextStyle bonbon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bonbon/v11/0FlVVPeVlFec4ee_cDEAbQY5-A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2738,13 +3554,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle boogaloo({TextStyle textStyle}) {
+  static TextStyle boogaloo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/boogaloo/v11/kmK-Zq45GAvOdnaW6x1F_SrQo_1K.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2756,13 +3578,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bowlbyOne({TextStyle textStyle}) {
+  static TextStyle bowlbyOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bowlbyone/v11/taiPGmVuC4y96PFeqp8smo6C_Z0wcK4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2774,13 +3602,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bowlbyOneSC({TextStyle textStyle}) {
+  static TextStyle bowlbyOneSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bowlbyonesc/v11/DtVlJxerQqQm37tzN3wMug9Pzgj8owhNjuE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2792,13 +3626,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle brawler({TextStyle textStyle}) {
+  static TextStyle brawler({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/brawler/v10/xn7gYHE3xXewAscGsgC7S9XdZN8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2810,13 +3650,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle breeSerif({TextStyle textStyle}) {
+  static TextStyle breeSerif({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/breeserif/v9/4UaHrEJCrhhnVA3DgluAx63j5pN1MwI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2828,13 +3674,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bubblegumSans({TextStyle textStyle}) {
+  static TextStyle bubblegumSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bubblegumsans/v8/AYCSpXb_Z9EORv1M5QTjEzMEtdaHzoPPb7R4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2846,13 +3698,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bubblerOne({TextStyle textStyle}) {
+  static TextStyle bubblerOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bubblerone/v8/f0Xy0eqj68ppQV9KBLmAouHH26MPePkt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2864,13 +3722,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle buda({TextStyle textStyle}) {
+  static TextStyle buda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/buda/v10/GFDqWAN8mnyIJSSrG7UBr7pZKA0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2882,14 +3746,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle buenard({TextStyle textStyle}) {
+  static TextStyle buenard({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/buenard/v11/OD5DuM6Cyma8FnnsPzf9qGi9HL4.ttf',
       '700' : 'http://fonts.gstatic.com/s/buenard/v11/OD5GuM6Cyma8FnnsB4vSjGCWALepwss.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2901,13 +3771,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bungee({TextStyle textStyle}) {
+  static TextStyle bungee({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bungee/v5/N0bU2SZBIuF2PU_ECn50Kd_PmA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2919,13 +3795,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bungeeHairline({TextStyle textStyle}) {
+  static TextStyle bungeeHairline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bungeehairline/v5/snfys0G548t04270a_ljTLUVrv-7YB2dQ5ZPqQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2937,13 +3819,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bungeeInline({TextStyle textStyle}) {
+  static TextStyle bungeeInline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bungeeinline/v5/Gg8zN58UcgnlCweMrih332VuDGJ1-FEglsc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2955,13 +3843,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bungeeOutline({TextStyle textStyle}) {
+  static TextStyle bungeeOutline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bungeeoutline/v5/_6_mEDvmVP24UvU2MyiGDslL3Qg3YhJqPXxo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2973,13 +3867,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle bungeeShade({TextStyle textStyle}) {
+  static TextStyle bungeeShade({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/bungeeshade/v5/DtVkJxarWL0t2KdzK3oI_jks7iLSrwFUlw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -2991,13 +3891,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle butcherman({TextStyle textStyle}) {
+  static TextStyle butcherman({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/butcherman/v11/2EbiL-thF0loflXUBOdb1zWzq_5uT84.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3009,13 +3915,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle butterflyKids({TextStyle textStyle}) {
+  static TextStyle butterflyKids({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/butterflykids/v8/ll8lK2CWTjuqAsXDqlnIbMNs5S4arxFrAX1D.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3027,7 +3939,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cabin({TextStyle textStyle}) {
+  static TextStyle cabin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cabin/v14/u-4x0qWljRw-Pe839fxqmjRv.ttf',
@@ -3040,7 +3956,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cabin/v14/u-460qWljRw-Pd81x0RnuyxEfw5IR-Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3052,7 +3970,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cabinCondensed({TextStyle textStyle}) {
+  static TextStyle cabinCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cabincondensed/v13/nwpMtK6mNhBK2err_hqkYhHRqmwaYOjZ5HZl8Q.ttf',
@@ -3061,7 +3983,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/cabincondensed/v13/nwpJtK6mNhBK2err_hqkYhHRqmwi3Mf97F15-K1oqQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3073,14 +3997,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cabinSketch({TextStyle textStyle}) {
+  static TextStyle cabinSketch({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cabinsketch/v13/QGYpz_kZZAGCONcK2A4bGOjMn9JM6fnuKg.ttf',
       '700' : 'http://fonts.gstatic.com/s/cabinsketch/v13/QGY2z_kZZAGCONcK2A4bGOj0I_1o4dLyI4CMFw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3092,13 +4022,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle caesarDressing({TextStyle textStyle}) {
+  static TextStyle caesarDressing({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/caesardressing/v8/yYLx0hLa3vawqtwdswbotmK4vrR3cbb6LZttyg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3110,13 +4046,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cagliostro({TextStyle textStyle}) {
+  static TextStyle cagliostro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cagliostro/v8/ZgNWjP5HM73BV5amnX-TjGXEM4COoE4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3128,7 +4070,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cairo({TextStyle textStyle}) {
+  static TextStyle cairo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/cairo/v6/SLXLc1nY6Hkvalrub76M7dd8aGZk.ttf',
@@ -3139,7 +4085,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/cairo/v6/SLXLc1nY6Hkvalqiab6M7dd8aGZk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3151,13 +4099,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle calligraffitti({TextStyle textStyle}) {
+  static TextStyle calligraffitti({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/calligraffitti/v11/46k2lbT3XjDVqJw3DCmCFjE0vnFZM5ZBpYN-.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3169,7 +4123,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cambay({TextStyle textStyle}) {
+  static TextStyle cambay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cambay/v6/SLXJc1rY6H0_ZDsGbrSIz9JsaA.ttf',
@@ -3178,7 +4136,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cambay/v6/SLXMc1rY6H0_ZDs2bIYwwvN0Q3ptkDMN.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3190,13 +4150,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cambo({TextStyle textStyle}) {
+  static TextStyle cambo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cambo/v8/IFSqHeNEk8FJk416ok7xkPm8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3208,13 +4174,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle candal({TextStyle textStyle}) {
+  static TextStyle candal({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/candal/v9/XoHn2YH6T7-t_8cNAR4Jt9Yxlw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3226,7 +4198,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cantarell({TextStyle textStyle}) {
+  static TextStyle cantarell({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cantarell/v9/B50NF7ZDq37KMUvlO01Ji6hqHK-CLA.ttf',
@@ -3235,7 +4211,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cantarell/v9/B50WF7ZDq37KMUvlO015iZrSEY6aB4oWgWHB.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3247,13 +4225,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cantataOne({TextStyle textStyle}) {
+  static TextStyle cantataOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cantataone/v9/PlI5Fl60Nb5obNzNe2jslVxEt8CwfGaD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3265,13 +4249,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cantoraOne({TextStyle textStyle}) {
+  static TextStyle cantoraOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cantoraone/v9/gyB4hws1JdgnKy56GB_JX6zdZ4vZVbgZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3283,13 +4273,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle capriola({TextStyle textStyle}) {
+  static TextStyle capriola({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/capriola/v7/wXKoE3YSppcvo1PDln_8L-AinG8y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3301,7 +4297,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cardo({TextStyle textStyle}) {
+  static TextStyle cardo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cardo/v11/wlp_gwjKBV1pqiv_1oAZ2H5O.ttf',
@@ -3309,7 +4309,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/cardo/v11/wlpygwjKBV1pqhND-aQR82JHaTBX.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3321,13 +4323,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle carme({TextStyle textStyle}) {
+  static TextStyle carme({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/carme/v10/ptRHTiWdbvZIDOjGxLNrxfbZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3339,13 +4347,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle carroisGothic({TextStyle textStyle}) {
+  static TextStyle carroisGothic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/carroisgothic/v10/Z9XPDmFATg-N1PLtLOOxvIHl9ZmD3i7ajcJ-.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3357,13 +4371,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle carroisGothicSC({TextStyle textStyle}) {
+  static TextStyle carroisGothicSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/carroisgothicsc/v9/ZgNJjOVHM6jfUZCmyUqT2A2HVKjc-28nNHabY4dN.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3375,13 +4395,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle carterOne({TextStyle textStyle}) {
+  static TextStyle carterOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/carterone/v11/q5uCsoe5IOB2-pXv9UcNIxR2hYxREMs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3393,7 +4419,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle catamaran({TextStyle textStyle}) {
+  static TextStyle catamaran({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/catamaran/v6/o-0OIpQoyXQa2RxT7-5jhjRFSfiM7HBj.ttf',
@@ -3407,7 +4437,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jZhNlY9aA5Wl6PQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3419,7 +4451,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle caudex({TextStyle textStyle}) {
+  static TextStyle caudex({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/caudex/v9/esDQ311QOP6BJUrIyviAnb4eEw.ttf',
@@ -3428,7 +4464,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/caudex/v9/esDV311QOP6BJUr4yMo4kJ8GOJSuGdLB.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3440,14 +4478,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle caveat({TextStyle textStyle}) {
+  static TextStyle caveat({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2QLYTwZqg_MPQ.ttf',
       '700' : 'http://fonts.gstatic.com/s/caveat/v7/Wnz5HAc5bAfYB2Qz3RM9oiTQNAuxjA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3459,13 +4503,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle caveatBrush({TextStyle textStyle}) {
+  static TextStyle caveatBrush({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/caveatbrush/v5/EYq0maZfwr9S9-ETZc3fKXtMW7mT03pdQw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3477,13 +4527,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cedarvilleCursive({TextStyle textStyle}) {
+  static TextStyle cedarvilleCursive({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cedarvillecursive/v11/yYL00g_a2veiudhUmxjo5VKkoqA-B_neJbBxw8BeTg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3495,13 +4551,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cevicheOne({TextStyle textStyle}) {
+  static TextStyle cevicheOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cevicheone/v10/gyB4hws1IcA6JzR-GB_JX6zdZ4vZVbgZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3513,7 +4575,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chakraPetch({TextStyle textStyle}) {
+  static TextStyle chakraPetch({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/chakrapetch/v3/cIflMapbsEk7TDLdtEz1BwkeNIhFQJXE3AY00g.ttf',
@@ -3528,7 +4594,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/chakrapetch/v3/cIfnMapbsEk7TDLdtEz1BwkWmpLZRZ_A_gMk0izH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3540,7 +4608,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle changa({TextStyle textStyle}) {
+  static TextStyle changa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcsqb2bUsT5rZhaZg.ttf',
@@ -3552,7 +4624,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcswbqbUsT5rZhaZg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3564,14 +4638,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle changaOne({TextStyle textStyle}) {
+  static TextStyle changaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/changaone/v12/xfu00W3wXn3QLUJXhzq46AbouLfbK64.ttf',
       'italic' : 'http://fonts.gstatic.com/s/changaone/v12/xfu20W3wXn3QLUJXhzq42ATivJXeO67ISw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3583,13 +4663,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chango({TextStyle textStyle}) {
+  static TextStyle chango({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chango/v8/2V0cKI0OB5U7WaJyz324TFUaAw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3601,14 +4687,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle charm({TextStyle textStyle}) {
+  static TextStyle charm({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/charm/v4/7cHmv4oii5K0MeYvIe804WIo.ttf',
       '700' : 'http://fonts.gstatic.com/s/charm/v4/7cHrv4oii5K0Md6TDss8yn4hnCci.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3620,14 +4712,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle charmonman({TextStyle textStyle}) {
+  static TextStyle charmonman({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/charmonman/v3/MjQDmiR3vP_nuxDv47jiWJGovLdh6OE.ttf',
       '700' : 'http://fonts.gstatic.com/s/charmonman/v3/MjQAmiR3vP_nuxDv47jiYC2HmL9K9OhmGnY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3639,7 +4737,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chathura({TextStyle textStyle}) {
+  static TextStyle chathura({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/chathura/v5/_gP91R7-rzUuVjim42dEq0SbTvZyuDo.ttf',
@@ -3649,7 +4751,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/chathura/v5/_gP81R7-rzUuVjim42eAjWSxYPp7oSNy.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3661,14 +4765,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chauPhilomeneOne({TextStyle textStyle}) {
+  static TextStyle chauPhilomeneOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chauphilomeneone/v9/55xxezRsPtfie1vPY49qzdgSlJiHRQFsnIx7QMISdQ.ttf',
       'italic' : 'http://fonts.gstatic.com/s/chauphilomeneone/v9/55xzezRsPtfie1vPY49qzdgSlJiHRQFcnoZ_YscCdXQB.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3680,13 +4790,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chelaOne({TextStyle textStyle}) {
+  static TextStyle chelaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chelaone/v8/6ae-4KC7Uqgdz_JZdPIy31vWNTMwoQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3698,13 +4814,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chelseaMarket({TextStyle textStyle}) {
+  static TextStyle chelseaMarket({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chelseamarket/v7/BCawqZsHqfr89WNP_IApC8tzKBhlLA4uKkWk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3716,13 +4838,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chenla({TextStyle textStyle}) {
+  static TextStyle chenla({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chenla/v12/SZc43FDpIKu8WZ9eXxfonUPL6Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3734,13 +4862,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cherryCreamSoda({TextStyle textStyle}) {
+  static TextStyle cherryCreamSoda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cherrycreamsoda/v10/UMBIrOxBrW6w2FFyi9paG0fdVdRciTd6Cd47DJ7G.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3752,14 +4886,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cherrySwash({TextStyle textStyle}) {
+  static TextStyle cherrySwash({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cherryswash/v8/i7dNIFByZjaNAMxtZcnfAy58QHi-EwWMbg.ttf',
       '700' : 'http://fonts.gstatic.com/s/cherryswash/v8/i7dSIFByZjaNAMxtZcnfAy5E_FeaGy6QZ3WfYg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3771,13 +4911,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chewy({TextStyle textStyle}) {
+  static TextStyle chewy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chewy/v11/uK_94ruUb-k-wk5xIDMfO-ed.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3789,13 +4935,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chicle({TextStyle textStyle}) {
+  static TextStyle chicle({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chicle/v8/lJwG-pw9i2dqU-BDyWKuobYSxw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3807,13 +4959,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chilanka({TextStyle textStyle}) {
+  static TextStyle chilanka({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chilanka/v5/WWXRlj2DZQiMJYaYRrJQI9EAZhTO.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3825,7 +4983,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chivo({TextStyle textStyle}) {
+  static TextStyle chivo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/chivo/v11/va9F4kzIxd1KFrjDY8Z_uqzGQC_-.ttf',
@@ -3838,7 +5000,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/chivo/v11/va9D4kzIxd1KFrBteWJ4sKjkRT_-bF0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3850,13 +5014,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle chonburi({TextStyle textStyle}) {
+  static TextStyle chonburi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/chonburi/v4/8AtqGs-wOpGRTBq66IWaFr3biAfZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3868,7 +5038,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cinzel({TextStyle textStyle}) {
+  static TextStyle cinzel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cinzel/v9/8vIJ7ww63mVu7gtL8W76HEdHMg.ttf',
@@ -3876,7 +5050,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/cinzel/v9/8vIK7ww63mVu7gtzdUPeFGxbO_zo-w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3888,7 +5064,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cinzelDecorative({TextStyle textStyle}) {
+  static TextStyle cinzelDecorative({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cinzeldecorative/v8/daaCSScvJGqLYhG8nNt8KPPswUAPnh7URs1LaCyC.ttf',
@@ -3896,7 +5076,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/cinzeldecorative/v8/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa-lDQzCLlQXE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3908,13 +5090,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle clickerScript({TextStyle textStyle}) {
+  static TextStyle clickerScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/clickerscript/v7/raxkHiKPvt8CMH6ZWP8PdlEq72rY2zqUKafv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3926,14 +5114,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle coda({TextStyle textStyle}) {
+  static TextStyle coda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/coda/v15/SLXHc1jY5nQ8JUIMapaN39I.ttf',
       '800' : 'http://fonts.gstatic.com/s/coda/v15/SLXIc1jY5nQ8HeIgTp6mw9t1cX8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3945,13 +5139,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle codaCaption({TextStyle textStyle}) {
+  static TextStyle codaCaption({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '800' : 'http://fonts.gstatic.com/s/codacaption/v13/ieVm2YRII2GMY7SyXSoDRiQGqcx6x_-fACIgaw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3963,14 +5163,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle codystar({TextStyle textStyle}) {
+  static TextStyle codystar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/codystar/v7/FwZf7-Q1xVk-40qxOuYsyuyrj0e29bfC.ttf',
       'regular' : 'http://fonts.gstatic.com/s/codystar/v7/FwZY7-Q1xVk-40qxOt6A4sijpFu_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -3982,13 +5188,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle coiny({TextStyle textStyle}) {
+  static TextStyle coiny({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/coiny/v5/gyByhwU1K989PXwbElSvO5Tc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4000,13 +5212,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle combo({TextStyle textStyle}) {
+  static TextStyle combo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/combo/v8/BXRlvF3Jh_fIhg0iBu9y8Hf0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4018,7 +5236,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle comfortaa({TextStyle textStyle}) {
+  static TextStyle comfortaa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMPrQVIT9c2c8.ttf',
@@ -4028,7 +5250,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4Y_LPrQVIT9c2c8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4040,13 +5264,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle comingSoon({TextStyle textStyle}) {
+  static TextStyle comingSoon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/comingsoon/v11/qWcuB6mzpYL7AJ2VfdQR1u-SUjjzsykh.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4058,13 +5288,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle concertOne({TextStyle textStyle}) {
+  static TextStyle concertOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/concertone/v10/VEM1Ro9xs5PjtzCu-srDqRTlhv-CuVAQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4076,13 +5312,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle condiment({TextStyle textStyle}) {
+  static TextStyle condiment({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/condiment/v7/pONk1hggFNmwvXALyH6Sq4n4o1vyCQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4094,14 +5336,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle content({TextStyle textStyle}) {
+  static TextStyle content({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/content/v12/zrfl0HLayePhU_AwUaDyIiL0RCg.ttf',
       '700' : 'http://fonts.gstatic.com/s/content/v12/zrfg0HLayePhU_AwaRzdBirfWCHvkAI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4113,13 +5361,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle contrailOne({TextStyle textStyle}) {
+  static TextStyle contrailOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/contrailone/v9/eLGbP-j_JA-kG0_Zo51noafdZUvt_c092w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4131,13 +5385,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle convergence({TextStyle textStyle}) {
+  static TextStyle convergence({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/convergence/v8/rax5HiePvdgXPmmMHcIPYRhasU7Q8Cad.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4149,13 +5409,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cookie({TextStyle textStyle}) {
+  static TextStyle cookie({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbfNlQCT9tPdpw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4167,13 +5433,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle copse({TextStyle textStyle}) {
+  static TextStyle copse({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/copse/v9/11hPGpDKz1rGb0djHkihUb-A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4185,14 +5457,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle corben({TextStyle textStyle}) {
+  static TextStyle corben({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/corben/v13/LYjDdGzzklQtCMp9oAlEpVs3VQ.ttf',
       '700' : 'http://fonts.gstatic.com/s/corben/v13/LYjAdGzzklQtCMpFHCZgrXArXN7HWQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4204,7 +5482,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorant({TextStyle textStyle}) {
+  static TextStyle cormorant({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorant/v8/H4cgBXOCl9bbnla_nHIiRLmYgoyyYzFzFw.ttf',
@@ -4219,7 +5501,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cormorant/v8/H4c-BXOCl9bbnla_nHIq6qMEh4a2QTRjF8ER.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4231,7 +5515,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorantGaramond({TextStyle textStyle}) {
+  static TextStyle cormorantGaramond({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorantgaramond/v7/co3YmX5slCNuHLi8bLeY9MK7whWMhyjQAllvuQWJ5heb_w.ttf',
@@ -4246,7 +5534,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cormorantgaramond/v7/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEPzvA-NxBKL_y94.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4258,7 +5548,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorantInfant({TextStyle textStyle}) {
+  static TextStyle cormorantInfant({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorantinfant/v8/HhyIU44g9vKiM1sORYSiWeAsLN9951w3_DMrQqcdJrk.ttf',
@@ -4273,7 +5567,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cormorantinfant/v8/HhyKU44g9vKiM1sORYSiWeAsLN997_ItYDYhRoUYNrn_Ig.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4285,7 +5581,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorantSC({TextStyle textStyle}) {
+  static TextStyle cormorantSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorantsc/v8/0ybmGD4kxqXBmOVLG30OGwsmABIU_R3y8DOWGA.ttf',
@@ -4295,7 +5595,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/cormorantsc/v8/0ybmGD4kxqXBmOVLG30OGwsmEBUU_R3y8DOWGA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4307,7 +5609,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorantUnicase({TextStyle textStyle}) {
+  static TextStyle cormorantUnicase({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorantunicase/v8/HI_ViZUaILtOqhqgDeXoF_n1_fTGX9N_tucv7Gy0DRzS.ttf',
@@ -4317,7 +5623,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/cormorantunicase/v8/HI_ViZUaILtOqhqgDeXoF_n1_fTGX9Nvsecv7Gy0DRzS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4329,7 +5637,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cormorantUpright({TextStyle textStyle}) {
+  static TextStyle cormorantUpright({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/cormorantupright/v6/VuJudM3I2Y35poFONtLdafkUCHw1y1N5phDsU9X6RPzQ.ttf',
@@ -4339,7 +5651,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/cormorantupright/v6/VuJudM3I2Y35poFONtLdafkUCHw1y1NpoRDsU9X6RPzQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4351,13 +5665,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle courgette({TextStyle textStyle}) {
+  static TextStyle courgette({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUkFUfAL3EsHiA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4369,7 +5689,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cousine({TextStyle textStyle}) {
+  static TextStyle cousine({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cousine/v14/d6lIkaiiRdih4SpPzSMlzTbtz9k.ttf',
@@ -4378,7 +5702,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cousine/v14/d6lPkaiiRdih4SpP_SEXdTvM1_JgjmRpOA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4390,14 +5716,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle coustard({TextStyle textStyle}) {
+  static TextStyle coustard({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/coustard/v10/3XFpErgg3YsZ5fqUU9UPvWXuROTd.ttf',
       '900' : 'http://fonts.gstatic.com/s/coustard/v10/3XFuErgg3YsZ5fqUU-2LkEHmb_jU3eRL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4409,13 +5741,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle coveredByYourGrace({TextStyle textStyle}) {
+  static TextStyle coveredByYourGrace({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/coveredbyyourgrace/v9/QGYwz-AZahWOJJI9kykWW9mD6opopoqXSOS0FgItq6bFIg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4427,13 +5765,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle craftyGirls({TextStyle textStyle}) {
+  static TextStyle craftyGirls({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/craftygirls/v9/va9B4kXI39VaDdlPJo8N_NvuQR37fF3Wlg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4445,13 +5789,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle creepster({TextStyle textStyle}) {
+  static TextStyle creepster({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4hdXf4XB0Tow.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4463,14 +5813,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle creteRound({TextStyle textStyle}) {
+  static TextStyle creteRound({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/creteround/v8/55xoey1sJNPjPiv1ZZZrxJ1827zAKnxN.ttf',
       'italic' : 'http://fonts.gstatic.com/s/creteround/v8/55xqey1sJNPjPiv1ZZZrxK1-0bjiL2xNhKc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4482,7 +5838,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle crimsonPro({TextStyle textStyle}) {
+  static TextStyle crimsonPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/crimsonpro/v11/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZTm18OJE_VNWoyQ.ttf',
@@ -4503,7 +5863,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/crimsonpro/v11/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi49fJs7dtC4yZNE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4515,7 +5877,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle crimsonText({TextStyle textStyle}) {
+  static TextStyle crimsonText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJvaAJSA_JN3Q.ttf',
@@ -4526,7 +5892,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/crimsontext/v10/wlprgwHKFkZgtmSR3NB0oRJfajDqDtNV9rRPfrKu.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4538,13 +5906,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle croissantOne({TextStyle textStyle}) {
+  static TextStyle croissantOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/croissantone/v7/3y9n6bU9bTPg4m8NDy3Kq24UM3pqn5cdJ-4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4556,13 +5930,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle crushed({TextStyle textStyle}) {
+  static TextStyle crushed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/crushed/v10/U9Mc6dym6WXImTlFT1kfuIqyLzA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4574,7 +5954,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cuprum({TextStyle textStyle}) {
+  static TextStyle cuprum({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cuprum/v11/dg4k_pLmvrkcOkB9IeFDh701Sg.ttf',
@@ -4583,7 +5967,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/cuprum/v11/dg4h_pLmvrkcOkBNI9P7ipwtYQYugjW4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4595,13 +5981,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cuteFont({TextStyle textStyle}) {
+  static TextStyle cuteFont({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cutefont/v8/Noaw6Uny2oWPbSHMrY6vmJNVNC9hkw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4613,13 +6005,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cutive({TextStyle textStyle}) {
+  static TextStyle cutive({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cutive/v11/NaPZcZ_fHOhV3Ip7T_hDoyqlZQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4631,13 +6029,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle cutiveMono({TextStyle textStyle}) {
+  static TextStyle cutiveMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/cutivemono/v8/m8JWjfRfY7WVjVi2E-K9H5RFRG-K3Mud.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4649,7 +6053,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dMSans({TextStyle textStyle}) {
+  static TextStyle dMSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dmsans/v3/rP2Hp2ywxg089UriOZSCHBeHFl0.ttf',
@@ -4660,7 +6068,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/dmsans/v3/rP2Ap2ywxg089UriCZawpBqmDnYS-Cjk6Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4672,14 +6082,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dMSerifDisplay({TextStyle textStyle}) {
+  static TextStyle dMSerifDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dmserifdisplay/v3/-nFnOHM81r4j6k0gjAW3mujVU2B2K_d709jy92k.ttf',
       'italic' : 'http://fonts.gstatic.com/s/dmserifdisplay/v3/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1_r352np3Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4691,14 +6107,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dMSerifText({TextStyle textStyle}) {
+  static TextStyle dMSerifText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dmseriftext/v3/rnCu-xZa_krGokauCeNq1wWyafOPXHIJErY.ttf',
       'italic' : 'http://fonts.gstatic.com/s/dmseriftext/v3/rnCw-xZa_krGokauCeNq1wWyWfGFWFAMArZKqQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4710,13 +6132,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle damion({TextStyle textStyle}) {
+  static TextStyle damion({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/damion/v9/hv-XlzJ3KEUe_YZUbWY3MTFgVg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4728,14 +6156,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dancingScript({TextStyle textStyle}) {
+  static TextStyle dancingScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dancingscript/v11/If2RXTr6YS-zF4S-kcSWSVi_swLngOAliz4X.ttf',
       '700' : 'http://fonts.gstatic.com/s/dancingscript/v11/If2SXTr6YS-zF4S-kcSWSVi_szpbr8QtoCIervbA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4747,13 +6181,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dangrek({TextStyle textStyle}) {
+  static TextStyle dangrek({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dangrek/v11/LYjCdG30nEgoH8E2gCNqqVIuTN4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4765,7 +6205,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle darkerGrotesque({TextStyle textStyle}) {
+  static TextStyle darkerGrotesque({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/darkergrotesque/v1/U9MA6cuh-mLQlC4BKCtayOfARkSVoxr2AW8hTOsXsX0.ttf',
@@ -4777,7 +6221,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/darkergrotesque/v1/U9MA6cuh-mLQlC4BKCtayOfARkSVozLzAW8hTOsXsX0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4789,7 +6235,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle davidLibre({TextStyle textStyle}) {
+  static TextStyle davidLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/davidlibre/v4/snfus0W_99N64iuYSvp4W_l86p6TYS-Y.ttf',
@@ -4797,7 +6247,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/davidlibre/v4/snfzs0W_99N64iuYSvp4W8HAxbqbSjORSo9W.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4809,13 +6261,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dawningofaNewDay({TextStyle textStyle}) {
+  static TextStyle dawningofaNewDay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dawningofanewday/v10/t5t_IQMbOp2SEwuncwLRjMfIg1yYit_nAz8bhWJGNoBE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4827,13 +6285,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle daysOne({TextStyle textStyle}) {
+  static TextStyle daysOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/daysone/v9/mem9YaCnxnKRiYZOCLYVeLkWVNBt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4845,13 +6309,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dekko({TextStyle textStyle}) {
+  static TextStyle dekko({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dekko/v6/46khlb_wWjfSrttFR0vsfl1B.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4863,13 +6333,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle delius({TextStyle textStyle}) {
+  static TextStyle delius({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/delius/v9/PN_xRfK0pW_9e1rtYcI-jT3L_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4881,13 +6357,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle deliusSwashCaps({TextStyle textStyle}) {
+  static TextStyle deliusSwashCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/deliusswashcaps/v11/oY1E8fPLr7v4JWCExZpWebxVKORpXXedKmeBvEYs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4899,14 +6381,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle deliusUnicase({TextStyle textStyle}) {
+  static TextStyle deliusUnicase({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/deliusunicase/v13/845BNMEwEIOVT8BmgfSzIr_6mmLHd-73LXWs.ttf',
       '700' : 'http://fonts.gstatic.com/s/deliusunicase/v13/845CNMEwEIOVT8BmgfSzIr_6mlp7WMr_BmmlS5aw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4918,13 +6406,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dellaRespira({TextStyle textStyle}) {
+  static TextStyle dellaRespira({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dellarespira/v7/RLp5K5v44KaueWI6iEJQBiGPRfkSu6EuTHo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4936,13 +6430,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle denkOne({TextStyle textStyle}) {
+  static TextStyle denkOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/denkone/v7/dg4m_pzhrqcFb2IzROtHpbglShon.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4954,13 +6454,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle devonshire({TextStyle textStyle}) {
+  static TextStyle devonshire({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/devonshire/v8/46kqlbDwWirWr4gtBD2BX0Vq01lYAZM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4972,13 +6478,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dhurjati({TextStyle textStyle}) {
+  static TextStyle dhurjati({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dhurjati/v7/_6_8ED3gSeatXfFiFX3ySKQtuTA2.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -4990,13 +6502,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle didactGothic({TextStyle textStyle}) {
+  static TextStyle didactGothic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASpUySp0LlcyQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5008,13 +6526,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle diplomata({TextStyle textStyle}) {
+  static TextStyle diplomata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/diplomata/v11/Cn-0JtiMXwhNwp-wKxyfYGxYrdM9Sg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5026,13 +6550,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle diplomataSC({TextStyle textStyle}) {
+  static TextStyle diplomataSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/diplomatasc/v8/buExpoi3ecvs3kidKgBJo2kf-P5Oaiw4cw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5044,13 +6574,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle doHyeon({TextStyle textStyle}) {
+  static TextStyle doHyeon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dohyeon/v11/TwMN-I8CRRU2zM86HFE3ZwaH__-C.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5062,13 +6598,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dokdo({TextStyle textStyle}) {
+  static TextStyle dokdo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dokdo/v8/esDf315XNuCBLxLo4NaMlKcH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5080,14 +6622,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle domine({TextStyle textStyle}) {
+  static TextStyle domine({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/domine/v7/L0x8DFMnlVwD4h3RvPCmRSlUig.ttf',
       '700' : 'http://fonts.gstatic.com/s/domine/v7/L0x_DFMnlVwD4h3pAN-CTQJIg3uuXg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5099,13 +6647,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle donegalOne({TextStyle textStyle}) {
+  static TextStyle donegalOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/donegalone/v7/m8JWjfRYea-ZnFz6fsK9FZRFRG-K3Mud.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5117,13 +6671,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle doppioOne({TextStyle textStyle}) {
+  static TextStyle doppioOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/doppioone/v7/Gg8wN5gSaBfyBw2MqCh-lgshKGpe5Fg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5135,13 +6695,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dorsa({TextStyle textStyle}) {
+  static TextStyle dorsa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dorsa/v10/yYLn0hjd0OGwqo493XCFxAnQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5153,7 +6719,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dosis({TextStyle textStyle}) {
+  static TextStyle dosis({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/dosis/v16/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7MV3BkFTq4EPw.ttf',
@@ -5165,7 +6735,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/dosis/v16/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7QV3BkFTq4EPw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5177,13 +6749,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle drSugiyama({TextStyle textStyle}) {
+  static TextStyle drSugiyama({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/drsugiyama/v9/HTxoL2k4N3O9n5I1boGI7abRM4-t-g7y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5195,13 +6773,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle duruSans({TextStyle textStyle}) {
+  static TextStyle duruSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/durusans/v13/xn7iYH8xwmSyTvEV_HOxT_fYdN-WZw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5213,13 +6797,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle dynalight({TextStyle textStyle}) {
+  static TextStyle dynalight({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/dynalight/v8/1Ptsg8LOU_aOmQvTsF4ISotrDfGGxA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5231,7 +6821,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle eBGaramond({TextStyle textStyle}) {
+  static TextStyle eBGaramond({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ebgaramond/v11/SlGUmQSNjdsmc35JDF1K5FRyQjgdYxPJ.ttf',
@@ -5246,7 +6840,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcJwTQgviqWC_O7Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5258,13 +6854,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle eagleLake({TextStyle textStyle}) {
+  static TextStyle eagleLake({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/eaglelake/v7/ptRMTiqbbuNJDOiKj9wG5O7yKQNute8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5276,13 +6878,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle eastSeaDokdo({TextStyle textStyle}) {
+  static TextStyle eastSeaDokdo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/eastseadokdo/v8/xfuo0Wn2V2_KanASqXSZp22m05_aGavYS18y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5294,13 +6902,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle eater({TextStyle textStyle}) {
+  static TextStyle eater({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/eater/v8/mtG04_FCK7bOvpu2u3FwsXsR.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5312,7 +6926,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle economica({TextStyle textStyle}) {
+  static TextStyle economica({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/economica/v7/Qw3fZQZaHCLgIWa29ZBrMcgAAl1lfQ.ttf',
@@ -5321,7 +6939,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/economica/v7/Qw3EZQZaHCLgIWa29ZBbM_q4D3x9Vnksi4M7.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5333,7 +6953,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle eczar({TextStyle textStyle}) {
+  static TextStyle eczar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/eczar/v8/BXRlvF3Pi-DLmw0iBu9y8Hf0.ttf',
@@ -5343,7 +6967,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/eczar/v8/BXRovF3Pi-DLmzWCKst622v9WNjW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5355,7 +6981,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle elMessiri({TextStyle textStyle}) {
+  static TextStyle elMessiri({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/elmessiri/v6/K2F0fZBRmr9vQ1pHEey6AoqKAyLzfWo.ttf',
@@ -5364,7 +6994,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/elmessiri/v6/K2F3fZBRmr9vQ1pHEey6OjalJyrYYWOMluQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5376,13 +7008,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle electrolize({TextStyle textStyle}) {
+  static TextStyle electrolize({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AUEGso5tQafB.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5394,14 +7032,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle elsie({TextStyle textStyle}) {
+  static TextStyle elsie({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/elsie/v9/BCanqZABrez54yYu9slAeLgX.ttf',
       '900' : 'http://fonts.gstatic.com/s/elsie/v9/BCaqqZABrez54x6q2-1IU6QeXSBk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5413,14 +7057,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle elsieSwashCaps({TextStyle textStyle}) {
+  static TextStyle elsieSwashCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/elsieswashcaps/v8/845DNN8xGZyVX5MVo_upKf7KnjK0ferVKGWsUo8.ttf',
       '900' : 'http://fonts.gstatic.com/s/elsieswashcaps/v8/845ENN8xGZyVX5MVo_upKf7KnjK0RW74DG2HToawrdU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5432,13 +7082,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle emblemaOne({TextStyle textStyle}) {
+  static TextStyle emblemaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/emblemaone/v8/nKKT-GQ0F5dSY8vzG0rOEIRBHl57G_f_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5450,13 +7106,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle emilysCandy({TextStyle textStyle}) {
+  static TextStyle emilysCandy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/emilyscandy/v7/2EbgL-1mD1Rnb0OGKudbk0y5r9xrX84JjA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5468,7 +7130,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle encodeSans({TextStyle textStyle}) {
+  static TextStyle encodeSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/encodesans/v4/LDI0apOFNxEwR-Bd1O9uYPvIeeLkl7Iw6yg.ttf',
@@ -5482,7 +7148,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/encodesans/v4/LDIrapOFNxEwR-Bd1O9uYPsoXsLOub458jGL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5494,7 +7162,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle encodeSansCondensed({TextStyle textStyle}) {
+  static TextStyle encodeSansCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/encodesanscondensed/v4/j8_76_LD37rqfuwxyIuaZhE6cRXOLtm2gfT-5a-JLQoFI2KR.ttf',
@@ -5508,7 +7180,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/encodesanscondensed/v4/j8_46_LD37rqfuwxyIuaZhE6cRXOLtm2gfT-BYipByQJKnuIFA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5520,7 +7194,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle encodeSansExpanded({TextStyle textStyle}) {
+  static TextStyle encodeSansExpanded({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/encodesansexpanded/v4/c4mx1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpJGKQNicoAbJlw.ttf',
@@ -5534,7 +7212,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/encodesansexpanded/v4/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpKmDiNIXIwSP0XD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5546,7 +7226,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle encodeSansSemiCondensed({TextStyle textStyle}) {
+  static TextStyle encodeSansSemiCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/encodesanssemicondensed/v4/3qT6oiKqnDuUtQUEHMoXcmspmy55SFWrXFRp9FTOG1T19MFtQ9jpVUA.ttf',
@@ -5560,7 +7244,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/encodesanssemicondensed/v4/3qT7oiKqnDuUtQUEHMoXcmspmy55SFWrXFRp9FTOG1QV0-FHbdTgTFmr.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5572,7 +7258,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle encodeSansSemiExpanded({TextStyle textStyle}) {
+  static TextStyle encodeSansSemiExpanded({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/encodesanssemiexpanded/v5/ke8xOhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TM-41KwrlKXeOEA.ttf',
@@ -5586,7 +7276,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/encodesanssemiexpanded/v5/ke8yOhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TMw4SCyDLJX6XCWU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5598,13 +7290,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle engagement({TextStyle textStyle}) {
+  static TextStyle engagement({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/engagement/v9/x3dlckLDZbqa7RUs9MFVXNossybsHQI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5616,13 +7314,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle englebert({TextStyle textStyle}) {
+  static TextStyle englebert({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/englebert/v7/xn7iYH8w2XGrC8AR4HSxT_fYdN-WZw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5634,7 +7338,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle enriqueta({TextStyle textStyle}) {
+  static TextStyle enriqueta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/enriqueta/v9/goksH6L7AUFrRvV44HVTS0CjkP1Yog.ttf',
@@ -5643,7 +7351,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/enriqueta/v9/gokpH6L7AUFrRvV44HVr92-HmNZEq6TTFw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5655,13 +7365,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ericaOne({TextStyle textStyle}) {
+  static TextStyle ericaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ericaone/v10/WBLnrEXccV9VGrOKmGD1W0_MJMGxiQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5673,13 +7389,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle esteban({TextStyle textStyle}) {
+  static TextStyle esteban({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/esteban/v8/r05bGLZE-bdGdN-GdOuD5jokU8E.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5691,13 +7413,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle euphoriaScript({TextStyle textStyle}) {
+  static TextStyle euphoriaScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/euphoriascript/v8/mFTpWb0X2bLb_cx6To2B8GpKoD5ak_ZT1D8x7Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5709,13 +7437,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ewert({TextStyle textStyle}) {
+  static TextStyle ewert({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ewert/v7/va9I4kzO2tFODYBvS-J3kbDP.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5727,7 +7461,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle exo({TextStyle textStyle}) {
+  static TextStyle exo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/exo/v9/4UaMrEtFpBIaEH6m2jbu5rXI.ttf',
@@ -5750,7 +7488,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/exo/v9/4UaBrEtFpBISdkYi9xLmzanB44N1.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5762,7 +7502,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle exo2({TextStyle textStyle}) {
+  static TextStyle exo2({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/exo2/v7/7cHov4okm5zmbt5LK-sW5HIohT4.ttf',
@@ -5785,7 +7529,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/exo2/v7/7cHtv4okm5zmbtYtE287wHoDmTcibrA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5797,7 +7543,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle expletusSans({TextStyle textStyle}) {
+  static TextStyle expletusSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/expletussans/v13/RLp5K5v5_bqufTYdnhFzDj2dRfkSu6EuTHo.ttf',
@@ -5810,7 +7560,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/expletussans/v13/RLpiK5v5_bqufTYdnhFzDj2ddfsgA6wPVFHNBaVImA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5822,7 +7574,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fahkwang({TextStyle textStyle}) {
+  static TextStyle fahkwang({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/fahkwang/v3/Noa26Uj3zpmBOgbNpOJHmZlRFipxkwjx.ttf',
@@ -5839,7 +7595,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/fahkwang/v3/Noa06Uj3zpmBOgbNpOqNgAVUHC5Tlhjxdw4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5851,14 +7609,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fanwoodText({TextStyle textStyle}) {
+  static TextStyle fanwoodText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fanwoodtext/v9/3XFtErwl05Ad_vSCF6Fq7xXGRdbY1P1Sbg.ttf',
       'italic' : 'http://fonts.gstatic.com/s/fanwoodtext/v9/3XFzErwl05Ad_vSCF6Fq7xX2R9zc9vhCblye.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5870,7 +7634,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle farro({TextStyle textStyle}) {
+  static TextStyle farro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/farro/v1/i7dJIFl3byGNHa3hNJ6-WkJUQUq7.ttf',
@@ -5879,7 +7647,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/farro/v1/i7dJIFl3byGNHa3xM56-WkJUQUq7.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5891,13 +7661,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle farsan({TextStyle textStyle}) {
+  static TextStyle farsan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/farsan/v5/VEMwRoJ0vY_zsyz62q-pxDX9rQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5909,13 +7685,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fascinate({TextStyle textStyle}) {
+  static TextStyle fascinate({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fascinate/v8/z7NWdRrufC8XJK0IIEli1LbQRPyNrw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5927,13 +7709,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fascinateInline({TextStyle textStyle}) {
+  static TextStyle fascinateInline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fascinateinline/v9/jVyR7mzzB3zc-jp6QCAu60poNqIy1g3CfRXxWZQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5945,13 +7733,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fasterOne({TextStyle textStyle}) {
+  static TextStyle fasterOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fasterone/v11/H4ciBXCHmdfClFb-vWhfyLuShq63czE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5963,13 +7757,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fasthand({TextStyle textStyle}) {
+  static TextStyle fasthand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fasthand/v10/0yb9GDohyKTYn_ZEESkuYkw2rQg1.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5981,13 +7781,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle faunaOne({TextStyle textStyle}) {
+  static TextStyle faunaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/faunaone/v7/wlpzgwTPBVpjpCuwkuEx2UxLYClOCg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -5999,7 +7805,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle faustina({TextStyle textStyle}) {
+  static TextStyle faustina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/faustina/v4/XLYlIZPxYpJfTbZAFW-4F81Kp28v.ttf',
@@ -6012,7 +7822,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/faustina/v4/XLYgIZPxYpJfTbZAFV-6JXVHhncESXFtUsM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6024,13 +7836,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle federant({TextStyle textStyle}) {
+  static TextStyle federant({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/federant/v12/2sDdZGNfip_eirT0_U0jRUG0AqUc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6042,13 +7860,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle federo({TextStyle textStyle}) {
+  static TextStyle federo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/federo/v11/iJWFBX-cbD_ETsbmjVOe2WTG7Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6060,13 +7884,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle felipa({TextStyle textStyle}) {
+  static TextStyle felipa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/felipa/v7/FwZa7-owz1Eu4F_wSNSEwM2zpA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6078,13 +7908,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fenix({TextStyle textStyle}) {
+  static TextStyle fenix({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fenix/v7/XoHo2YL_S7-g5ostKzAFvs8o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6096,13 +7932,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fingerPaint({TextStyle textStyle}) {
+  static TextStyle fingerPaint({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fingerpaint/v9/0QInMXVJ-o-oRn_7dron8YWO85bS8ANesw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6114,7 +7956,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle firaCode({TextStyle textStyle}) {
+  static TextStyle firaCode({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/firacode/v7/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_GNsFVfxN87gsj0.ttf',
@@ -6124,7 +7970,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/firacode/v7/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVfxN87gsj0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6136,7 +7984,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle firaMono({TextStyle textStyle}) {
+  static TextStyle firaMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/firamono/v8/N0bX2SlFPv1weGeLZDtQIfTTkdbJYA.ttf',
@@ -6144,7 +7996,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/firamono/v8/N0bS2SlFPv1weGeLZDtondv3mf3VaZBRBQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6156,7 +8010,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle firaSans({TextStyle textStyle}) {
+  static TextStyle firaSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/firasans/v10/va9C4kDNxMZdWfMOD5Vn9IjOazP3dUTP.ttf',
@@ -6179,7 +8037,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/firasans/v10/va9f4kDNxMZdWfMOD5VvkrBKRhf_XljGllLX.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6191,7 +8051,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle firaSansCondensed({TextStyle textStyle}) {
+  static TextStyle firaSansCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/firasanscondensed/v4/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXtqOlQfx9CjA.ttf',
@@ -6214,7 +8078,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/firasanscondensed/v4/wEOuEADFm8hSaQTFG18FErVhsC9x-tarUfPVLMR0dzRehY43EA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6226,7 +8092,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle firaSansExtraCondensed({TextStyle textStyle}) {
+  static TextStyle firaSansExtraCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/firasansextracondensed/v4/NaPMcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda3Zyuv1WarE9ncg.ttf',
@@ -6249,7 +8119,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/firasansextracondensed/v4/NaPxcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda1fqWO3i-pGR7e2SvJQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6261,13 +8133,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fjallaOne({TextStyle textStyle}) {
+  static TextStyle fjallaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFnOZwkxgtUb8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6279,13 +8157,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fjordOne({TextStyle textStyle}) {
+  static TextStyle fjordOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fjordone/v8/zOL-4pbEnKBY_9S1jNKr6e5As-FeiQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6297,14 +8181,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle flamenco({TextStyle textStyle}) {
+  static TextStyle flamenco({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/flamenco/v10/neIPzCehqYguo67ssZ0qNIkyepH9qGsf.ttf',
       'regular' : 'http://fonts.gstatic.com/s/flamenco/v10/neIIzCehqYguo67ssaWGHK06UY30.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6316,13 +8206,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle flavors({TextStyle textStyle}) {
+  static TextStyle flavors({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/flavors/v9/FBV2dDrhxqmveJTpbkzlNqkG9UY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6334,14 +8230,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fondamento({TextStyle textStyle}) {
+  static TextStyle fondamento({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fondamento/v10/4UaHrEJGsxNmFTPDnkaJx63j5pN1MwI.ttf',
       'italic' : 'http://fonts.gstatic.com/s/fondamento/v10/4UaFrEJGsxNmFTPDnkaJ96_p4rFwIwJePw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6353,13 +8255,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fontdinerSwanky({TextStyle textStyle}) {
+  static TextStyle fontdinerSwanky({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fontdinerswanky/v10/ijwOs4XgRNsiaI5-hcVb4hQgMvCD4uEfKiGvxts.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6371,13 +8279,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle forum({TextStyle textStyle}) {
+  static TextStyle forum({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/forum/v10/6aey4Ky-Vb8Ew_IWMJMa3mnT.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6389,13 +8303,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle francoisOne({TextStyle textStyle}) {
+  static TextStyle francoisOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/francoisone/v14/_Xmr-H4zszafZw3A-KPSZutNxgKQu_avAg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6407,7 +8327,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle frankRuhlLibre({TextStyle textStyle}) {
+  static TextStyle frankRuhlLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/frankruhllibre/v5/j8_36_fAw7jrcalD7oKYNX0QfAnPUxvHxJDMhYeIHw8.ttf',
@@ -6417,7 +8341,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/frankruhllibre/v5/j8_36_fAw7jrcalD7oKYNX0QfAnPUzPCxJDMhYeIHw8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6429,13 +8355,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle freckleFace({TextStyle textStyle}) {
+  static TextStyle freckleFace({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/freckleface/v8/AMOWz4SXrmKHCvXTohxY-YI0U1K2w9lb4g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6447,13 +8379,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle frederickatheGreat({TextStyle textStyle}) {
+  static TextStyle frederickatheGreat({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV-9Skz7Ylch2L.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6465,13 +8403,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fredokaOne({TextStyle textStyle}) {
+  static TextStyle fredokaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fredokaone/v7/k3kUo8kEI-tA1RRcTZGmTmHBA6aF8Bf_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6483,13 +8427,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle freehand({TextStyle textStyle}) {
+  static TextStyle freehand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/freehand/v11/cIf-Ma5eqk01VjKTgAmBTmUOmZJk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6501,13 +8451,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fresca({TextStyle textStyle}) {
+  static TextStyle fresca({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fresca/v8/6ae94K--SKgCzbM2Gr0W13DKPA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6519,13 +8475,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle frijole({TextStyle textStyle}) {
+  static TextStyle frijole({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/frijole/v8/uU9PCBUR8oakM2BQ7xPb3vyHmlI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6537,13 +8499,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fruktur({TextStyle textStyle}) {
+  static TextStyle fruktur({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fruktur/v12/SZc53FHsOru5QYsMfz3GkUrS8DI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6555,13 +8523,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle fugazOne({TextStyle textStyle}) {
+  static TextStyle fugazOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/fugazone/v9/rax_HiWKp9EAITukFslMBBJek0vA8A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6573,13 +8547,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gFSDidot({TextStyle textStyle}) {
+  static TextStyle gFSDidot({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gfsdidot/v9/Jqzh5TybZ9vZMWFssvwiF-fGFSCGAA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6591,7 +8571,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gFSNeohellenic({TextStyle textStyle}) {
+  static TextStyle gFSNeohellenic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gfsneohellenic/v12/8QIRdiDOrfiq0b7R8O1Iw9WLcY5TLahP46UDUw.ttf',
@@ -6600,7 +8584,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/gfsneohellenic/v12/8QIWdiDOrfiq0b7R8O1Iw9WLcY5jL5r37oQbeMFe985V.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6612,13 +8598,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gabriela({TextStyle textStyle}) {
+  static TextStyle gabriela({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gabriela/v8/qkBWXvsO6sreR8E-b_m-zrpHmRzC.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6630,7 +8622,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gaegu({TextStyle textStyle}) {
+  static TextStyle gaegu({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/gaegu/v8/TuGSUVB6Up9NU57nifw74sdtBk0x.ttf',
@@ -6638,7 +8634,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/gaegu/v8/TuGSUVB6Up9NU573jvw74sdtBk0x.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6650,13 +8648,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gafata({TextStyle textStyle}) {
+  static TextStyle gafata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gafata/v8/XRXV3I6Cn0VJKon4MuyAbsrVcA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6668,13 +8672,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle galada({TextStyle textStyle}) {
+  static TextStyle galada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/galada/v5/H4cmBXyGmcjXlUX-8iw-4Lqggw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6686,13 +8696,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle galdeano({TextStyle textStyle}) {
+  static TextStyle galdeano({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/galdeano/v9/uU9MCBoQ4YOqOW1boDPx8PCOg0uX.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6704,13 +8720,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle galindo({TextStyle textStyle}) {
+  static TextStyle galindo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/galindo/v7/HI_KiYMeLqVKqwyuQ5HiRp-dhpQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6722,13 +8744,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gamjaFlower({TextStyle textStyle}) {
+  static TextStyle gamjaFlower({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gamjaflower/v8/6NUR8FiKJg-Pa0rM6uN40Z4kyf9Fdty2ew.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6740,7 +8768,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gayathri({TextStyle textStyle}) {
+  static TextStyle gayathri({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/gayathri/v1/MCoWzAb429DbBilWLLhc-pvSA_gA2W8.ttf',
@@ -6748,7 +8780,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/gayathri/v1/MCoXzAb429DbBilWLLiE37v4LfQJwHbn.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6760,7 +8794,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gentiumBasic({TextStyle textStyle}) {
+  static TextStyle gentiumBasic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gentiumbasic/v11/Wnz9HAw9aB_JD2VGQVR80We3HAqDiTI_cIM.ttf',
@@ -6769,7 +8807,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/gentiumbasic/v11/WnzmHAw9aB_JD2VGQVR80We3LAixMT8eaKiNbBVWkw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6781,7 +8821,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gentiumBookBasic({TextStyle textStyle}) {
+  static TextStyle gentiumBookBasic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gentiumbookbasic/v10/pe0zMJCbPYBVokB1LHA9bbyaQb8ZGjcIV7t7w6bE2A.ttf',
@@ -6790,7 +8834,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/gentiumbookbasic/v10/pe0-MJCbPYBVokB1LHA9bbyaQb8ZGjc4VYnDzofc81s0voO3.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6802,14 +8848,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle geo({TextStyle textStyle}) {
+  static TextStyle geo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/geo/v11/CSRz4zRZlufVL3BmQjlCbQ.ttf',
       'italic' : 'http://fonts.gstatic.com/s/geo/v11/CSRx4zRZluflLXpiYDxSbf8r.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6821,13 +8873,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle geostar({TextStyle textStyle}) {
+  static TextStyle geostar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/geostar/v10/sykz-yx4n701VLOftSq9-trEvlQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6839,13 +8897,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle geostarFill({TextStyle textStyle}) {
+  static TextStyle geostarFill({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/geostarfill/v10/AMOWz4SWuWiXFfjEohxQ9os0U1K2w9lb4g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6857,13 +8921,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle germaniaOne({TextStyle textStyle}) {
+  static TextStyle germaniaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/germaniaone/v7/Fh4yPjrqIyv2ucM2qzBjeS3ezAJONau6ew.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6875,13 +8945,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gidugu({TextStyle textStyle}) {
+  static TextStyle gidugu({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gidugu/v6/L0x8DFMkk1Uf6w3RvPCmRSlUig.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6893,13 +8969,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gildaDisplay({TextStyle textStyle}) {
+  static TextStyle gildaDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gildadisplay/v7/t5tmIRoYMoaYG0WEOh7HwMeR7TnFrpOHYh4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6911,13 +8993,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle giveYouGlory({TextStyle textStyle}) {
+  static TextStyle giveYouGlory({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/giveyouglory/v9/8QIQdiHOgt3vv4LR7ahjw9-XYc1zB4ZD6rwa.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6929,13 +9017,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle glassAntiqua({TextStyle textStyle}) {
+  static TextStyle glassAntiqua({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/glassantiqua/v7/xfu30Wr0Wn3NOQM2piC0uXOjnL_wN6fRUkY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6947,14 +9041,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle glegoo({TextStyle textStyle}) {
+  static TextStyle glegoo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/glegoo/v9/_Xmt-HQyrTKWaw2Ji6mZAI91xw.ttf',
       '700' : 'http://fonts.gstatic.com/s/glegoo/v9/_Xmu-HQyrTKWaw2xN4a9CKRpzimMsg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6966,13 +9066,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gloriaHallelujah({TextStyle textStyle}) {
+  static TextStyle gloriaHallelujah({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gloriahallelujah/v11/LYjYdHv3kUk9BMV96EIswT9DIbW-MLSy3TKEvkCF.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -6984,13 +9090,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle goblinOne({TextStyle textStyle}) {
+  static TextStyle goblinOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/goblinone/v9/CSR64z1ZnOqZRjRCBVY_TOcATNt_pOU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7002,13 +9114,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gochiHand({TextStyle textStyle}) {
+  static TextStyle gochiHand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gochihand/v10/hES06XlsOjtJsgCkx1PkTo71-n0nXWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7020,14 +9138,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gorditas({TextStyle textStyle}) {
+  static TextStyle gorditas({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gorditas/v7/ll8_K2aTVD26DsPEtQDoDa4AlxYb.ttf',
       '700' : 'http://fonts.gstatic.com/s/gorditas/v7/ll84K2aTVD26DsPEtThUIooIvAoShA1i.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7039,7 +9163,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gothicA1({TextStyle textStyle}) {
+  static TextStyle gothicA1({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/gothica1/v8/CSR74z5ZnPydRjlCCwlCCMcqYtd2vfwk.ttf',
@@ -7053,7 +9181,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/gothica1/v8/CSR44z5ZnPydRjlCCwlC6OAKSPl6tOU9Eg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7065,13 +9195,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle goudyBookletter1911({TextStyle textStyle}) {
+  static TextStyle goudyBookletter1911({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/goudybookletter1911/v9/sykt-z54laciWfKv-kX8krex0jDiD2HbY6I5tRbXZ4IXAA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7083,13 +9219,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle graduate({TextStyle textStyle}) {
+  static TextStyle graduate({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/graduate/v7/C8cg4cs3o2n15t_2YxgR6X2NZAn2.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7101,13 +9243,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle grandHotel({TextStyle textStyle}) {
+  static TextStyle grandHotel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/grandhotel/v7/7Au7p_IgjDKdCRWuR1azpmQNEl0O0kEx.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7119,13 +9267,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gravitasOne({TextStyle textStyle}) {
+  static TextStyle gravitasOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gravitasone/v9/5h1diZ4hJ3cblKy3LWakKQmaDWRNr3DzbQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7137,13 +9291,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle greatVibes({TextStyle textStyle}) {
+  static TextStyle greatVibes({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN-XCg6UKDXlq.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7155,7 +9315,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle grenze({TextStyle textStyle}) {
+  static TextStyle grenze({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/grenze/v1/O4ZRFGb7hR12BxqPm2IjuAkalnmd.ttf',
@@ -7178,7 +9342,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/grenze/v1/O4ZWFGb7hR12BxqH_VqnlS0SvWWUy1uW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7190,13 +9356,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle griffy({TextStyle textStyle}) {
+  static TextStyle griffy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/griffy/v8/FwZa7-ox2FQh9kfwSNSEwM2zpA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7208,13 +9380,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gruppo({TextStyle textStyle}) {
+  static TextStyle gruppo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gruppo/v10/WwkfxPmzE06v_ZWFWXDAOIEQUQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7226,7 +9404,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gudea({TextStyle textStyle}) {
+  static TextStyle gudea({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gudea/v9/neIFzCqgsI0mp-CP9IGON7Ez.ttf',
@@ -7234,7 +9416,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/gudea/v9/neIIzCqgsI0mp9gz26WGHK06UY30.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7246,13 +9430,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gugi({TextStyle textStyle}) {
+  static TextStyle gugi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gugi/v8/A2BVn5dXywshVA6A9DEfgqM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7264,13 +9454,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle gurajada({TextStyle textStyle}) {
+  static TextStyle gurajada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/gurajada/v7/FwZY7-Qx308m-l-0Kd6A4sijpFu_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7282,13 +9478,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle habibi({TextStyle textStyle}) {
+  static TextStyle habibi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/habibi/v8/CSR-4zFWkuqcTTNCShJeZOYySQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7300,7 +9502,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle halant({TextStyle textStyle}) {
+  static TextStyle halant({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/halant/v7/u-490qaujRI2Pbsvc_pCmwZqcwdRXg.ttf',
@@ -7310,7 +9516,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/halant/v7/u-490qaujRI2PbsvY_1CmwZqcwdRXg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7322,13 +9530,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hammersmithOne({TextStyle textStyle}) {
+  static TextStyle hammersmithOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/hammersmithone/v10/qWcyB624q4L_C4jGQ9IK0O_dFlnbshsks4MRXw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7340,13 +9554,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hanalei({TextStyle textStyle}) {
+  static TextStyle hanalei({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/hanalei/v10/E21n_dD8iufIjBRHXzgmVydREus.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7358,13 +9578,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hanaleiFill({TextStyle textStyle}) {
+  static TextStyle hanaleiFill({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/hanaleifill/v8/fC1mPYtObGbfyQznIaQzPQiMVwLBplm9aw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7376,13 +9602,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle handlee({TextStyle textStyle}) {
+  static TextStyle handlee({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/handlee/v8/-F6xfjBsISg9aMakDmr6oilJ3ik.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7394,14 +9626,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hanuman({TextStyle textStyle}) {
+  static TextStyle hanuman({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/hanuman/v13/VuJxdNvD15HhpJJBeKbXOIFneRo.ttf',
       '700' : 'http://fonts.gstatic.com/s/hanuman/v13/VuJ0dNvD15HhpJJBQBr4HIlMZRNcp0o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7413,13 +9651,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle happyMonkey({TextStyle textStyle}) {
+  static TextStyle happyMonkey({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/happymonkey/v8/K2F2fZZcl-9SXwl5F_C4R_OABwD2bWqVjw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7431,13 +9675,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle harmattan({TextStyle textStyle}) {
+  static TextStyle harmattan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/harmattan/v6/goksH6L2DkFvVvRp9XpTS0CjkP1Yog.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7449,13 +9699,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle headlandOne({TextStyle textStyle}) {
+  static TextStyle headlandOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/headlandone/v7/yYLu0hHR2vKnp89Tk1TCq3Tx0PlTeZ3mJA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7467,7 +9723,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle heebo({TextStyle textStyle}) {
+  static TextStyle heebo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/heebo/v5/NGS0v5_NC0k9P9mVTbRhtKMByaw.ttf',
@@ -7479,7 +9739,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/heebo/v5/NGS3v5_NC0k9P9l1apRLmq8I0LVF.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7491,13 +9753,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hennyPenny({TextStyle textStyle}) {
+  static TextStyle hennyPenny({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/hennypenny/v7/wXKvE3UZookzsxz_kjGSfMQqt3M7tMDT.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7509,7 +9777,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle heptaSlab({TextStyle textStyle}) {
+  static TextStyle heptaSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/heptaslab/v6/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5jfbY5B0NBkz.ttf',
@@ -7523,7 +9795,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/heptaslab/v6/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5Hvm84DfbY5B0NBkz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7535,13 +9809,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle herrVonMuellerhoff({TextStyle textStyle}) {
+  static TextStyle herrVonMuellerhoff({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/herrvonmuellerhoff/v9/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft3c6_qJY3QPQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7553,13 +9833,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hiMelody({TextStyle textStyle}) {
+  static TextStyle hiMelody({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/himelody/v8/46ktlbP8Vnz0pJcqCTbEf29E31BBGA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7571,7 +9857,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hind({TextStyle textStyle}) {
+  static TextStyle hind({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/hind/v10/5aU19_a8oxmIfMJaIRuYjDpf5Vw.ttf',
@@ -7581,7 +9871,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/hind/v10/5aU19_a8oxmIfNJdIRuYjDpf5Vw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7593,7 +9885,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hindGuntur({TextStyle textStyle}) {
+  static TextStyle hindGuntur({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/hindguntur/v5/wXKyE3UZrok56nvamSuJd_yGn1czn9zaj5Ju.ttf',
@@ -7603,7 +9899,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/hindguntur/v5/wXKyE3UZrok56nvamSuJd_yWmFczn9zaj5Ju.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7615,7 +9913,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hindMadurai({TextStyle textStyle}) {
+  static TextStyle hindMadurai({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/hindmadurai/v5/f0Xu0e2p98ZvDXdZQIOcpqjfXaUnecsoMJ0b_g.ttf',
@@ -7625,7 +9927,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/hindmadurai/v5/f0Xu0e2p98ZvDXdZQIOcpqjfTaInecsoMJ0b_g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7637,7 +9941,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hindSiliguri({TextStyle textStyle}) {
+  static TextStyle hindSiliguri({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/hindsiliguri/v6/ijwOs5juQtsyLLR5jN4cxBEoRDf44uEfKiGvxts.ttf',
@@ -7647,7 +9955,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/hindsiliguri/v6/ijwOs5juQtsyLLR5jN4cxBEoRCf_4uEfKiGvxts.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7659,7 +9969,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle hindVadodara({TextStyle textStyle}) {
+  static TextStyle hindVadodara({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/hindvadodara/v6/neIQzCKvrIcn5pbuuuriV9tTSDn3iXM0oSOL2Yw.ttf',
@@ -7669,7 +9983,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/hindvadodara/v6/neIQzCKvrIcn5pbuuuriV9tTSCnwiXM0oSOL2Yw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7681,13 +9997,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle holtwoodOneSC({TextStyle textStyle}) {
+  static TextStyle holtwoodOneSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/holtwoodonesc/v10/yYLx0hLR0P-3vMFSk1TCq3Txg5B3cbb6LZttyg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7699,13 +10021,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle homemadeApple({TextStyle textStyle}) {
+  static TextStyle homemadeApple({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/homemadeapple/v10/Qw3EZQFXECDrI2q789EKQZJob3x9Vnksi4M7.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7717,13 +10045,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle homenaje({TextStyle textStyle}) {
+  static TextStyle homenaje({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/homenaje/v9/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7735,7 +10069,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iBMPlexMono({TextStyle textStyle}) {
+  static TextStyle iBMPlexMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/ibmplexmono/v5/-F6pfjptAgt5VM-kVkqdyU8n3kwq0n1hj-sNFQ.ttf',
@@ -7754,7 +10092,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ibmplexmono/v5/-F6sfjptAgt5VM-kVkqdyU8n1ioSblJFh8ARHNh4zg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7766,7 +10106,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iBMPlexSans({TextStyle textStyle}) {
+  static TextStyle iBMPlexSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/ibmplexsans/v7/zYX-KVElMYYaJe8bpLHnCwDKjbLeEKxIedbzDw.ttf',
@@ -7785,7 +10129,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ibmplexsans/v7/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINscf3vBmpl8A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7797,7 +10143,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iBMPlexSansCondensed({TextStyle textStyle}) {
+  static TextStyle iBMPlexSansCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/ibmplexsanscondensed/v6/Gg8nN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY7KyKvBgYsMDhM.ttf',
@@ -7816,7 +10166,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ibmplexsanscondensed/v6/Gg8iN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHYas8BfupYMnEhq5H1w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7828,7 +10180,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iBMPlexSerif({TextStyle textStyle}) {
+  static TextStyle iBMPlexSerif({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/ibmplexserif/v8/jizBREVNn1dOx-zrZ2X3pZvkTi182zIZj1bIkNo.ttf',
@@ -7847,7 +10203,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ibmplexserif/v8/jizGREVNn1dOx-zrZ2X3pZvkTiUa4442q17jjNOg_oc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7859,14 +10217,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellDWPica({TextStyle textStyle}) {
+  static TextStyle iMFellDWPica({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfelldwpica/v9/2sDGZGRQotv9nbn2qSl0TxXVYNw9ZAPUvi88MQ.ttf',
       'italic' : 'http://fonts.gstatic.com/s/imfelldwpica/v9/2sDEZGRQotv9nbn2qSl0TxXVYNwNZgnQnCosMXm0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7878,13 +10242,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellDWPicaSC({TextStyle textStyle}) {
+  static TextStyle iMFellDWPicaSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfelldwpicasc/v9/0ybjGCAu5PfqkvtGVU15aBhXz3EUrnTW-BiKEUiBGA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7896,14 +10266,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellDoublePica({TextStyle textStyle}) {
+  static TextStyle iMFellDoublePica({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfelldoublepica/v9/3XF2EqMq_94s9PeKF7Fg4gOKINyMtZ8rT0S1UL5Ayp0.ttf',
       'italic' : 'http://fonts.gstatic.com/s/imfelldoublepica/v9/3XF0EqMq_94s9PeKF7Fg4gOKINyMtZ8rf0a_VJxF2p2G8g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7915,13 +10291,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellDoublePicaSC({TextStyle textStyle}) {
+  static TextStyle iMFellDoublePicaSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfelldoublepicasc/v9/neIazDmuiMkFo6zj_sHpQ8teNbWlwBB_hXjJ4Y0Eeru2dGg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7933,14 +10315,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellEnglish({TextStyle textStyle}) {
+  static TextStyle iMFellEnglish({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellenglish/v9/Ktk1ALSLW8zDe0rthJysWrnLsAz3F6mZVY9Y5w.ttf',
       'italic' : 'http://fonts.gstatic.com/s/imfellenglish/v9/Ktk3ALSLW8zDe0rthJysWrnLsAzHFaOdd4pI59zg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7952,13 +10340,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellEnglishSC({TextStyle textStyle}) {
+  static TextStyle iMFellEnglishSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellenglishsc/v9/a8IENpD3CDX-4zrWfr1VY879qFF05pZLO4gOg0shzA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7970,14 +10364,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellFrenchCanon({TextStyle textStyle}) {
+  static TextStyle iMFellFrenchCanon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellfrenchcanon/v9/-F6ufiNtDWYfYc-tDiyiw08rrghJszkK6coVPt1ozoPz.ttf',
       'italic' : 'http://fonts.gstatic.com/s/imfellfrenchcanon/v9/-F6gfiNtDWYfYc-tDiyiw08rrghJszkK6foXNNlKy5PzzrU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -7989,13 +10389,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellFrenchCanonSC({TextStyle textStyle}) {
+  static TextStyle iMFellFrenchCanonSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellfrenchcanonsc/v9/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H3c0UBCVIVqH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8007,14 +10413,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellGreatPrimer({TextStyle textStyle}) {
+  static TextStyle iMFellGreatPrimer({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellgreatprimer/v9/bx6aNwSJtayYxOkbYFsT6hMsLzX7u85rJorXvDo3SQY1.ttf',
       'italic' : 'http://fonts.gstatic.com/s/imfellgreatprimer/v9/bx6UNwSJtayYxOkbYFsT6hMsLzX7u85rJrrVtj4VTBY1N6U.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8026,13 +10438,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iMFellGreatPrimerSC({TextStyle textStyle}) {
+  static TextStyle iMFellGreatPrimerSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imfellgreatprimersc/v9/ga6daxBOxyt6sCqz3fjZCTFCTUDMHagsQKdDTLf9BXz0s8FG.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8044,13 +10462,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iceberg({TextStyle textStyle}) {
+  static TextStyle iceberg({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/iceberg/v7/8QIJdijAiM7o-qnZuIgOq7jkAOw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8062,13 +10486,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle iceland({TextStyle textStyle}) {
+  static TextStyle iceland({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPWKxGADBbg0s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8080,13 +10510,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle imprima({TextStyle textStyle}) {
+  static TextStyle imprima({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/imprima/v8/VEMxRoN7sY3yuy-7-oWHyDzktPo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8098,14 +10534,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle inconsolata({TextStyle textStyle}) {
+  static TextStyle inconsolata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/inconsolata/v18/QldKNThLqRwH-OJ1UHjlKFle7KlmxuHx.ttf',
       '700' : 'http://fonts.gstatic.com/s/inconsolata/v18/QldXNThLqRwH-OJ1UHjlKGHiw41u7f34DYwn.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8117,13 +10559,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle inder({TextStyle textStyle}) {
+  static TextStyle inder({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/inder/v8/w8gUH2YoQe8_4vq6pw-P3U4O.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8135,13 +10583,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle indieFlower({TextStyle textStyle}) {
+  static TextStyle indieFlower({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZlbkGG1dKEDw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8153,14 +10607,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle inika({TextStyle textStyle}) {
+  static TextStyle inika({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/inika/v8/rnCm-x5X3QP-phTHRcc2s2XH.ttf',
       '700' : 'http://fonts.gstatic.com/s/inika/v8/rnCr-x5X3QP-pix7auM-mHnOSOuk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8172,7 +10632,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle inknutAntiqua({TextStyle textStyle}) {
+  static TextStyle inknutAntiqua({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/inknutantiqua/v5/Y4GRYax7VC4ot_qNB4nYpBdaKU2vwrj5bBoIYJNf.ttf',
@@ -8184,7 +10648,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/inknutantiqua/v5/Y4GRYax7VC4ot_qNB4nYpBdaKU2Hx7j5bBoIYJNf.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8196,13 +10662,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle irishGrover({TextStyle textStyle}) {
+  static TextStyle irishGrover({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/irishgrover/v10/buExpoi6YtLz2QW7LA4flVgf-P5Oaiw4cw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8214,7 +10686,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle istokWeb({TextStyle textStyle}) {
+  static TextStyle istokWeb({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/istokweb/v14/3qTvojGmgSyUukBzKslZAWF-9kIIaQ.ttf',
@@ -8223,7 +10699,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/istokweb/v14/3qT0ojGmgSyUukBzKslpA1PG-2MQQhLMMygN.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8235,13 +10713,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle italiana({TextStyle textStyle}) {
+  static TextStyle italiana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/italiana/v8/QldNNTtLsx4E__B0XTmRY31Wx7Vv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8253,13 +10737,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle italianno({TextStyle textStyle}) {
+  static TextStyle italianno({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/italianno/v9/dg4n_p3sv6gCJkwzT6Rnj5YpQwM-gg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8271,13 +10761,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle itim({TextStyle textStyle}) {
+  static TextStyle itim({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYewARKkc7ZdwU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8289,13 +10785,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jacquesFrancois({TextStyle textStyle}) {
+  static TextStyle jacquesFrancois({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jacquesfrancois/v7/ZXu9e04ZvKeOOHIe1TMahbcIU2cgmcPqoeRWfbs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8307,13 +10809,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jacquesFrancoisShadow({TextStyle textStyle}) {
+  static TextStyle jacquesFrancoisShadow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jacquesfrancoisshadow/v8/KR1FBtOz8PKTMk-kqdkLVrvR0ECFrB6Pin-2_q8VsHuV5ULS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8325,14 +10833,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jaldi({TextStyle textStyle}) {
+  static TextStyle jaldi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jaldi/v6/or3sQ67z0_CI30NUZpD_B6g8.ttf',
       '700' : 'http://fonts.gstatic.com/s/jaldi/v6/or3hQ67z0_CI33voSbT3LLQ1niPn.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8344,13 +10858,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jimNightshade({TextStyle textStyle}) {
+  static TextStyle jimNightshade({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jimnightshade/v7/PlIkFlu9Pb08Q8HLM1PxmB0g-OS4V3qKaMxD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8362,13 +10882,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jockeyOne({TextStyle textStyle}) {
+  static TextStyle jockeyOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jockeyone/v9/HTxpL2g2KjCFj4x8WI6ArIb7HYOk4xc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8380,13 +10906,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jollyLodger({TextStyle textStyle}) {
+  static TextStyle jollyLodger({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jollylodger/v7/BXRsvFTAh_bGkA1uQ48dlB3VWerT3ZyuqA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8398,13 +10930,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jomhuria({TextStyle textStyle}) {
+  static TextStyle jomhuria({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jomhuria/v7/Dxxp8j-TMXf-llKur2b1MOGbC3Dh.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8416,13 +10954,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jomolhari({TextStyle textStyle}) {
+  static TextStyle jomolhari({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQCF1IZKq5INg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8434,7 +10978,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle josefinSans({TextStyle textStyle}) {
+  static TextStyle josefinSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/josefinsans/v14/Qw3EZQNVED7rKGKxtqIqX5Ecbnx9Vnksi4M7.ttf',
@@ -8449,7 +10997,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/josefinsans/v14/Qw3HZQNVED7rKGKxtqIqX5EUCETBeV0koJ8y_eiS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8461,7 +11011,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle josefinSlab({TextStyle textStyle}) {
+  static TextStyle josefinSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/josefinslab/v10/lW-nwjwOK3Ps5GSJlNNkMalvyQ6qBM7oPxMX.ttf',
@@ -8476,7 +11030,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/josefinslab/v10/lW-kwjwOK3Ps5GSJlNNkMalnrzYWK-rgFA8e7onu.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8488,13 +11044,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jotiOne({TextStyle textStyle}) {
+  static TextStyle jotiOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jotione/v8/Z9XVDmdJQAmWm9TwaYTe4u2El6GC.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8506,13 +11068,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jua({TextStyle textStyle}) {
+  static TextStyle jua({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/jua/v8/co3KmW9ljjAjc-DZCsKgsg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8524,7 +11092,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle judson({TextStyle textStyle}) {
+  static TextStyle judson({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/judson/v12/FeVRS0Fbvbc14VxRD7N01bV7kg.ttf',
@@ -8532,7 +11104,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/judson/v12/FeVSS0Fbvbc14Vxps5xQ3Z5nm29Gww.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8544,13 +11118,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle julee({TextStyle textStyle}) {
+  static TextStyle julee({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/julee/v9/TuGfUVB3RpZPQ6ZLodgzydtk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8562,13 +11142,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle juliusSansOne({TextStyle textStyle}) {
+  static TextStyle juliusSansOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/juliussansone/v8/1Pt2g8TAX_SGgBGUi0tGOYEga5W-xXEW6aGXHw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8580,13 +11166,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle junge({TextStyle textStyle}) {
+  static TextStyle junge({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/junge/v7/gokgH670Gl1lUqAdvhB7SnKm.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8598,7 +11190,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle jura({TextStyle textStyle}) {
+  static TextStyle jura({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/jura/v13/z7NOdRfiaC4Vd8hhoPzfb5vBTP0D7auhTfmrH_rt.ttf',
@@ -8608,7 +11204,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/jura/v13/z7NOdRfiaC4Vd8hhoPzfb5vBTP266quhTfmrH_rt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8620,13 +11218,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle justAnotherHand({TextStyle textStyle}) {
+  static TextStyle justAnotherHand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/justanotherhand/v11/845CNN4-AJyIGvIou-6yJKyptyOpOcr_BmmlS5aw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8638,13 +11242,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle justMeAgainDownHere({TextStyle textStyle}) {
+  static TextStyle justMeAgainDownHere({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/justmeagaindownhere/v11/MwQmbgXtz-Wc6RUEGNMc0QpRrfUh2hSdBBMoAuwHvqDwc_fg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8656,7 +11266,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle k2D({TextStyle textStyle}) {
+  static TextStyle k2D({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/k2d/v3/J7aRnpF2V0ErE6UpvrIw74NL.ttf',
@@ -8677,7 +11291,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/k2d/v3/J7acnpF2V0EjdZ2JkpY4xJ9CGyAa.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8689,14 +11305,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kadwa({TextStyle textStyle}) {
+  static TextStyle kadwa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kadwa/v4/rnCm-x5V0g7iphTHRcc2s2XH.ttf',
       '700' : 'http://fonts.gstatic.com/s/kadwa/v4/rnCr-x5V0g7ipix7auM-mHnOSOuk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8708,7 +11330,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kalam({TextStyle textStyle}) {
+  static TextStyle kalam({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/kalam/v10/YA9Qr0Wd4kDdMtD6GgLLmCUItqGt.ttf',
@@ -8716,7 +11342,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/kalam/v10/YA9Qr0Wd4kDdMtDqHQLLmCUItqGt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8728,14 +11356,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kameron({TextStyle textStyle}) {
+  static TextStyle kameron({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kameron/v10/vm82dR7vXErQxuznsL4wL-XIYH8.ttf',
       '700' : 'http://fonts.gstatic.com/s/kameron/v10/vm8zdR7vXErQxuzniAIfC-3jfHb--NY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8747,7 +11381,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kanit({TextStyle textStyle}) {
+  static TextStyle kanit({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/kanit/v5/nKKX-Go6G5tXcr72GwWKcaxALFs.ttf',
@@ -8770,7 +11408,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/kanit/v5/nKKS-Go6G5tXcraQI4GnVaRrMFJyAu4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8782,7 +11422,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kantumruy({TextStyle textStyle}) {
+  static TextStyle kantumruy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/kantumruy/v7/syk0-yJ0m7wyVb-f4FOPUtDlpn-UJ1H6Uw.ttf',
@@ -8790,7 +11434,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/kantumruy/v7/syk0-yJ0m7wyVb-f4FOPQtflpn-UJ1H6Uw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8802,7 +11448,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle karla({TextStyle textStyle}) {
+  static TextStyle karla({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/karla/v8/qkBbXvYC6trAT4RSJN225aZO.ttf',
@@ -8811,7 +11461,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/karla/v8/qkBQXvYC6trAT7RQFmW7xL5lnAzCKNg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8823,7 +11475,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle karma({TextStyle textStyle}) {
+  static TextStyle karma({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/karma/v10/va9F4kzAzMZRGLjDY8Z_uqzGQC_-.ttf',
@@ -8833,7 +11489,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/karma/v10/va9F4kzAzMZRGLjTZMZ_uqzGQC_-.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8845,13 +11503,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle katibeh({TextStyle textStyle}) {
+  static TextStyle katibeh({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/katibeh/v7/ZGjXol5MQJog4bxDaC1RVDNdGDs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8863,13 +11527,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kaushanScript({TextStyle textStyle}) {
+  static TextStyle kaushanScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DF7_ytN3M48a.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8881,13 +11551,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kavivanar({TextStyle textStyle}) {
+  static TextStyle kavivanar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kavivanar/v5/o-0IIpQgyXYSwhxP7_Jb4j5Ba_2c7A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8899,13 +11575,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kavoon({TextStyle textStyle}) {
+  static TextStyle kavoon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kavoon/v8/pxiFyp4_scRYhlU4NLr6f1pdEQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8917,13 +11599,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kdamThmor({TextStyle textStyle}) {
+  static TextStyle kdamThmor({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kdamthmor/v7/MwQzbhjs3veF6QwJVf0JkGMViblPtXs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8935,13 +11623,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle keaniaOne({TextStyle textStyle}) {
+  static TextStyle keaniaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/keaniaone/v7/zOL54pXJk65E8pXardnuycRuv-hHkOs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8953,13 +11647,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kellySlab({TextStyle textStyle}) {
+  static TextStyle kellySlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kellyslab/v10/-W_7XJX0Rz3cxUnJC5t6TkMBf50kbiM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8971,13 +11671,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kenia({TextStyle textStyle}) {
+  static TextStyle kenia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kenia/v11/jizURE5PuHQH9qCONUGswfGM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -8989,7 +11695,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle khand({TextStyle textStyle}) {
+  static TextStyle khand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/khand/v8/TwMN-IINQlQQ0bL5cFE3ZwaH__-C.ttf',
@@ -8999,7 +11709,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/khand/v8/TwMN-IINQlQQ0bLpd1E3ZwaH__-C.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9011,13 +11723,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle khmer({TextStyle textStyle}) {
+  static TextStyle khmer({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/khmer/v12/MjQImit_vPPwpF-BpN2EeYmD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9029,7 +11747,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle khula({TextStyle textStyle}) {
+  static TextStyle khula({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-ljCvUrC59XwXD.ttf',
@@ -9039,7 +11761,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piCvUrC59XwXD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9051,13 +11775,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kirangHaerang({TextStyle textStyle}) {
+  static TextStyle kirangHaerang({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kiranghaerang/v8/E21-_dn_gvvIjhYON1lpIU4-bcqvWPaJq4no.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9069,13 +11799,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kiteOne({TextStyle textStyle}) {
+  static TextStyle kiteOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kiteone/v7/70lQu7shLnA_E02vyq1b6HnGO4uA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9087,13 +11823,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle knewave({TextStyle textStyle}) {
+  static TextStyle knewave({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/knewave/v8/sykz-yx0lLcxQaSItSq9-trEvlQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9105,7 +11847,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle koHo({TextStyle textStyle}) {
+  static TextStyle koHo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/koho/v3/K2FxfZ5fmddNPuE1WJ75JoKhHys.ttf',
@@ -9122,7 +11868,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/koho/v3/K2FzfZ5fmddNNissxJvzIqCkDyvqZA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9134,7 +11882,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kodchasan({TextStyle textStyle}) {
+  static TextStyle kodchasan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/kodchasan/v3/1cX0aUPOAJv9sG4I-DJeR1Cggeqo3eMeoA.ttf',
@@ -9151,7 +11903,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/kodchasan/v3/1cXqaUPOAJv9sG4I-DJWjUk8hOCs_-YOoIgN.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9163,13 +11917,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kosugi({TextStyle textStyle}) {
+  static TextStyle kosugi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kosugi/v6/pxiFyp4_v8FCjlI4NLr6f1pdEQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9181,13 +11941,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kosugiMaru({TextStyle textStyle}) {
+  static TextStyle kosugiMaru({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kosugimaru/v6/0nksC9PgP_wGh21A2KeqGiTqivr9iBq_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9199,13 +11965,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kottaOne({TextStyle textStyle}) {
+  static TextStyle kottaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kottaone/v7/S6u_w41LXzPc_jlfNWqPHA3s5dwt7w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9217,13 +11989,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle koulen({TextStyle textStyle}) {
+  static TextStyle koulen({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/koulen/v13/AMOQz46as3KIBPeWgnA9kuYMUg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9235,13 +12013,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kranky({TextStyle textStyle}) {
+  static TextStyle kranky({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kranky/v10/hESw6XVgJzlPsFnMpheEZo_H_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9253,7 +12037,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kreon({TextStyle textStyle}) {
+  static TextStyle kreon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/kreon/v21/t5t9IRIUKY-TFF_LW5lnMR3v2DnvPNimejUfp2dWNg.ttf',
@@ -9263,7 +12051,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/kreon/v21/t5t9IRIUKY-TFF_LW5lnMR3v2Dnvhd-mejUfp2dWNg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9275,13 +12065,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kristi({TextStyle textStyle}) {
+  static TextStyle kristi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kristi/v11/uK_y4ricdeU6zwdRCh0TMv6EXw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9293,13 +12089,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kronaOne({TextStyle textStyle}) {
+  static TextStyle kronaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kronaone/v8/jAnEgHdjHcjgfIb1ZcUCMY-h3cWkWg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9311,7 +12113,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle krub({TextStyle textStyle}) {
+  static TextStyle krub({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/krub/v3/sZlEdRyC6CRYZo47KLF4R6gWaf8.ttf',
@@ -9328,7 +12134,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/krub/v3/sZlGdRyC6CRYbkQitLRyQ4oTef_6gQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9340,13 +12148,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kumarOne({TextStyle textStyle}) {
+  static TextStyle kumarOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kumarone/v4/bMr1mS-P958wYi6YaGeGNO6WU3oT0g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9358,13 +12172,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kumarOneOutline({TextStyle textStyle}) {
+  static TextStyle kumarOneOutline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kumaroneoutline/v5/Noao6VH62pyLP0fsrZ-v18wlUEcX9zDwRQu8EGKF.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9376,13 +12196,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle kurale({TextStyle textStyle}) {
+  static TextStyle kurale({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/kurale/v5/4iCs6KV9e9dXjho6eAT3v02QFg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9394,13 +12220,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle laBelleAurore({TextStyle textStyle}) {
+  static TextStyle laBelleAurore({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/labelleaurore/v10/RrQIbot8-mNYKnGNDkWlocovHeIIG-eFNVmULg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9412,13 +12244,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lacquer({TextStyle textStyle}) {
+  static TextStyle lacquer({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lacquer/v1/EYqzma1QwqpG4_BBB7-AXhttQ5I.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9430,7 +12268,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle laila({TextStyle textStyle}) {
+  static TextStyle laila({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/laila/v6/LYjBdG_8nE8jDLzxogNAh14nVcfe.ttf',
@@ -9440,7 +12282,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/laila/v6/LYjBdG_8nE8jDLzhpQNAh14nVcfe.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9452,13 +12296,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lakkiReddy({TextStyle textStyle}) {
+  static TextStyle lakkiReddy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lakkireddy/v6/S6u5w49MUSzD9jlCPmvLZQfox9k97-xZ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9470,13 +12320,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lalezar({TextStyle textStyle}) {
+  static TextStyle lalezar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lalezar/v6/zrfl0HLVx-HwTP82UaDyIiL0RCg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9488,13 +12344,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lancelot({TextStyle textStyle}) {
+  static TextStyle lancelot({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lancelot/v9/J7acnppxBGtQEulG4JY4xJ9CGyAa.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9506,13 +12368,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lateef({TextStyle textStyle}) {
+  static TextStyle lateef({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lateef/v15/hESw6XVnNCxEvkbMpheEZo_H_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9524,7 +12392,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lato({TextStyle textStyle}) {
+  static TextStyle lato({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30wWyWrFCbw7A.ttf',
@@ -9539,7 +12411,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI3wiPHA3s5dwt7w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9551,13 +12425,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle leagueScript({TextStyle textStyle}) {
+  static TextStyle leagueScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/leaguescript/v11/CSR54zpSlumSWj9CGVsoBZdeaNNUuOwkC2s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9569,13 +12449,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle leckerliOne({TextStyle textStyle}) {
+  static TextStyle leckerliOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/leckerlione/v10/V8mCoQH8VCsNttEnxnGQ-1itLZxcBtItFw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9587,13 +12473,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ledger({TextStyle textStyle}) {
+  static TextStyle ledger({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ledger/v7/j8_q6-HK1L3if_sxm8DwHTBhHw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9605,7 +12497,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lekton({TextStyle textStyle}) {
+  static TextStyle lekton({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lekton/v10/SZc43FDmLaWmWpBeXxfonUPL6Q.ttf',
@@ -9613,7 +12509,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/lekton/v10/SZc73FDmLaWmWpBm4zjMlWjX4DJXgQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9625,13 +12523,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lemon({TextStyle textStyle}) {
+  static TextStyle lemon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lemon/v8/HI_EiYEVKqRMq0jBSZXAQ4-d.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9643,7 +12547,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lemonada({TextStyle textStyle}) {
+  static TextStyle lemonada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8PindGu2bje-RpH.ttf',
@@ -9652,7 +12560,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8PymtGu2bje-RpH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9664,13 +12574,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendDeca({TextStyle textStyle}) {
+  static TextStyle lexendDeca({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ6qgLS76ZHOM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9682,13 +12598,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendExa({TextStyle textStyle}) {
+  static TextStyle lexendExa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendexa/v1/UMBXrPdOoHOnxExyjdBeWirXArM58BY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9700,13 +12622,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendGiga({TextStyle textStyle}) {
+  static TextStyle lexendGiga({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendgiga/v1/PlI5Fl67Mah5Y8yMHE7lkVxEt8CwfGaD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9718,13 +12646,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendMega({TextStyle textStyle}) {
+  static TextStyle lexendMega({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendmega/v1/qFdA35aBi5JtHD41zSTFEv7K6BsAikI7.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9736,13 +12670,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendPeta({TextStyle textStyle}) {
+  static TextStyle lexendPeta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendpeta/v1/BXRvvFPGjeLPh0kCfI4OkE_1c8Tf1IW3.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9754,13 +12694,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendTera({TextStyle textStyle}) {
+  static TextStyle lexendTera({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendtera/v1/RrQUbo98_jt_IXnBPwCWtZhARYMgGtWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9772,13 +12718,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lexendZetta({TextStyle textStyle}) {
+  static TextStyle lexendZetta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lexendzetta/v1/ll87K2KYXje7CdOFnEWcU8soliQejRR7AQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9790,13 +12742,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode128({TextStyle textStyle}) {
+  static TextStyle libreBarcode128({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode128/v9/cIfnMbdUsUoiW3O_hVviCwVjuLtXeJ_A_gMk0izH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9808,13 +12766,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode128Text({TextStyle textStyle}) {
+  static TextStyle libreBarcode128Text({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode128text/v9/fdNv9tubt3ZEnz1Gu3I4-zppwZ9CWZ16Z0w5cV3Y6M90w4k.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9826,13 +12790,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode39({TextStyle textStyle}) {
+  static TextStyle libreBarcode39({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode39/v9/-nFnOHM08vwC6h8Li1eQnP_AHzI2K_d709jy92k.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9844,13 +12814,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode39Extended({TextStyle textStyle}) {
+  static TextStyle libreBarcode39Extended({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode39extended/v8/8At7Gt6_O5yNS0-K4Nf5U922qSzhJ3dUdfJpwNUgfNRCOZ1GOBw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9862,13 +12838,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode39ExtendedText({TextStyle textStyle}) {
+  static TextStyle libreBarcode39ExtendedText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode39extendedtext/v8/eLG1P_rwIgOiDA7yrs9LoKaYRVLQ1YldrrOnnL7xPO4jNP68fLIiPopNNA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9880,13 +12862,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBarcode39Text({TextStyle textStyle}) {
+  static TextStyle libreBarcode39Text({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebarcode39text/v9/sJoa3KhViNKANw_E3LwoDXvs5Un0HQ1vT-031RRL-9rYaw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9898,7 +12886,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreBaskerville({TextStyle textStyle}) {
+  static TextStyle libreBaskerville({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librebaskerville/v7/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNeYRI4CN2V.ttf',
@@ -9906,7 +12898,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYwI8Gcw6Oi.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9918,13 +12912,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreCaslonDisplay({TextStyle textStyle}) {
+  static TextStyle libreCaslonDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librecaslondisplay/v1/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr2lRdRhtCC4d.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9936,7 +12936,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreCaslonText({TextStyle textStyle}) {
+  static TextStyle libreCaslonText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/librecaslontext/v1/DdT878IGsGw1aF1JU10PUbTvNNaDMcq_3eNrHgO1.ttf',
@@ -9944,7 +12948,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/librecaslontext/v1/DdT578IGsGw1aF1JU10PUbTvNNaDMfID8sdjNR-8ssPt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9956,7 +12962,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle libreFranklin({TextStyle textStyle}) {
+  static TextStyle libreFranklin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/librefranklin/v4/jizBREVItHgc8qDIbSTKq4XkRi182zIZj1bIkNo.ttf',
@@ -9979,7 +12989,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/librefranklin/v4/jizGREVItHgc8qDIbSTKq4XkRiUa47Y0q17jjNOg_oc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -9991,7 +13003,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lifeSavers({TextStyle textStyle}) {
+  static TextStyle lifeSavers({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lifesavers/v10/ZXuie1UftKKabUQMgxAal_lrFgpbuNvB.ttf',
@@ -9999,7 +13015,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/lifesavers/v10/ZXu_e1UftKKabUQMgxAal8HLOi5Tk8fIpPRW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10011,13 +13029,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lilitaOne({TextStyle textStyle}) {
+  static TextStyle lilitaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lilitaone/v7/i7dPIFZ9Zz-WBtRtedDbUEZ2RFq7AwU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10029,13 +13053,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lilyScriptOne({TextStyle textStyle}) {
+  static TextStyle lilyScriptOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lilyscriptone/v7/LhW9MV7ZMfIPdMxeBjBvFN8SXLS4gsSjQNsRMg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10047,13 +13077,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle limelight({TextStyle textStyle}) {
+  static TextStyle limelight({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/limelight/v10/XLYkIZL7aopJVbZJHDuYPeNGrnY2TA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10065,14 +13101,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lindenHill({TextStyle textStyle}) {
+  static TextStyle lindenHill({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lindenhill/v9/-F61fjxoKSg9Yc3hZgO8ygFI7CwC009k.ttf',
       'italic' : 'http://fonts.gstatic.com/s/lindenhill/v9/-F63fjxoKSg9Yc3hZgO8yjFK5igg1l9kn-s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10084,7 +13126,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle literata({TextStyle textStyle}) {
+  static TextStyle literata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/literata/v14/or38Q6P12-iJxAIgLa78DkTtAoDhk0oVpaLVa5RXzC1KOw.ttf',
@@ -10097,7 +13143,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/literata/v14/or3yQ6P12-iJxAIgLYT1PLs1a-t7PU0AbeHaL55T7ihaO_CS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10109,13 +13157,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle liuJianMaoCao({TextStyle textStyle}) {
+  static TextStyle liuJianMaoCao({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/liujianmaocao/v5/845DNN84HJrccNonurqXILGpvCOoferVKGWsUo8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10127,7 +13181,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle livvic({TextStyle textStyle}) {
+  static TextStyle livvic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/livvic/v3/rnCr-x1S2hzjrlffC-M-mHnOSOuk.ttf',
@@ -10148,7 +13206,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/livvic/v3/rnCs-x1S2hzjrlfXbdu6tV3GY_etWWIJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10160,13 +13220,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lobster({TextStyle textStyle}) {
+  static TextStyle lobster({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9_oWsMqEzSJQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10178,7 +13244,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lobsterTwo({TextStyle textStyle}) {
+  static TextStyle lobsterTwo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lobstertwo/v12/BngMUXZGTXPUvIoyV6yN59fK7KSJ4ACD.ttf',
@@ -10187,7 +13257,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/lobstertwo/v12/BngTUXZGTXPUvIoyV6yN5-fI3hyEwRiof_DpXMY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10199,13 +13271,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle londrinaOutline({TextStyle textStyle}) {
+  static TextStyle londrinaOutline({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/londrinaoutline/v10/C8c44dM8vmb14dfsZxhetg3pDH-SfuoxrSKMDvI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10217,13 +13295,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle londrinaShadow({TextStyle textStyle}) {
+  static TextStyle londrinaShadow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/londrinashadow/v9/oPWX_kB4kOQoWNJmjxLV5JuoCUlXRlaSxkrMCQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10235,13 +13319,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle londrinaSketch({TextStyle textStyle}) {
+  static TextStyle londrinaSketch({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/londrinasketch/v8/c4m41npxGMTnomOHtRU68eIJn8qfWWn5Pos6CA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10253,7 +13343,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle londrinaSolid({TextStyle textStyle}) {
+  static TextStyle londrinaSolid({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/londrinasolid/v9/flUjRq6sw40kQEJxWNgkLuudGfs9KBYesZHhV64.ttf',
@@ -10262,7 +13356,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/londrinasolid/v9/flUiRq6sw40kQEJxWNgkLuudGfvdDzY0n53oTrcL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10274,13 +13370,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle longCang({TextStyle textStyle}) {
+  static TextStyle longCang({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/longcang/v5/LYjAdGP8kkgoTec8zkRgrXArXN7HWQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10292,7 +13394,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lora({TextStyle textStyle}) {
+  static TextStyle lora({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuAw3xItNPh_A.ttf',
@@ -10301,7 +13407,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/lora/v14/0QIiMX1D_JOuMw_Dmt5un9uq-73O-Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10313,13 +13421,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle loveYaLikeASister({TextStyle textStyle}) {
+  static TextStyle loveYaLikeASister({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/loveyalikeasister/v10/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-Be78nZcsGGycA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10331,13 +13445,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lovedbytheKing({TextStyle textStyle}) {
+  static TextStyle lovedbytheKing({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lovedbytheking/v9/Gw6gwdP76VDVJNXerebZxUMeRXUF2PiNlXFu2R64.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10349,13 +13469,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle loversQuarrel({TextStyle textStyle}) {
+  static TextStyle loversQuarrel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/loversquarrel/v7/Yq6N-LSKXTL-5bCy8ksBzpQ_-zAsY7pO6siz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10367,13 +13493,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle luckiestGuy({TextStyle textStyle}) {
+  static TextStyle luckiestGuy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2RStR3qDpraA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10385,14 +13517,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lusitana({TextStyle textStyle}) {
+  static TextStyle lusitana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lusitana/v7/CSR84z9ShvucWzsMKxhaRuMiSct_.ttf',
       '700' : 'http://fonts.gstatic.com/s/lusitana/v7/CSR74z9ShvucWzsMKyDmaccqYtd2vfwk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10404,13 +13542,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle lustria({TextStyle textStyle}) {
+  static TextStyle lustria({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/lustria/v7/9oRONYodvDEyjuhOrCg5MtPyAcg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10422,7 +13566,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mPLUS1p({TextStyle textStyle}) {
+  static TextStyle mPLUS1p({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/mplus1p/v19/e3tleuShHdiFyPFzBRrQnDQAUW3aq-5N.ttf',
@@ -10434,7 +13582,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/mplus1p/v19/e3tmeuShHdiFyPFzBRrQfBMge0PWovdU4w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10446,7 +13596,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mPLUSRounded1c({TextStyle textStyle}) {
+  static TextStyle mPLUSRounded1c({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/mplusrounded1c/v10/VdGCAYIAV6gnpUpoWwNkYvrugw9RuM3ixLsg6-av1x0.ttf',
@@ -10458,7 +13612,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/mplusrounded1c/v10/VdGBAYIAV6gnpUpoWwNkYvrugw9RuM0C45sKxeqmzgRK.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10470,13 +13626,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle maShanZheng({TextStyle textStyle}) {
+  static TextStyle maShanZheng({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mashanzheng/v5/NaPecZTRCLxvwo41b4gvzkXaRMTsDIRSfr0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10488,13 +13650,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle macondo({TextStyle textStyle}) {
+  static TextStyle macondo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/macondo/v8/RrQQboN9-iB1IXmOS2XO0LBBd4Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10506,13 +13674,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle macondoSwashCaps({TextStyle textStyle}) {
+  static TextStyle macondoSwashCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/macondoswashcaps/v7/6NUL8EaAJgGKZA7lpt941Z9s6ZYgDq6Oekoa_mm5bA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10524,7 +13698,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mada({TextStyle textStyle}) {
+  static TextStyle mada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/mada/v8/7Au_p_0qnzeSdf3nCCL8zkwMIFg.ttf',
@@ -10536,7 +13714,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/mada/v8/7Au_p_0qnzeSdbHhCCL8zkwMIFg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10548,14 +13728,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle magra({TextStyle textStyle}) {
+  static TextStyle magra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/magra/v8/uK_94ruaZus72k5xIDMfO-ed.ttf',
       '700' : 'http://fonts.gstatic.com/s/magra/v8/uK_w4ruaZus72nbNDxcXEPuUX1ow.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10567,13 +13753,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle maidenOrange({TextStyle textStyle}) {
+  static TextStyle maidenOrange({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/maidenorange/v10/kJE1BuIX7AUmhi2V4m08kb1XjOZdCZS8FY8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10585,7 +13777,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle maitree({TextStyle textStyle}) {
+  static TextStyle maitree({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/maitree/v4/MjQDmil5tffhpBrklhGNWJGovLdh6OE.ttf',
@@ -10596,7 +13792,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/maitree/v4/MjQDmil5tffhpBrklmWJWJGovLdh6OE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10608,13 +13806,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle majorMonoDisplay({TextStyle textStyle}) {
+  static TextStyle majorMonoDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRhLCn2QIndPww.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10626,13 +13830,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mako({TextStyle textStyle}) {
+  static TextStyle mako({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mako/v11/H4coBX6Mmc_Z0ST09g478Lo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10644,7 +13854,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mali({TextStyle textStyle}) {
+  static TextStyle mali({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/mali/v3/N0bV2SRONuN4QOLlKlRaJdbWgdY.ttf',
@@ -10661,7 +13875,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/mali/v3/N0bX2SRONuN4SCj8tlFQIfTTkdbJYA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10673,13 +13889,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mallanna({TextStyle textStyle}) {
+  static TextStyle mallanna({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mallanna/v7/hv-Vlzx-KEQb84YaDGwzEzRwVvJ-.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10691,13 +13913,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mandali({TextStyle textStyle}) {
+  static TextStyle mandali({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mandali/v8/LhWlMVbYOfASNfNUVFk1ZPdcKtA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10709,7 +13937,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle manjari({TextStyle textStyle}) {
+  static TextStyle manjari({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/manjari/v2/k3kSo8UPMOBO2w1UdbroK2vFIaOV8A.ttf',
@@ -10717,7 +13949,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/manjari/v2/k3kVo8UPMOBO2w1UdWLNC0HrLaqM6Q4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10729,13 +13963,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mansalva({TextStyle textStyle}) {
+  static TextStyle mansalva({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mansalva/v1/aWB4m0aacbtDfvq5NJllI47vdyBg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10747,7 +13987,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle manuale({TextStyle textStyle}) {
+  static TextStyle manuale({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/manuale/v4/f0X20eas_8Z-TFZdBPbEw8nG6aY.ttf',
@@ -10760,7 +14004,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/manuale/v4/f0Xx0eas_8Z-TFZdNPT2e8Tn8Y0DceA0OQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10772,13 +14018,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle marcellus({TextStyle textStyle}) {
+  static TextStyle marcellus({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/marcellus/v7/wEO_EBrOk8hQLDvIAF8FUfAL3EsHiA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10790,13 +14042,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle marcellusSC({TextStyle textStyle}) {
+  static TextStyle marcellusSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/marcellussc/v7/ke8iOgUHP1dg-Rmi6RWjbLEPgdydGKikhA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10808,13 +14066,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle marckScript({TextStyle textStyle}) {
+  static TextStyle marckScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuCzyI-aMPF7Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10826,13 +14090,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle margarine({TextStyle textStyle}) {
+  static TextStyle margarine({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLye5JRLkAXbMQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10844,7 +14114,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle markaziText({TextStyle textStyle}) {
+  static TextStyle markaziText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/markazitext/v10/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtfSQT4MlBekmJLo.ttf',
@@ -10853,7 +14127,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/markazitext/v10/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtROXT4MlBekmJLo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10865,13 +14141,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle markoOne({TextStyle textStyle}) {
+  static TextStyle markoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/markoone/v9/9Btq3DFG0cnVM5lw1haaKpUfrHPzUw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10883,13 +14165,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle marmelad({TextStyle textStyle}) {
+  static TextStyle marmelad({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/marmelad/v9/Qw3eZQdSHj_jK2e-8tFLG-YMC0R8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10901,7 +14189,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle martel({TextStyle textStyle}) {
+  static TextStyle martel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/martel/v4/PN_yRfK9oXHga0XVqekahRbX9vnDzw.ttf',
@@ -10913,7 +14205,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/martel/v4/PN_yRfK9oXHga0XV5e8ahRbX9vnDzw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10925,7 +14219,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle martelSans({TextStyle textStyle}) {
+  static TextStyle martelSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/martelsans/v6/h0GxssGi7VdzDgKjM-4d8hAX5suHFUknqMxQ.ttf',
@@ -10937,7 +14235,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/martelsans/v6/h0GxssGi7VdzDgKjM-4d8hBb4MuHFUknqMxQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10949,7 +14249,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle marvel({TextStyle textStyle}) {
+  static TextStyle marvel({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/marvel/v9/nwpVtKeoNgBV0qaIkV7ED366zg.ttf',
@@ -10958,7 +14262,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/marvel/v9/nwpQtKeoNgBV0qa4k2x8Al-i5QwyYdrc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10970,14 +14276,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mate({TextStyle textStyle}) {
+  static TextStyle mate({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mate/v8/m8JdjftRd7WZ2z28WoXSaLU.ttf',
       'italic' : 'http://fonts.gstatic.com/s/mate/v8/m8JTjftRd7WZ6z-2XqfXeLVdbw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -10989,13 +14301,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mateSC({TextStyle textStyle}) {
+  static TextStyle mateSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/matesc/v8/-nF8OGQ1-uoVr2wKyiXZ95OkJwA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11007,7 +14325,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mavenPro({TextStyle textStyle}) {
+  static TextStyle mavenPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mavenpro/v13/7Au9p_AqnyWWAxW2Wk32ym4JMFge0g.ttf',
@@ -11016,7 +14338,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/mavenpro/v13/7Au4p_AqnyWWAxW2Wk3OTkMtOHMC21go8A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11028,13 +14352,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mcLaren({TextStyle textStyle}) {
+  static TextStyle mcLaren({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXISYYf8z2Yt_c.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11046,13 +14376,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle meddon({TextStyle textStyle}) {
+  static TextStyle meddon({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/meddon/v12/kmK8ZqA2EgDNeHTZhBdB3y_Aow.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11064,13 +14400,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle medievalSharp({TextStyle textStyle}) {
+  static TextStyle medievalSharp({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/medievalsharp/v12/EvOJzAlL3oU5AQl2mP5KdgptAq96MwvXLDk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11082,13 +14424,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle medulaOne({TextStyle textStyle}) {
+  static TextStyle medulaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/medulaone/v9/YA9Wr0qb5kjJM6l2V0yukiEqs7GtlvY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11100,13 +14448,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle meeraInimai({TextStyle textStyle}) {
+  static TextStyle meeraInimai({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/meerainimai/v4/845fNMM5EIqOW5MPuvO3ILep_2jDVevnLQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11118,13 +14472,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle megrim({TextStyle textStyle}) {
+  static TextStyle megrim({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/megrim/v10/46kulbz5WjvLqJZlbWXgd0RY1g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11136,13 +14496,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle meieScript({TextStyle textStyle}) {
+  static TextStyle meieScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/meiescript/v7/_LOImzDK7erRjhunIspaMjxn5IXg0WDz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11154,14 +14520,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle merienda({TextStyle textStyle}) {
+  static TextStyle merienda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/merienda/v8/gNMHW3x8Qoy5_mf8uVMCOou6_dvg.ttf',
       '700' : 'http://fonts.gstatic.com/s/merienda/v8/gNMAW3x8Qoy5_mf8uWu-Fa-y1sfpPES4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11173,13 +14545,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle meriendaOne({TextStyle textStyle}) {
+  static TextStyle meriendaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/meriendaone/v10/H4cgBXaMndbflEq6kyZ1ht6YgoyyYzFzFw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11191,7 +14569,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle merriweather({TextStyle textStyle}) {
+  static TextStyle merriweather({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/merriweather/v21/u-4n0qyriQwlOrhSvowK_l521wRpX837pvjxPA.ttf',
@@ -11204,7 +14586,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/merriweather/v21/u-4l0qyriQwlOrhSvowK_l5-eR7NWMf_hP3hPGWH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11216,7 +14600,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle merriweatherSans({TextStyle textStyle}) {
+  static TextStyle merriweatherSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/merriweathersans/v11/2-c49IRs1JiJN1FRAMjTN5zd9vgsFH1eYBDD2BdWzIqY.ttf',
@@ -11229,7 +14617,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/merriweathersans/v11/2-c29IRs1JiJN1FRAMjTN5zd9vgsFHXwepDF0hN0yZqYcqw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11241,13 +14631,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle metal({TextStyle textStyle}) {
+  static TextStyle metal({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/metal/v12/lW-wwjUJIXTo7i3nnoQAUdN2.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11259,13 +14655,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle metalMania({TextStyle textStyle}) {
+  static TextStyle metalMania({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/metalmania/v9/RWmMoKWb4e8kqMfBUdPFJeXCg6UKDXlq.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11277,13 +14679,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle metamorphous({TextStyle textStyle}) {
+  static TextStyle metamorphous({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/metamorphous/v10/Wnz8HA03aAXcC39ZEX5y1330PCCthTsmaQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11295,13 +14703,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle metrophobic({TextStyle textStyle}) {
+  static TextStyle metrophobic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/metrophobic/v13/sJoA3LZUhMSAPV_u0qwiAT-J737FPEEL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11313,13 +14727,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle michroma({TextStyle textStyle}) {
+  static TextStyle michroma({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/michroma/v10/PN_zRfy9qWD8fEagAMg6rzjb_-Da.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11331,13 +14751,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle milonga({TextStyle textStyle}) {
+  static TextStyle milonga({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/milonga/v7/SZc53FHnIaK9W5kffz3GkUrS8DI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11349,13 +14775,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle miltonian({TextStyle textStyle}) {
+  static TextStyle miltonian({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/miltonian/v13/zOL-4pbPn6Ne9JqTg9mr6e5As-FeiQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11367,13 +14799,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle miltonianTattoo({TextStyle textStyle}) {
+  static TextStyle miltonianTattoo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/miltoniantattoo/v15/EvOUzBRL0o0kCxF-lcMCQxlpVsA_FwP8MDBku-s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11385,14 +14823,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mina({TextStyle textStyle}) {
+  static TextStyle mina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mina/v3/-nFzOGc18vARrz9j7i3y65o.ttf',
       '700' : 'http://fonts.gstatic.com/s/mina/v3/-nF8OGc18vARl4NMyiXZ95OkJwA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11404,13 +14848,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle miniver({TextStyle textStyle}) {
+  static TextStyle miniver({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/miniver/v8/eLGcP-PxIg-5H0vC770Cy8r8fWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11422,14 +14872,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle miriamLibre({TextStyle textStyle}) {
+  static TextStyle miriamLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/miriamlibre/v6/DdTh798HsHwubBAqfkcBTL_vYJn_Teun9g.ttf',
       '700' : 'http://fonts.gstatic.com/s/miriamlibre/v6/DdT-798HsHwubBAqfkcBTL_X3LbbRcC7_-Z7Hg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11441,7 +14897,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mirza({TextStyle textStyle}) {
+  static TextStyle mirza({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mirza/v7/co3ImWlikiN5EurdKMewsrvI.ttf',
@@ -11450,7 +14910,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/mirza/v7/co3FmWlikiN5EtJhB-O4mafBomDi.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11462,13 +14924,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle missFajardose({TextStyle textStyle}) {
+  static TextStyle missFajardose({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/missfajardose/v9/E21-_dn5gvrawDdPFVl-N0Ajb8qvWPaJq4no.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11480,7 +14948,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mitr({TextStyle textStyle}) {
+  static TextStyle mitr({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/mitr/v5/pxiEypw5ucZF8fMZFJDUc1NECPY.ttf',
@@ -11491,7 +14963,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/mitr/v5/pxiEypw5ucZF8YcdFJDUc1NECPY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11503,13 +14977,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle modak({TextStyle textStyle}) {
+  static TextStyle modak({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/modak/v5/EJRYQgs1XtIEsnMH8BVZ76KU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11521,13 +15001,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle modernAntiqua({TextStyle textStyle}) {
+  static TextStyle modernAntiqua({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/modernantiqua/v9/NGStv5TIAUg6Iq_RLNo_2dp1sI1Ea2u0c3Gi.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11539,13 +15025,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mogra({TextStyle textStyle}) {
+  static TextStyle mogra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mogra/v6/f0X40eSs8c95TBo4DvLmxtnG.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11557,13 +15049,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle molengo({TextStyle textStyle}) {
+  static TextStyle molengo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/molengo/v10/I_uuMpWeuBzZNBtQbbRQkiCvs5Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11575,13 +15073,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle molle({TextStyle textStyle}) {
+  static TextStyle molle({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'italic' : 'http://fonts.gstatic.com/s/molle/v8/E21n_dL5hOXFhWEsXzgmVydREus.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11593,14 +15097,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle monda({TextStyle textStyle}) {
+  static TextStyle monda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/monda/v9/TK3tWkYFABsmjvpmNBsLvPdG.ttf',
       '700' : 'http://fonts.gstatic.com/s/monda/v9/TK3gWkYFABsmjsLaGz8Dl-tPKo2t.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11612,13 +15122,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle monofett({TextStyle textStyle}) {
+  static TextStyle monofett({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/monofett/v9/mFTyWbofw6zc9NtnW43SuRwr0VJ7.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11630,13 +15146,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle monoton({TextStyle textStyle}) {
+  static TextStyle monoton({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/monoton/v9/5h1aiZUrOngCibe4fkbBQ2S7FU8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11648,13 +15170,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle monsieurLaDoulaise({TextStyle textStyle}) {
+  static TextStyle monsieurLaDoulaise({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/monsieurladoulaise/v8/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZl5ewkEU4HTy.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11666,13 +15194,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle montaga({TextStyle textStyle}) {
+  static TextStyle montaga({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/montaga/v7/H4cnBX2Ml8rCkEO_0gYQ7LO5mqc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11684,13 +15218,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle montez({TextStyle textStyle}) {
+  static TextStyle montez({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/montez/v10/845ZNMk5GoGIX8lm1LDeSd-R_g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11702,7 +15242,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle montserrat({TextStyle textStyle}) {
+  static TextStyle montserrat({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm45_QphziTn89dtpQ.ttf',
@@ -11725,7 +15269,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnD-_xxrCq7qg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11737,7 +15283,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle montserratAlternates({TextStyle textStyle}) {
+  static TextStyle montserratAlternates({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/montserratalternates/v11/mFThWacfw6zH4dthXcyms1lPpC8I_b0juU0xiKfVKphL03l4.ttf',
@@ -11760,7 +15310,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/montserratalternates/v11/mFTkWacfw6zH4dthXcyms1lPpC8I_b0juU057p9RB7xD-GVxk3Nd.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11772,14 +15324,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle montserratSubrayada({TextStyle textStyle}) {
+  static TextStyle montserratSubrayada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/montserratsubrayada/v9/U9MD6c-o9H7PgjlTHThBnNHGVUORwteQQE8LYuceqGT-.ttf',
       '700' : 'http://fonts.gstatic.com/s/montserratsubrayada/v9/U9MM6c-o9H7PgjlTHThBnNHGVUORwteQQHe3TcMWg3j36Ebz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11791,13 +15349,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle moul({TextStyle textStyle}) {
+  static TextStyle moul({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/moul/v11/nuF2D__FSo_3E-RYiJCy-00.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11809,13 +15373,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle moulpali({TextStyle textStyle}) {
+  static TextStyle moulpali({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/moulpali/v12/H4ckBXKMl9HagUWymyY6wr-wg763.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11827,14 +15397,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mountainsofChristmas({TextStyle textStyle}) {
+  static TextStyle mountainsofChristmas({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mountainsofchristmas/v12/3y9w6a4zcCnn5X0FDyrKi2ZRUBIy8uxoUo7ePNamMPNpJpc.ttf',
       '700' : 'http://fonts.gstatic.com/s/mountainsofchristmas/v12/3y9z6a4zcCnn5X0FDyrKi2ZRUBIy8uxoUo7eBGqJFPtCOp6IaEA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11846,13 +15422,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mouseMemoirs({TextStyle textStyle}) {
+  static TextStyle mouseMemoirs({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mousememoirs/v7/t5tmIRoSNJ-PH0WNNgDYxdSb7TnFrpOHYh4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11864,13 +15446,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mrBedfort({TextStyle textStyle}) {
+  static TextStyle mrBedfort({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mrbedfort/v8/MQpR-WCtNZSWAdTMwBicliq0XZe_Iy8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11882,13 +15470,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mrDafoe({TextStyle textStyle}) {
+  static TextStyle mrDafoe({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mrdafoe/v8/lJwE-pIzkS5NXuMMrGiqg7MCxz_C.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11900,13 +15494,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mrDeHaviland({TextStyle textStyle}) {
+  static TextStyle mrDeHaviland({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mrdehaviland/v8/OpNVnooIhJj96FdB73296ksbOj3C4ULVNTlB.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11918,13 +15518,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mrsSaintDelafield({TextStyle textStyle}) {
+  static TextStyle mrsSaintDelafield({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mrssaintdelafield/v7/v6-IGZDIOVXH9xtmTZfRagunqBw5WC62cK4tLsubB2w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11936,13 +15542,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mrsSheppards({TextStyle textStyle}) {
+  static TextStyle mrsSheppards({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mrssheppards/v8/PN_2Rfm9snC0XUGoEZhb91ig3vjxynMix4Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11954,7 +15566,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mukta({TextStyle textStyle}) {
+  static TextStyle mukta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbEOjFma-2HW7ZB_.ttf',
@@ -11966,7 +15582,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbFmi1ma-2HW7ZB_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -11978,7 +15596,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle muktaMahee({TextStyle textStyle}) {
+  static TextStyle muktaMahee({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/muktamahee/v5/XRXN3IOIi0hcP8iVU67hA9MFcBoHJndqZCsW.ttf',
@@ -11990,7 +15612,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/muktamahee/v5/XRXN3IOIi0hcP8iVU67hA9NtdxoHJndqZCsW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12002,7 +15626,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle muktaMalar({TextStyle textStyle}) {
+  static TextStyle muktaMalar({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/muktamalar/v6/MCoKzAXyz8LOE2FpJMxZqIMwBtAB62ruoAZW.ttf',
@@ -12014,7 +15642,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/muktamalar/v6/MCoKzAXyz8LOE2FpJMxZqINYAdAB62ruoAZW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12026,7 +15656,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle muktaVaani({TextStyle textStyle}) {
+  static TextStyle muktaVaani({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/muktavaani/v7/3JnkSD_-ynaxmxnEfVHPIGXNV8BD-u97MW1a.ttf',
@@ -12038,7 +15672,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/muktavaani/v7/3JnkSD_-ynaxmxnEfVHPIGWlUMBD-u97MW1a.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12050,7 +15686,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle muli({TextStyle textStyle}) {
+  static TextStyle muli({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adf3nCCL8zkwMIFg.ttf',
@@ -12069,7 +15709,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-rCX2ym4JMFge0g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12081,13 +15723,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle mysteryQuest({TextStyle textStyle}) {
+  static TextStyle mysteryQuest({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/mysteryquest/v7/-nF6OG414u0E6k0wynSGlujRHwElD_9Qz9E.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12099,13 +15747,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nTR({TextStyle textStyle}) {
+  static TextStyle nTR({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ntr/v7/RLpzK5Xy0ZjiGGhs5TA4bg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12117,13 +15771,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nanumBrushScript({TextStyle textStyle}) {
+  static TextStyle nanumBrushScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nanumbrushscript/v17/wXK2E2wfpokopxzthSqPbcR5_gVaxazyjqBr1lO97Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12135,7 +15795,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nanumGothic({TextStyle textStyle}) {
+  static TextStyle nanumGothic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_z_tLfxno73g.ttf',
@@ -12143,7 +15807,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/nanumgothic/v17/PN_oRfi-oW3hYwmKDpxS7F_LXv77zlEn14YEUQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12155,14 +15821,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nanumGothicCoding({TextStyle textStyle}) {
+  static TextStyle nanumGothicCoding({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nanumgothiccoding/v14/8QIVdjzHisX_8vv59_xMxtPFW4IXROwsy6QxVs1X7tc.ttf',
       '700' : 'http://fonts.gstatic.com/s/nanumgothiccoding/v14/8QIYdjzHisX_8vv59_xMxtPFW4IXROws8xgecsV88t5V9r4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12174,7 +15846,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nanumMyeongjo({TextStyle textStyle}) {
+  static TextStyle nanumMyeongjo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nanummyeongjo/v15/9Btx3DZF0dXLMZlywRbVRNhxy1LreHQ8juyl.ttf',
@@ -12182,7 +15858,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/nanummyeongjo/v15/9Bty3DZF0dXLMZlywRbVRNhxy2pLVFA0pfCs5Kos.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12194,13 +15872,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nanumPenScript({TextStyle textStyle}) {
+  static TextStyle nanumPenScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nanumpenscript/v15/daaDSSYiLGqEal3MvdA_FOL_3FkN2z7-aMFCcTU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12212,13 +15896,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle neucha({TextStyle textStyle}) {
+  static TextStyle neucha({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/neucha/v11/q5uGsou0JOdh94bvugNsCxVEgA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12230,7 +15920,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle neuton({TextStyle textStyle}) {
+  static TextStyle neuton({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/neuton/v12/UMBQrPtMoH62xUZKAKkfegD5Drog6Q.ttf',
@@ -12241,7 +15935,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/neuton/v12/UMBQrPtMoH62xUZKaK4fegD5Drog6Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12253,13 +15949,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle newRocker({TextStyle textStyle}) {
+  static TextStyle newRocker({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/newrocker/v8/MwQzbhjp3-HImzcCU_cJkGMViblPtXs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12271,14 +15973,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle newsCycle({TextStyle textStyle}) {
+  static TextStyle newsCycle({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/newscycle/v16/CSR64z1Qlv-GDxkbKVQ_TOcATNt_pOU.ttf',
       '700' : 'http://fonts.gstatic.com/s/newscycle/v16/CSR54z1Qlv-GDxkbKVQ_dFsvaNNUuOwkC2s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12290,13 +15998,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle niconne({TextStyle textStyle}) {
+  static TextStyle niconne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/niconne/v9/w8gaH2QvRug1_rTfrQut2F4OuOo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12308,7 +16022,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle niramit({TextStyle textStyle}) {
+  static TextStyle niramit({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/niramit/v4/I_urMpWdvgLdNxVLVXx7tiiEr5_BdZ8.ttf',
@@ -12325,7 +16043,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/niramit/v4/I_upMpWdvgLdNxVLXbZiKi2Oq73EZZ_f6w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12337,13 +16057,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nixieOne({TextStyle textStyle}) {
+  static TextStyle nixieOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nixieone/v10/lW-8wjkKLXjg5y2o2uUoUOFzpS-yLw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12355,7 +16081,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nobile({TextStyle textStyle}) {
+  static TextStyle nobile({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nobile/v11/m8JTjflSeaOVl1i2XqfXeLVdbw.ttf',
@@ -12366,7 +16096,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/nobile/v11/m8JWjflSeaOVl1iGXJVvdZRFRG-K3Mud.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12378,14 +16110,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nokora({TextStyle textStyle}) {
+  static TextStyle nokora({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nokora/v13/hYkIPuwgTubzaWxQOzoPovZg8Q.ttf',
       '700' : 'http://fonts.gstatic.com/s/nokora/v13/hYkLPuwgTubzaWxohxUrqt18-B9Uuw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12397,13 +16135,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle norican({TextStyle textStyle}) {
+  static TextStyle norican({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/norican/v8/MwQ2bhXp1eSBqjkPGJJRtGs-lbA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12415,13 +16159,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nosifer({TextStyle textStyle}) {
+  static TextStyle nosifer({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nosifer/v8/ZGjXol5JTp0g5bxZaC1RVDNdGDs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12433,13 +16183,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notable({TextStyle textStyle}) {
+  static TextStyle notable({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/notable/v4/gNMEW3N_SIqx-WX9-HMoFIez5MI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12451,13 +16207,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nothingYouCouldDo({TextStyle textStyle}) {
+  static TextStyle nothingYouCouldDo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/nothingyoucoulddo/v9/oY1B8fbBpaP5OX3DtrRYf_Q2BPB1SnfZb0OJl1ol2Ymo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12469,7 +16231,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle noticiaText({TextStyle textStyle}) {
+  static TextStyle noticiaText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/noticiatext/v9/VuJ2dNDF2Yv9qppOePKYRP1GYTFZt0rNpQ.ttf',
@@ -12478,7 +16244,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/noticiatext/v9/VuJrdNDF2Yv9qppOePKYRP12YwPhumvVjjTkeMnz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12490,7 +16258,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSans({TextStyle textStyle}) {
+  static TextStyle notoSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNb4j5Ba_2c7A.ttf',
@@ -12499,7 +16271,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/notosans/v9/o-0TIpQlx3QUlC5A4PNr4Az5ZtyEx2xqPaif.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12511,7 +16285,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSansHK({TextStyle textStyle}) {
+  static TextStyle notoSansHK({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/notosanshk/v5/nKKO-GM_FYFRJvXzVXaAPe9ZUHp1MOv2ObB7.otf',
@@ -12522,7 +16300,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notosanshk/v5/nKKP-GM_FYFRJvXzVXaAPe9ZsF1THMX6MKliqQ.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12534,7 +16314,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSansJP({TextStyle textStyle}) {
+  static TextStyle notoSansJP({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/notosansjp/v24/-F6ofjtqLzI2JPCgQBnw7HFQoggM-FNthvIU.otf',
@@ -12545,7 +16329,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notosansjp/v24/-F6pfjtqLzI2JPCgQBnw7HFQQi8q1H1hj-sNFQ.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12557,7 +16343,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSansKR({TextStyle textStyle}) {
+  static TextStyle notoSansKR({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/notosanskr/v12/Pby6FmXiEBPT4ITbgNA5CgmOsn7uwpYcuH8y.otf',
@@ -12568,7 +16358,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOUlnI7rgQsWYrzw.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12580,7 +16372,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSansSC({TextStyle textStyle}) {
+  static TextStyle notoSansSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/notosanssc/v9/k3kJo84MPvpLmixcA63oeALZTYKL2wv287Sb.otf',
@@ -12591,7 +16387,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZraWt9yX6-q2CGg.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12603,7 +16401,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSansTC({TextStyle textStyle}) {
+  static TextStyle notoSansTC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/notosanstc/v9/-nFlOG829Oofr2wohFbTp9i9WyEJIfNZ1sjy.otf',
@@ -12614,7 +16416,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notosanstc/v9/-nFkOG829Oofr2wohFbTp9i9uwYvDd1V39Hr7g.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12626,7 +16430,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSerif({TextStyle textStyle}) {
+  static TextStyle notoSerif({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFAcaRi_bMQ.ttf',
@@ -12635,7 +16443,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/notoserif/v8/ga6Vaw1J5X9T9RW6j9bNfFIu0RWedO9NOoYIDg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12647,7 +16457,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSerifJP({TextStyle textStyle}) {
+  static TextStyle notoSerifJP({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/notoserifjp/v7/xn77YHs72GKoTvER4Gn3b5eMZBaPRkgfU8fEwb0.otf',
@@ -12659,7 +16473,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notoserifjp/v7/xn77YHs72GKoTvER4Gn3b5eMZFqJRkgfU8fEwb0.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12671,7 +16487,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSerifKR({TextStyle textStyle}) {
+  static TextStyle notoSerifKR({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/notoserifkr/v6/3JnmSDn90Gmq2mr3blnHaTZXTihC8O1ZNH1ahck.otf',
@@ -12683,7 +16503,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notoserifkr/v6/3JnmSDn90Gmq2mr3blnHaTZXTmRE8O1ZNH1ahck.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12695,7 +16517,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSerifSC({TextStyle textStyle}) {
+  static TextStyle notoSerifSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/notoserifsc/v6/H4c8BXePl9DZ0Xe7gG9cyOj7mm63SzZBEtERe7U.otf',
@@ -12707,7 +16533,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notoserifsc/v6/H4c8BXePl9DZ0Xe7gG9cyOj7miKxSzZBEtERe7U.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12719,7 +16547,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle notoSerifTC({TextStyle textStyle}) {
+  static TextStyle notoSerifTC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/notoseriftc/v6/XLY9IZb5bJNDGYxLBibeHZ0Bvr8vbX9GTsoOAX4.otf',
@@ -12731,7 +16563,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/notoseriftc/v6/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbX9GTsoOAX4.otf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12743,13 +16577,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaCut({TextStyle textStyle}) {
+  static TextStyle novaCut({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novacut/v11/KFOkCnSYu8mL-39LkWxPKTM1K9nz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12761,13 +16601,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaFlat({TextStyle textStyle}) {
+  static TextStyle novaFlat({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novaflat/v11/QdVUSTc-JgqpytEbVebEuStkm20oJA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12779,13 +16625,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaMono({TextStyle textStyle}) {
+  static TextStyle novaMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novamono/v10/Cn-0JtiGWQ5Ajb--MRKfYGxYrdM9Sg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12797,13 +16649,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaOval({TextStyle textStyle}) {
+  static TextStyle novaOval({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novaoval/v11/jAnEgHdmANHvPenMaswCMY-h3cWkWg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12815,13 +16673,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaRound({TextStyle textStyle}) {
+  static TextStyle novaRound({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novaround/v11/flU9Rqquw5UhEnlwTJYTYYfeeetYEBc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12833,13 +16697,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaScript({TextStyle textStyle}) {
+  static TextStyle novaScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novascript/v12/7Au7p_IpkSWSTWaFWkumvmQNEl0O0kEx.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12851,13 +16721,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaSlim({TextStyle textStyle}) {
+  static TextStyle novaSlim({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novaslim/v11/Z9XUDmZNQAuem8jyZcn-yMOInrib9Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12869,13 +16745,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle novaSquare({TextStyle textStyle}) {
+  static TextStyle novaSquare({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/novasquare/v12/RrQUbo9-9DV7b06QHgSWsZhARYMgGtWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12887,13 +16769,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle numans({TextStyle textStyle}) {
+  static TextStyle numans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/numans/v9/SlGRmQmGupYAfH8IYRggiHVqaQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12905,7 +16793,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nunito({TextStyle textStyle}) {
+  static TextStyle nunito({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA-sekZuHJeTsfDQ.ttf',
@@ -12924,7 +16816,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN4AYevNWz4PDWtj.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12936,7 +16830,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle nunitoSans({TextStyle textStyle}) {
+  static TextStyle nunitoSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc9yAv5qWVAgVol-.ttf',
@@ -12955,7 +16853,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/nunitosans/v5/pe01MImSLYBIv1o4X1M8cce4G1ptU1QCU5l-06Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12967,13 +16867,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle odorMeanChey({TextStyle textStyle}) {
+  static TextStyle odorMeanChey({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/odormeanchey/v11/raxkHiKDttkTe1aOGcJMR1A_4mrY2zqUKafv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -12985,13 +16891,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle offside({TextStyle textStyle}) {
+  static TextStyle offside({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/offside/v7/HI_KiYMWKa9QrAykQ5HiRp-dhpQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13003,7 +16915,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oldStandardTT({TextStyle textStyle}) {
+  static TextStyle oldStandardTT({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVurVC5RHdCZg.ttf',
@@ -13011,7 +16927,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/oldstandardtt/v12/MwQrbh3o1vLImiwAVvYawgcf2eVWEX-dTFxeb80flQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13023,13 +16941,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oldenburg({TextStyle textStyle}) {
+  static TextStyle oldenburg({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oldenburg/v7/fC1jPY5JYWzbywv7c4V6UU6oXyndrw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13041,14 +16965,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oleoScript({TextStyle textStyle}) {
+  static TextStyle oleoScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oleoscript/v8/rax5HieDvtMOe0iICsUccBhasU7Q8Cad.ttf',
       '700' : 'http://fonts.gstatic.com/s/oleoscript/v8/raxkHieDvtMOe0iICsUccCDmnmrY2zqUKafv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13060,14 +16990,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oleoScriptSwashCaps({TextStyle textStyle}) {
+  static TextStyle oleoScriptSwashCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oleoscriptswashcaps/v7/Noaj6Vb-w5SFbTTAsZP_7JkCS08K-jCzDn_HMXquSY0Hg90.ttf',
       '700' : 'http://fonts.gstatic.com/s/oleoscriptswashcaps/v7/Noag6Vb-w5SFbTTAsZP_7JkCS08K-jCzDn_HCcaBbYUsn9T5dt0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13079,7 +17015,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle openSans({TextStyle textStyle}) {
+  static TextStyle openSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VeJoCqeDjg.ttf',
@@ -13094,7 +17034,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKW-U-hsKKKTjrPW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13106,7 +17048,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle openSansCondensed({TextStyle textStyle}) {
+  static TextStyle openSansCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhPuLGRpWRyAs.ttf',
@@ -13114,7 +17060,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmPuLGRpWRyAs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13126,13 +17074,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oranienbaum({TextStyle textStyle}) {
+  static TextStyle oranienbaum({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oranienbaum/v8/OZpHg_txtzZKMuXLIVrx-3zn7kz3dpHc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13144,7 +17098,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle orbitron({TextStyle textStyle}) {
+  static TextStyle orbitron({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/orbitron/v11/yMJRMIlzdpvBhQQL_Tq8fSx5i814.ttf',
@@ -13153,7 +17111,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/orbitron/v11/yMJWMIlzdpvBhQQL_QI4UAhxoNFxW0Hz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13165,14 +17125,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oregano({TextStyle textStyle}) {
+  static TextStyle oregano({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oregano/v7/If2IXTPxciS3H4S2kZffPznO3yM.ttf',
       'italic' : 'http://fonts.gstatic.com/s/oregano/v7/If2KXTPxciS3H4S2oZXVOxvLzyP_qw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13184,13 +17150,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle orienta({TextStyle textStyle}) {
+  static TextStyle orienta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/orienta/v7/PlI9FlK4Jrl5Y9zNeyeo9HRFhcU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13202,13 +17174,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle originalSurfer({TextStyle textStyle}) {
+  static TextStyle originalSurfer({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/originalsurfer/v8/RWmQoKGZ9vIirYntXJ3_MbekzNMiDEtvAlaMKw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13220,7 +17198,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oswald({TextStyle textStyle}) {
+  static TextStyle oswald({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvgUFoZAaRliE.ttf',
@@ -13231,7 +17213,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUFoZAaRliE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13243,13 +17227,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle overtheRainbow({TextStyle textStyle}) {
+  static TextStyle overtheRainbow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/overtherainbow/v10/11haGoXG1k_HKhMLUWz7Mc7vvW5upvOm9NA2XG0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13261,7 +17251,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle overlock({TextStyle textStyle}) {
+  static TextStyle overlock({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/overlock/v9/Z9XVDmdMWRiN1_T9Z4Te4u2El6GC.ttf',
@@ -13272,7 +17266,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/overlock/v9/Z9XQDmdMWRiN1_T9Z7Tc0G2Ltrmp8CLTlNs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13284,13 +17280,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle overlockSC({TextStyle textStyle}) {
+  static TextStyle overlockSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/overlocksc/v8/1cX3aUHKGZrstGAY8nwVzHGAq8Sk1PoH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13302,7 +17304,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle overpass({TextStyle textStyle}) {
+  static TextStyle overpass({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/overpass/v4/qFdB35WCmI96Ajtm81nGU97gxhcJk1s.ttf',
@@ -13323,7 +17329,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/overpass/v4/qFdC35WCmI96Ajtm81Gga1rN4h8ij1I7LLE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13335,7 +17343,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle overpassMono({TextStyle textStyle}) {
+  static TextStyle overpassMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/overpassmono/v5/_Xm3-H86tzKDdAPa-KPQZ-AC3oSWk_edB3Zf8EQ.ttf',
@@ -13344,7 +17356,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/overpassmono/v5/_Xm3-H86tzKDdAPa-KPQZ-AC3pSRk_edB3Zf8EQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13356,13 +17370,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ovo({TextStyle textStyle}) {
+  static TextStyle ovo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ovo/v11/yYLl0h7Wyfzjy4Q5_3WVxA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13374,7 +17394,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oxygen({TextStyle textStyle}) {
+  static TextStyle oxygen({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/oxygen/v9/2sDcZG1Wl4LcnbuCJW8Db2-4C7wFZQ.ttf',
@@ -13382,7 +17406,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/oxygen/v9/2sDcZG1Wl4LcnbuCNWgDb2-4C7wFZQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13394,13 +17420,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle oxygenMono({TextStyle textStyle}) {
+  static TextStyle oxygenMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/oxygenmono/v7/h0GsssGg9FxgDgCjLeAd7ijfze-PPlUu.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13412,13 +17444,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTMono({TextStyle textStyle}) {
+  static TextStyle pTMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9ArCg5MtPyAcg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13430,7 +17468,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTSans({TextStyle textStyle}) {
+  static TextStyle pTSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79P0WOxOGMMDQ.ttf',
@@ -13439,7 +17481,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ptsans/v11/jizdRExUiTo99u79D0e8fOytKB8c8zMrig.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13451,14 +17495,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTSansCaption({TextStyle textStyle}) {
+  static TextStyle pTSansCaption({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptsanscaption/v12/0FlMVP6Hrxmt7-fsUFhlFXNIlpcqfQXwQy6yxg.ttf',
       '700' : 'http://fonts.gstatic.com/s/ptsanscaption/v12/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrUSwWuz38Tgg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13470,14 +17520,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTSansNarrow({TextStyle textStyle}) {
+  static TextStyle pTSansNarrow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsYCByxyKeuDp.ttf',
       '700' : 'http://fonts.gstatic.com/s/ptsansnarrow/v11/BngSUXNadjH0qYEzV7ab-oWlsbg95DiCUfzgRd-3.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13489,7 +17545,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTSerif({TextStyle textStyle}) {
+  static TextStyle pTSerif({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptserif/v11/EJRVQgYoZZY2vCFuvDFRxL6ddjb-.ttf',
@@ -13498,7 +17558,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ptserif/v11/EJRQQgYoZZY2vCFuvAFT9gaQVy7VocNB6Iw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13510,14 +17572,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pTSerifCaption({TextStyle textStyle}) {
+  static TextStyle pTSerifCaption({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ptserifcaption/v11/ieVl2ZhbGCW-JoW6S34pSDpqYKU059WxDCs5cvI.ttf',
       'italic' : 'http://fonts.gstatic.com/s/ptserifcaption/v11/ieVj2ZhbGCW-JoW6S34pSDpqYKU019e7CAk8YvJEeg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13529,13 +17597,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pacifico({TextStyle textStyle}) {
+  static TextStyle pacifico({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ96A4sijpFu_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13547,14 +17621,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle padauk({TextStyle textStyle}) {
+  static TextStyle padauk({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/padauk/v6/RrQRboJg-id7OnbBa0_g3LlYbg.ttf',
       '700' : 'http://fonts.gstatic.com/s/padauk/v6/RrQSboJg-id7Onb512DE1JJEZ4YwGg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13566,7 +17646,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle palanquin({TextStyle textStyle}) {
+  static TextStyle palanquin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/palanquin/v5/9XUhlJ90n1fBFg7ceXwUEltI7rWmZzTH.ttf',
@@ -13578,7 +17662,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/palanquin/v5/9XUilJ90n1fBFg7ceXwUyn5oxJuqbi3ezg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13590,7 +17676,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle palanquinDark({TextStyle textStyle}) {
+  static TextStyle palanquinDark({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/palanquindark/v6/xn75YHgl1nqmANMB-26xC7yuF_6OTEo9VtfE.ttf',
@@ -13599,7 +17689,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/palanquindark/v6/xn76YHgl1nqmANMB-26xC7yuF8YyY241fcvN2KT4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13611,13 +17703,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pangolin({TextStyle textStyle}) {
+  static TextStyle pangolin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pangolin/v5/cY9GfjGcW0FPpi-tWPfK5d3aiLBG.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13629,13 +17727,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle paprika({TextStyle textStyle}) {
+  static TextStyle paprika({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/paprika/v7/8QIJdijZitv49rDfuIgOq7jkAOw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13647,13 +17751,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle parisienne({TextStyle textStyle}) {
+  static TextStyle parisienne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/parisienne/v7/E21i_d3kivvAkxhLEVZpcy96DuKuavM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13665,13 +17775,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle passeroOne({TextStyle textStyle}) {
+  static TextStyle passeroOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/passeroone/v11/JTUTjIko8DOq5FeaeEAjgE5B5Arr-s50.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13683,7 +17799,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle passionOne({TextStyle textStyle}) {
+  static TextStyle passionOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/passionone/v10/PbynFmL8HhTPqbjUzux3JHuW_Frg6YoV.ttf',
@@ -13691,7 +17811,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/passionone/v10/Pby6FmL8HhTPqbjUzux3JEMS0X7owpYcuH8y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13703,13 +17825,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pathwayGothicOne({TextStyle textStyle}) {
+  static TextStyle pathwayGothicOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pathwaygothicone/v8/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-dTFxeb80flQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13721,13 +17849,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle patrickHand({TextStyle textStyle}) {
+  static TextStyle patrickHand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYeMWcjKm7sp8g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13739,13 +17873,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle patrickHandSC({TextStyle textStyle}) {
+  static TextStyle patrickHandSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ViSi6JQc7Vg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13757,13 +17897,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pattaya({TextStyle textStyle}) {
+  static TextStyle pattaya({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pattaya/v5/ea8ZadcqV_zkHY-XNdCn92ZEmVs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13775,13 +17921,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle patuaOne({TextStyle textStyle}) {
+  static TextStyle patuaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/patuaone/v10/ZXuke1cDvLCKLDcimxBI5PNvNA9LuA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13793,13 +17945,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pavanam({TextStyle textStyle}) {
+  static TextStyle pavanam({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pavanam/v4/BXRrvF_aiezLh0xPDOtQ9Wf0QcE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13811,13 +17969,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle paytoneOne({TextStyle textStyle}) {
+  static TextStyle paytoneOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/paytoneone/v12/0nksC9P7MfYHj2oFtYm2CiTqivr9iBq_.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13829,13 +17993,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle peddana({TextStyle textStyle}) {
+  static TextStyle peddana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/peddana/v7/aFTU7PBhaX89UcKWhh2aBYyMcKw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13847,13 +18017,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle peralta({TextStyle textStyle}) {
+  static TextStyle peralta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/peralta/v7/hYkJPu0-RP_9d3kRGxAhrv956B8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13865,13 +18041,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle permanentMarker({TextStyle textStyle}) {
+  static TextStyle permanentMarker({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004HaqIfrT5nlk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13883,13 +18065,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle petitFormalScript({TextStyle textStyle}) {
+  static TextStyle petitFormalScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/petitformalscript/v7/B50TF6xQr2TXJBnGOFME6u5OR83oRP5qoHnqP4gZSiE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13901,13 +18089,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle petrona({TextStyle textStyle}) {
+  static TextStyle petrona({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/petrona/v8/mtG64_NXL7bZo9XXsXVStGsRwCU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13919,7 +18113,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle philosopher({TextStyle textStyle}) {
+  static TextStyle philosopher({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/philosopher/v11/vEFV2_5QCwIS4_Dhez5jcVBpRUwU08qe.ttf',
@@ -13928,7 +18126,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/philosopher/v11/vEFK2_5QCwIS4_Dhez5jcWBrd_QZ8tK1W77HtMo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13940,13 +18140,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle piedra({TextStyle textStyle}) {
+  static TextStyle piedra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/piedra/v8/ke8kOg8aN0Bn7hTunEyHN_M3gA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13958,13 +18164,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pinyonScript({TextStyle textStyle}) {
+  static TextStyle pinyonScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pinyonscript/v9/6xKpdSJbL9-e9LuoeQiDRQR8aOLQO4bhiDY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13976,13 +18188,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pirataOne({TextStyle textStyle}) {
+  static TextStyle pirataOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pirataone/v8/I_urMpiDvgLdLh0fAtoftiiEr5_BdZ8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -13994,13 +18212,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle plaster({TextStyle textStyle}) {
+  static TextStyle plaster({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/plaster/v11/DdTm79QatW80eRh4Ei5JOtLOeLI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14012,14 +18236,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle play({TextStyle textStyle}) {
+  static TextStyle play({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/play/v11/6aez4K2oVqwIjtI8Hp8Tx3A.ttf',
       '700' : 'http://fonts.gstatic.com/s/play/v11/6ae84K2oVqwItm4TOpc423nTJTM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14031,13 +18261,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle playball({TextStyle textStyle}) {
+  static TextStyle playball({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/playball/v9/TK3gWksYAxQ7jbsKcj8Dl-tPKo2t.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14049,7 +18285,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle playfairDisplay({TextStyle textStyle}) {
+  static TextStyle playfairDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXPTvSgWE_-xU.ttf',
@@ -14060,7 +18300,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngAW4e4z5nNKaV_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14072,7 +18314,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle playfairDisplaySC({TextStyle textStyle}) {
+  static TextStyle playfairDisplaySC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/playfairdisplaysc/v9/ke85OhoaMkR6-hSn7kbHVoFf7ZfgMPr_pb4GEcM2M4s.ttf',
@@ -14083,7 +18329,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/playfairdisplaysc/v9/ke82OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbw0kcwXK6ARIyH5IA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14095,7 +18343,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle podkova({TextStyle textStyle}) {
+  static TextStyle podkova({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/podkova/v15/K2FufZ1EmftJSV9VQpXb1lo9vC3nZWtFzcU4EoporSHH.ttf',
@@ -14105,7 +18357,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/podkova/v15/K2FufZ1EmftJSV9VQpXb1lo9vC3nZWvFysU4EoporSHH.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14117,13 +18371,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle poiretOne({TextStyle textStyle}) {
+  static TextStyle poiretOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbk5lWVscxdKE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14135,13 +18395,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pollerOne({TextStyle textStyle}) {
+  static TextStyle pollerOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pollerone/v9/ahccv82n0TN3gia5E4Bud-lbgUS5u0s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14153,14 +18419,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle poly({TextStyle textStyle}) {
+  static TextStyle poly({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/poly/v10/MQpb-W6wKNitRLCAq2Lpris.ttf',
       'italic' : 'http://fonts.gstatic.com/s/poly/v10/MQpV-W6wKNitdLKKr0DsviuGWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14172,13 +18444,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pompiere({TextStyle textStyle}) {
+  static TextStyle pompiere({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pompiere/v9/VEMyRoxis5Dwuyeov6Wt5jDtreOL.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14190,13 +18468,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pontanoSans({TextStyle textStyle}) {
+  static TextStyle pontanoSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3qwjUMg1siNQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14208,13 +18492,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle poorStory({TextStyle textStyle}) {
+  static TextStyle poorStory({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/poorstory/v8/jizfREFUsnUct9P6cDfd4OmnLD0Z4zM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14226,7 +18516,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle poppins({TextStyle textStyle}) {
+  static TextStyle poppins({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/poppins/v9/pxiGyp8kv8JHgFVrLPTed3FBGPaTSQ.ttf',
@@ -14249,7 +18543,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/poppins/v9/pxiDyp8kv8JHgFVrJJLm81xlEN2PQEhcqw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14261,13 +18557,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle portLligatSans({TextStyle textStyle}) {
+  static TextStyle portLligatSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/portlligatsans/v8/kmKmZrYrGBbdN1aV7Vokow6Lw4s4l7N0Tx4xEcQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14279,13 +18581,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle portLligatSlab({TextStyle textStyle}) {
+  static TextStyle portLligatSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/portlligatslab/v8/LDIpaoiQNgArA8kR7ulhZ8P_NYOss7ob9yGLmfI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14297,14 +18605,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pragatiNarrow({TextStyle textStyle}) {
+  static TextStyle pragatiNarrow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pragatinarrow/v5/vm8vdRf0T0bS1ffgsPB7WZ-mD17_ytN3M48a.ttf',
       '700' : 'http://fonts.gstatic.com/s/pragatinarrow/v5/vm8sdRf0T0bS1ffgsPB7WZ-mD2ZD5fd_GJMTlo_4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14316,13 +18630,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle prata({TextStyle textStyle}) {
+  static TextStyle prata({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/prata/v10/6xKhdSpbNNCT-vWIAG_5LWwJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14334,13 +18654,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle preahvihear({TextStyle textStyle}) {
+  static TextStyle preahvihear({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/preahvihear/v11/6NUS8F-dNQeEYhzj7uluxswE49FJf8Wv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14352,13 +18678,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pressStart2P({TextStyle textStyle}) {
+  static TextStyle pressStart2P({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK0nSgPJE4580.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14370,7 +18702,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle pridi({TextStyle textStyle}) {
+  static TextStyle pridi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/pridi/v5/2sDdZG5JnZLfkc1SiE0jRUG0AqUc.ttf',
@@ -14381,7 +18717,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/pridi/v5/2sDdZG5JnZLfkc0mjE0jRUG0AqUc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14393,13 +18731,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle princessSofia({TextStyle textStyle}) {
+  static TextStyle princessSofia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/princesssofia/v8/qWczB6yguIb8DZ_GXZst16n7GRz7mDUoupoI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14411,13 +18755,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle prociono({TextStyle textStyle}) {
+  static TextStyle prociono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/prociono/v9/r05YGLlR-KxAf9GGO8upyDYtStiJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14429,7 +18779,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle prompt({TextStyle textStyle}) {
+  static TextStyle prompt({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/prompt/v4/-W_9XJnvUD7dzB2CA9oYREcjeo0k.ttf',
@@ -14452,7 +18806,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/prompt/v4/-W_6XJnvUD7dzB2KZeKcaWMrUZEtdzow.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14464,13 +18820,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle prostoOne({TextStyle textStyle}) {
+  static TextStyle prostoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/prostoone/v8/OpNJno4VhNfK-RgpwWWxpipfWhXD00c.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14482,7 +18844,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle prozaLibre({TextStyle textStyle}) {
+  static TextStyle prozaLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/prozalibre/v4/LYjGdGHgj0k1DIQRyUEyyHovftvXWYyz.ttf',
@@ -14497,7 +18863,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/prozalibre/v4/LYjZdGHgj0k1DIQRyUEyyEotTH_ZeJSY8z6Np1k.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14509,7 +18877,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle puritan({TextStyle textStyle}) {
+  static TextStyle puritan({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/puritan/v11/845YNMgkAJ2VTtIo9JrwRdaI50M.ttf',
@@ -14518,7 +18890,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/puritan/v11/845fNMgkAJ2VTtIoxJjC_dup_2jDVevnLQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14530,13 +18904,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle purplePurse({TextStyle textStyle}) {
+  static TextStyle purplePurse({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/purplepurse/v8/qWctB66gv53iAp-Vfs4My6qyeBb_ujA4ug.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14548,13 +18928,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quando({TextStyle textStyle}) {
+  static TextStyle quando({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/quando/v8/xMQVuFNaVa6YuW0pC6WzKX_QmA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14566,7 +18952,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quantico({TextStyle textStyle}) {
+  static TextStyle quantico({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/quantico/v9/rax-HiSdp9cPL3KIF4xsLjxSmlLZ.ttf',
@@ -14575,7 +18965,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/quantico/v9/rax7HiSdp9cPL3KIF7xuHIRfu0ry9TadML4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14587,14 +18979,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quattrocento({TextStyle textStyle}) {
+  static TextStyle quattrocento({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/quattrocento/v11/OZpEg_xvsDZQL_LKIF7q4jPHxGL7f4jFuA.ttf',
       '700' : 'http://fonts.gstatic.com/s/quattrocento/v11/OZpbg_xvsDZQL_LKIF7q4jP_eE3fd6PZsXcM9w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14606,7 +19004,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quattrocentoSans({TextStyle textStyle}) {
+  static TextStyle quattrocentoSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/quattrocentosans/v12/va9c4lja2NVIDdIAAoMR5MfuElaRB3zOvU7eHGHJ.ttf',
@@ -14615,7 +19017,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/quattrocentosans/v12/va9X4lja2NVIDdIAAoMR5MfuElaRB0zMj_bTPXnijLsJV7E.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14627,13 +19031,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle questrial({TextStyle textStyle}) {
+  static TextStyle questrial({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/questrial/v9/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14645,7 +19055,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quicksand({TextStyle textStyle}) {
+  static TextStyle quicksand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkKEo18G0wx40QDw.ttf',
@@ -14655,7 +19069,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv18G0wx40QDw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14667,13 +19083,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle quintessential({TextStyle textStyle}) {
+  static TextStyle quintessential({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/quintessential/v7/fdNn9sOGq31Yjnh3qWU14DdtjY5wS7kmAyxM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14685,13 +19107,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle qwigley({TextStyle textStyle}) {
+  static TextStyle qwigley({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/qwigley/v9/1cXzaU3UGJb5tGoCuVxsi1mBmcE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14703,13 +19131,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle racingSansOne({TextStyle textStyle}) {
+  static TextStyle racingSansOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/racingsansone/v7/sykr-yRtm7EvTrXNxkv5jfKKyDCwL3rmWpIBtA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14721,14 +19155,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle radley({TextStyle textStyle}) {
+  static TextStyle radley({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/radley/v14/LYjDdGzinEIjCN19oAlEpVs3VQ.ttf',
       'italic' : 'http://fonts.gstatic.com/s/radley/v14/LYjBdGzinEIjCN1NogNAh14nVcfe.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14740,7 +19180,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rajdhani({TextStyle textStyle}) {
+  static TextStyle rajdhani({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/rajdhani/v9/LDI2apCSOBg7S-QT7pasEcOsc-bGkqIw.ttf',
@@ -14750,7 +19194,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/rajdhani/v9/LDI2apCSOBg7S-QT7pa8FsOsc-bGkqIw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14762,13 +19208,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rakkas({TextStyle textStyle}) {
+  static TextStyle rakkas({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rakkas/v7/Qw3cZQlNHiblL3j_lttPOeMcCw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14780,7 +19232,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle raleway({TextStyle textStyle}) {
+  static TextStyle raleway({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNwE4ISotrDfGGxA.ttf',
@@ -14803,7 +19259,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwzqZPBdqazVoK4A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14815,13 +19273,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ralewayDots({TextStyle textStyle}) {
+  static TextStyle ralewayDots({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ralewaydots/v7/6NUR8FifJg6AfQvzpshgwJ8kyf9Fdty2ew.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14833,13 +19297,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ramabhadra({TextStyle textStyle}) {
+  static TextStyle ramabhadra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ramabhadra/v9/EYq2maBOwqRW9P1SQ83LehNGX5uWw3o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14851,13 +19321,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ramaraja({TextStyle textStyle}) {
+  static TextStyle ramaraja({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ramaraja/v4/SlGTmQearpYAYG1CABIkqnB6aSQU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14869,7 +19345,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rambla({TextStyle textStyle}) {
+  static TextStyle rambla({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rambla/v7/snfrs0ip98hx6mr0I7IONthkwQ.ttf',
@@ -14878,7 +19358,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/rambla/v7/snfus0ip98hx6mrEIYC2O_l86p6TYS-Y.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14890,13 +19372,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rammettoOne({TextStyle textStyle}) {
+  static TextStyle rammettoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rammettoone/v8/LhWiMV3HOfMbMetJG3lQDpp9Mvuciu-_SQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14908,13 +19396,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ranchers({TextStyle textStyle}) {
+  static TextStyle ranchers({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ranchers/v7/zrfm0H3Lx-P2Xvs2AoDYDC79XTHv.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14926,13 +19420,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rancho({TextStyle textStyle}) {
+  static TextStyle rancho({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rancho/v10/46kulbzmXjLaqZRlbWXgd0RY1g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14944,14 +19444,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ranga({TextStyle textStyle}) {
+  static TextStyle ranga({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ranga/v5/C8ct4cYisGb28p6CLDwZwmGE.ttf',
       '700' : 'http://fonts.gstatic.com/s/ranga/v5/C8cg4cYisGb28qY-AxgR6X2NZAn2.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14963,7 +19469,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rasa({TextStyle textStyle}) {
+  static TextStyle rasa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/rasa/v5/xn7gYHIn1mWmdg52sgC7S9XdZN8.ttf',
@@ -14973,7 +19483,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/rasa/v5/xn7gYHIn1mWmdh5xsgC7S9XdZN8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -14985,13 +19497,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rationale({TextStyle textStyle}) {
+  static TextStyle rationale({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rationale/v11/9XUnlJ92n0_JFxHIfHcsdlFMzLC2Zw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15003,13 +19521,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle raviPrakash({TextStyle textStyle}) {
+  static TextStyle raviPrakash({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/raviprakash/v6/gokpH6fsDkVrF9Bv9X8SOAKHmNZEq6TTFw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15021,7 +19545,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle redHatDisplay({TextStyle textStyle}) {
+  static TextStyle redHatDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/redhatdisplay/v3/8vIQ7wUr0m80wwYf0QCXZzYzUoTQ-jSgZYvdCQ.ttf',
@@ -15034,7 +19562,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/redhatdisplay/v3/8vIX7wUr0m80wwYf0QCXZzYzUoTg-AYgaqrFIkJQb7zU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15046,7 +19576,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle redHatText({TextStyle textStyle}) {
+  static TextStyle redHatText({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/redhattext/v2/RrQXbohi_ic6B3yVSzGBrMxgb60sE8yZPA.ttf',
@@ -15057,7 +19591,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/redhattext/v2/RrQKbohi_ic6B3yVSzGBrMxQbZ-UHu2BF1yELmgy.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15069,13 +19605,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle redressed({TextStyle textStyle}) {
+  static TextStyle redressed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/redressed/v10/x3dickHUbrmJ7wMy9MsBfPACvy_1BA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15087,13 +19629,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle reemKufi({TextStyle textStyle}) {
+  static TextStyle reemKufi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/reemkufi/v7/2sDcZGJLip7W2J7v7wQDb2-4C7wFZQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15105,13 +19653,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle reenieBeanie({TextStyle textStyle}) {
+  static TextStyle reenieBeanie({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/reeniebeanie/v10/z7NSdR76eDkaJKZJFkkjuvWxbP2_qoOgf_w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15123,13 +19677,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle revalia({TextStyle textStyle}) {
+  static TextStyle revalia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/revalia/v7/WwkexPimBE2-4ZPEeVruNIgJSNM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15141,13 +19701,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rhodiumLibre({TextStyle textStyle}) {
+  static TextStyle rhodiumLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rhodiumlibre/v4/1q2AY5adA0tn_ukeHcQHqpx6pETLeo2gm2U.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15159,13 +19725,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ribeye({TextStyle textStyle}) {
+  static TextStyle ribeye({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ribeye/v8/L0x8DFMxk1MP9R3RvPCmRSlUig.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15177,13 +19749,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ribeyeMarrow({TextStyle textStyle}) {
+  static TextStyle ribeyeMarrow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ribeyemarrow/v9/GFDsWApshnqMRO2JdtRZ2d0vEAwTVWgKdtw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15195,13 +19773,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle righteous({TextStyle textStyle}) {
+  static TextStyle righteous({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9mj3uEicG01A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15213,13 +19797,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle risque({TextStyle textStyle}) {
+  static TextStyle risque({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/risque/v7/VdGfAZUfHosahXxoCUYVBJ-T5g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15231,7 +19821,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle roboto({TextStyle textStyle}) {
+  static TextStyle roboto({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxPKTM1K9nz.ttf',
@@ -15248,7 +19842,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBBc9AMX6lJBP.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15260,7 +19856,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle robotoCondensed({TextStyle textStyle}) {
+  static TextStyle robotoCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCMSbvtdYyQ.ttf',
@@ -15271,7 +19871,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/robotocondensed/v18/ieVg2ZhZI2eCN5jzbjEETS9weq8-19eDtCYYatlYcyRi4A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15283,7 +19885,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle robotoMono({TextStyle textStyle}) {
+  static TextStyle robotoMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/robotomono/v7/L0x7DF4xlVMF-BfR8bXMIjAoq3qcW7KCG1w.ttf',
@@ -15298,7 +19904,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/robotomono/v7/L0xmDF4xlVMF-BfR8bXMIjhOk8azf7qpB1U-Drg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15310,7 +19918,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle robotoSlab({TextStyle textStyle}) {
+  static TextStyle robotoSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/robotoslab/v9/BngOUXZYTXPIvIBgJJSb6u-u5qCr5RCDY_k.ttf',
@@ -15319,7 +19931,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w4CByxyKeuDp.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15331,13 +19945,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rochester({TextStyle textStyle}) {
+  static TextStyle rochester({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rochester/v10/6ae-4KCqVa4Zy6Fif-Uy31vWNTMwoQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15349,13 +19969,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rockSalt({TextStyle textStyle}) {
+  static TextStyle rockSalt({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZbsEk7hbBWrA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15367,7 +19993,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rokkitt({TextStyle textStyle}) {
+  static TextStyle rokkitt({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/rokkitt/v14/qFdG35qfgYFjGy5hmCWCc_TOyh4Qig.ttf',
@@ -15381,7 +20011,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmMWlU97gxhcJk1s.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15393,13 +20025,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle romanesco({TextStyle textStyle}) {
+  static TextStyle romanesco({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/romanesco/v8/w8gYH2ozQOY7_r_J7mSn3HwLqOqSBg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15411,14 +20049,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ropaSans({TextStyle textStyle}) {
+  static TextStyle ropaSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ropasans/v9/EYqxmaNOzLlWtsZSScyKWjloU5KP2g.ttf',
       'italic' : 'http://fonts.gstatic.com/s/ropasans/v9/EYq3maNOzLlWtsZSScy6WDNscZef2mNE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15430,7 +20074,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rosario({TextStyle textStyle}) {
+  static TextStyle rosario({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/rosario/v16/xfuu0WDhWW_fOEoY8l_VPNZfB7jPM69GCWczd-YnOzUD.ttf',
@@ -15445,7 +20093,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/rosario/v16/xfug0WDhWW_fOEoY2Fbnww42bCJhNLrQSmh3feIFPiUDn08.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15457,14 +20107,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rosarivo({TextStyle textStyle}) {
+  static TextStyle rosarivo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rosarivo/v7/PlI-Fl2lO6N9f8HaNAeC2nhMnNy5.ttf',
       'italic' : 'http://fonts.gstatic.com/s/rosarivo/v7/PlI4Fl2lO6N9f8HaNDeA0Hxumcy5ZX8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15476,13 +20132,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rougeScript({TextStyle textStyle}) {
+  static TextStyle rougeScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rougescript/v8/LYjFdGbiklMoCIQOw1Ep3S4PVPXbUJWq9g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15494,13 +20156,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rozhaOne({TextStyle textStyle}) {
+  static TextStyle rozhaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rozhaone/v7/AlZy_zVFtYP12Zncg2khdXf4XB0Tow.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15512,7 +20180,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rubik({TextStyle textStyle}) {
+  static TextStyle rubik({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Fqj1ma-2HW7ZB_.ttf',
@@ -15527,7 +20199,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nElf2d8WX06IB_18o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15539,13 +20213,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rubikMonoOne({TextStyle textStyle}) {
+  static TextStyle rubikMonoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rubikmonoone/v8/UqyJK8kPP3hjw6ANTdfRk9YSN-8wRqQrc_j9.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15557,7 +20237,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ruda({TextStyle textStyle}) {
+  static TextStyle ruda({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ruda/v11/k3kfo8YQJOpFmn8XadbJM0A.ttf',
@@ -15565,7 +20249,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/ruda/v11/k3kQo8YQJOpFovs6Td7iL0nAMaM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15577,14 +20263,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rufina({TextStyle textStyle}) {
+  static TextStyle rufina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rufina/v7/Yq6V-LyURyLy-aKyoxRktOdClg.ttf',
       '700' : 'http://fonts.gstatic.com/s/rufina/v7/Yq6W-LyURyLy-aKKHztAvMxenxE0SA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15596,13 +20288,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rugeBoogie({TextStyle textStyle}) {
+  static TextStyle rugeBoogie({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rugeboogie/v10/JIA3UVFwbHRF_GIWSMhKNROiPzUveSxy.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15614,13 +20312,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ruluko({TextStyle textStyle}) {
+  static TextStyle ruluko({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ruluko/v7/xMQVuFNZVaODtm0pC6WzKX_QmA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15632,13 +20336,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rumRaisin({TextStyle textStyle}) {
+  static TextStyle rumRaisin({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rumraisin/v7/nwpRtKu3Ih8D5avB4h2uJ3-IywA7eMM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15650,13 +20360,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ruslanDisplay({TextStyle textStyle}) {
+  static TextStyle ruslanDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ruslandisplay/v10/Gw6jwczl81XcIZuckK_e3UpfdzxrldyFvm1n.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15668,13 +20384,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle russoOne({TextStyle textStyle}) {
+  static TextStyle russoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsH-yMOInrib9Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15686,13 +20408,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ruthie({TextStyle textStyle}) {
+  static TextStyle ruthie({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ruthie/v10/gokvH63sGkdqXuU9lD53Q2u_mQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15704,13 +20432,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle rye({TextStyle textStyle}) {
+  static TextStyle rye({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/rye/v7/r05XGLJT86YDFpTsXOqx4w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15722,13 +20456,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sacramento({TextStyle textStyle}) {
+  static TextStyle sacramento({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG0CoV_NxLeiw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15740,14 +20480,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sahitya({TextStyle textStyle}) {
+  static TextStyle sahitya({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sahitya/v4/6qLAKZkOuhnuqlJAaScFPywEDnI.ttf',
       '700' : 'http://fonts.gstatic.com/s/sahitya/v4/6qLFKZkOuhnuqlJAUZsqGyQvEnvSexI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15759,13 +20505,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sail({TextStyle textStyle}) {
+  static TextStyle sail({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sail/v10/DPEjYwiBxwYJFBTDADYAbvw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15777,7 +20529,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle saira({TextStyle textStyle}) {
+  static TextStyle saira({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/saira/v4/mem-Ya2wxmKQyNFETZY_VrUfTck.ttf',
@@ -15791,7 +20547,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNGkarYVeLkWVNBt.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15803,7 +20561,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sairaCondensed({TextStyle textStyle}) {
+  static TextStyle sairaCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/sairacondensed/v5/EJRMQgErUN8XuHNEtX81i9TmEkrnwetA2omSrzS8.ttf',
@@ -15817,7 +20579,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/sairacondensed/v5/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxg8Keepi2lHw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15829,7 +20593,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sairaExtraCondensed({TextStyle textStyle}) {
+  static TextStyle sairaExtraCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/sairaextracondensed/v5/-nFsOHYr-vcC7h8MklGBkrvmUG9rbpkisrTri0jx9i5ss3a3.ttf',
@@ -15843,7 +20611,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTra2_R3ABgum-uoQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15855,7 +20625,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sairaSemiCondensed({TextStyle textStyle}) {
+  static TextStyle sairaSemiCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/sairasemicondensed/v5/U9MN6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXdvaOM8rXT-8V8.ttf',
@@ -15869,7 +20643,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/sairasemicondensed/v5/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXePT8MWg3j36Ebz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15881,13 +20657,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sairaStencilOne({TextStyle textStyle}) {
+  static TextStyle sairaStencilOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sairastencilone/v1/SLXSc03I6HkvZGJ1GvvipLoYSTEL9AsMawif2YQ2.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15899,13 +20681,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle salsa({TextStyle textStyle}) {
+  static TextStyle salsa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/salsa/v9/gNMKW3FiRpKj-imY8ncKEZez.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15917,14 +20705,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sanchez({TextStyle textStyle}) {
+  static TextStyle sanchez({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbITm5b_BwE1l0.ttf',
       'italic' : 'http://fonts.gstatic.com/s/sanchez/v7/Ycm0sZJORluHnXbIfmxR-D4Bxl3gkw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15936,13 +20730,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sancreek({TextStyle textStyle}) {
+  static TextStyle sancreek({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sancreek/v10/pxiHypAnsdxUm159X7D-XV9NEe-K.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15954,7 +20754,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sansita({TextStyle textStyle}) {
+  static TextStyle sansita({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sansita/v4/QldONTRRphEb_-V7HBm7TXFf3qw.ttf',
@@ -15967,7 +20771,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/sansita/v4/QldJNTRRphEb_-V7LBuJzX5-xodqz_joDQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -15979,7 +20785,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sarabun({TextStyle textStyle}) {
+  static TextStyle sarabun({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/sarabun/v7/DtVhJx26TKEr37c9YHZJmnYI5gnOpg.ttf',
@@ -16000,7 +20810,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/sarabun/v7/DtVkJx26TKEr37c9aBBxOlos7iLSrwFUlw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16012,14 +20824,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sarala({TextStyle textStyle}) {
+  static TextStyle sarala({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sarala/v4/uK_y4riEZv4o1w9RCh0TMv6EXw.ttf',
       '700' : 'http://fonts.gstatic.com/s/sarala/v4/uK_x4riEZv4o1w9ptjI3OtWYVkMpXA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16031,13 +20849,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sarina({TextStyle textStyle}) {
+  static TextStyle sarina({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sarina/v8/-F6wfjF3ITQwasLhLkDUriBQxw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16049,7 +20873,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sarpanch({TextStyle textStyle}) {
+  static TextStyle sarpanch({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sarpanch/v5/hESy6Xt4NCpRuk6Pzh2ARIrX_20n.ttf',
@@ -16060,7 +20888,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/sarpanch/v5/hES16Xt4NCpRuk6PziUEaa7f1HEuRHkM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16072,13 +20902,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle satisfy({TextStyle textStyle}) {
+  static TextStyle satisfy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoOZSCHBeHFl0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16090,13 +20926,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sawarabiGothic({TextStyle textStyle}) {
+  static TextStyle sawarabiGothic({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sawarabigothic/v8/x3d4ckfVaqqa-BEj-I9mE65u3k3NBSk3E2YljQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16108,13 +20950,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sawarabiMincho({TextStyle textStyle}) {
+  static TextStyle sawarabiMincho({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sawarabimincho/v10/8QIRdiDaitzr7brc8ahpxt6GcIJTLahP46UDUw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16126,7 +20974,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle scada({TextStyle textStyle}) {
+  static TextStyle scada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/scada/v8/RLpxK5Pv5qumeWJoxzUobkvv.ttf',
@@ -16135,7 +20987,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/scada/v8/RLp6K5Pv5qumeVJq9Y0lT1PEYfE5p6g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16147,14 +21001,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle scheherazade({TextStyle textStyle}) {
+  static TextStyle scheherazade({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/scheherazade/v17/YA9Ur0yF4ETZN60keViq1kQgt5OohvbJ9A.ttf',
       '700' : 'http://fonts.gstatic.com/s/scheherazade/v17/YA9Lr0yF4ETZN60keViq1kQYC7yMjt3V_dB0Yw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16166,13 +21026,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle schoolbell({TextStyle textStyle}) {
+  static TextStyle schoolbell({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/schoolbell/v10/92zQtBZWOrcgoe-fgnJIVxIQ6mRqfiQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16184,13 +21050,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle scopeOne({TextStyle textStyle}) {
+  static TextStyle scopeOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/scopeone/v6/WBLnrEXKYFlGHrOKmGD1W0_MJMGxiQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16202,13 +21074,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle seaweedScript({TextStyle textStyle}) {
+  static TextStyle seaweedScript({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/seaweedscript/v7/bx6cNx6Tne2pxOATYE8C_Rsoe0WJ-KcGVbLW.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16220,13 +21098,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle secularOne({TextStyle textStyle}) {
+  static TextStyle secularOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/secularone/v4/8QINdiTajsj_87rMuMdKypDlMul7LJpK.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16238,13 +21122,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sedgwickAve({TextStyle textStyle}) {
+  static TextStyle sedgwickAve({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sedgwickave/v5/uK_04rKEYuguzAcSYRdWTJq8Xmg1Vcf5JA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16256,13 +21146,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sedgwickAveDisplay({TextStyle textStyle}) {
+  static TextStyle sedgwickAveDisplay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sedgwickavedisplay/v5/xfuu0XPgU3jZPUoUo3ScvmPi-NapQ8OxM2czd-YnOzUD.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16274,13 +21170,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sevillana({TextStyle textStyle}) {
+  static TextStyle sevillana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sevillana/v8/KFOlCnWFscmDt1Bfiy1vAx05IsDqlA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16292,13 +21194,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle seymourOne({TextStyle textStyle}) {
+  static TextStyle seymourOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/seymourone/v7/4iCp6Khla9xbjQpoWGGd0myIPYBvgpUI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16310,13 +21218,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shadowsIntoLight({TextStyle textStyle}) {
+  static TextStyle shadowsIntoLight({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQDcsr4xzSMYA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16328,13 +21242,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shadowsIntoLightTwo({TextStyle textStyle}) {
+  static TextStyle shadowsIntoLightTwo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shadowsintolighttwo/v7/4iC86LVlZsRSjQhpWGedwyOoW-0A6_kpsyNmlAvNGLNnIF0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16346,13 +21266,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shanti({TextStyle textStyle}) {
+  static TextStyle shanti({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shanti/v11/t5thIREMM4uSDgzgU0ezpKfwzA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16364,7 +21290,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle share({TextStyle textStyle}) {
+  static TextStyle share({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/share/v10/i7dEIFliZjKNF5VNHLq2cV5d.ttf',
@@ -16373,7 +21303,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/share/v10/i7dPIFliZjKNF6VPLgK7UEZ2RFq7AwU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16385,13 +21317,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shareTech({TextStyle textStyle}) {
+  static TextStyle shareTech({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sharetech/v9/7cHtv4Uyi5K0OeZ7bohUwHoDmTcibrA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16403,13 +21341,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shareTechMono({TextStyle textStyle}) {
+  static TextStyle shareTechMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sharetechmono/v9/J7aHnp1uDWRBEqV98dVQztYldFc7pAsEIc3Xew.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16421,13 +21365,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shojumaru({TextStyle textStyle}) {
+  static TextStyle shojumaru({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shojumaru/v7/rax_HiWfutkLLnaKCtlMBBJek0vA8A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16439,13 +21389,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shortStack({TextStyle textStyle}) {
+  static TextStyle shortStack({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shortstack/v9/bMrzmS2X6p0jZC6EcmPFX-SScX8D0nq6.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16457,13 +21413,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle shrikhand({TextStyle textStyle}) {
+  static TextStyle shrikhand({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/shrikhand/v5/a8IbNovtLWfR7T7bMJwbBIiQ0zhMtA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16475,13 +21437,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle siemreap({TextStyle textStyle}) {
+  static TextStyle siemreap({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/siemreap/v12/Gg82N5oFbgLvHAfNl2YbnA8DLXpe.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16493,13 +21461,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sigmarOne({TextStyle textStyle}) {
+  static TextStyle sigmarOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3dk6Pjp3Di8U0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16511,7 +21485,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle signika({TextStyle textStyle}) {
+  static TextStyle signika({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/signika/v10/vEFU2_JTCgwQ5ejvE_oEI3BDa0AdytM.ttf',
@@ -16520,7 +21498,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/signika/v10/vEFU2_JTCgwQ5ejvE-oDI3BDa0AdytM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16532,7 +21512,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle signikaNegative({TextStyle textStyle}) {
+  static TextStyle signikaNegative({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/signikanegative/v10/E217_cfngu7HiRpPX3ZpNE4kY5zKal6DipHD6z_iXAs.ttf',
@@ -16541,7 +21525,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/signikanegative/v10/E217_cfngu7HiRpPX3ZpNE4kY5zKak6EipHD6z_iXAs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16553,7 +21539,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle simonetta({TextStyle textStyle}) {
+  static TextStyle simonetta({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/simonetta/v10/x3dickHVYrCU5BU15c4BfPACvy_1BA.ttf',
@@ -16562,7 +21552,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/simonetta/v10/x3d5ckHVYrCU5BU15c4xfsKCsA7tLwc7Gn88.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16574,13 +21566,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle singleDay({TextStyle textStyle}) {
+  static TextStyle singleDay({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/singleday/v1/LYjHdGDjlEgoAcF95EI5jVoFUNfeQJU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16592,14 +21590,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sintony({TextStyle textStyle}) {
+  static TextStyle sintony({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sintony/v7/XoHm2YDqR7-98cVUITQnu98ojjs.ttf',
       '700' : 'http://fonts.gstatic.com/s/sintony/v7/XoHj2YDqR7-98cVUGYgIn9cDkjLp6C8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16611,13 +21615,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sirinStencil({TextStyle textStyle}) {
+  static TextStyle sirinStencil({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sirinstencil/v8/mem4YaWwznmLx-lzGfN7MdRydchGBq6al6o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16629,13 +21639,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sixCaps({TextStyle textStyle}) {
+  static TextStyle sixCaps({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sixcaps/v10/6ae_4KGrU7VR7bNmabcS9XXaPCop.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16647,14 +21663,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle skranji({TextStyle textStyle}) {
+  static TextStyle skranji({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/skranji/v7/OZpDg_dtriVFNerMYzuuklTm3Ek.ttf',
       '700' : 'http://fonts.gstatic.com/s/skranji/v7/OZpGg_dtriVFNerMW4eBtlzNwED-b4g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16666,13 +21688,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle slabo13px({TextStyle textStyle}) {
+  static TextStyle slabo13px({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/slabo13px/v7/11hEGp_azEvXZUdSBzzRcKer2wkYnvI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16684,13 +21712,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle slabo27px({TextStyle textStyle}) {
+  static TextStyle slabo27px({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/slabo27px/v6/mFT0WbgBwKPR_Z4hGN2qsxgJ1EJ7i90.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16702,13 +21736,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle slackey({TextStyle textStyle}) {
+  static TextStyle slackey({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/slackey/v10/N0bV2SdQO-5yM0-dKlRaJdbWgdY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16720,13 +21760,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle smokum({TextStyle textStyle}) {
+  static TextStyle smokum({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/smokum/v10/TK3iWkUbAhopmrdGHjUHte5fKg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16738,13 +21784,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle smythe({TextStyle textStyle}) {
+  static TextStyle smythe({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/smythe/v10/MwQ3bhT01--coT1BOLh_uGInjA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16756,14 +21808,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sniglet({TextStyle textStyle}) {
+  static TextStyle sniglet({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sniglet/v11/cIf9MaFLtkE3UjaJxCmrYGkHgIs.ttf',
       '800' : 'http://fonts.gstatic.com/s/sniglet/v11/cIf4MaFLtkE3UjaJ_ImHRGEsnIJkWL4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16775,13 +21833,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle snippet({TextStyle textStyle}) {
+  static TextStyle snippet({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/snippet/v9/bWt47f7XfQH9Gupu2v_Afcp9QWc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16793,13 +21857,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle snowburstOne({TextStyle textStyle}) {
+  static TextStyle snowburstOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/snowburstone/v7/MQpS-WezKdujBsXY3B7I-UT7eZ-UPyacPbo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16811,13 +21881,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sofadiOne({TextStyle textStyle}) {
+  static TextStyle sofadiOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sofadione/v8/JIA2UVBxdnVBuElZaMFGcDOIETkmYDU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16829,13 +21905,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sofia({TextStyle textStyle}) {
+  static TextStyle sofia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sofia/v8/8QIHdirahM3j_vu-sowsrqjk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16847,13 +21929,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle songMyung({TextStyle textStyle}) {
+  static TextStyle songMyung({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/songmyung/v8/1cX2aUDWAJH5-EIC7DIhr1GqhcitzeM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16865,13 +21953,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sonsieOne({TextStyle textStyle}) {
+  static TextStyle sonsieOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sonsieone/v8/PbymFmP_EAnPqbKaoc18YVu80lbp8JM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16883,14 +21977,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sortsMillGoudy({TextStyle textStyle}) {
+  static TextStyle sortsMillGoudy({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sortsmillgoudy/v9/Qw3GZR9MED_6PSuS_50nEaVrfzgEXH0OjpM75PE.ttf',
       'italic' : 'http://fonts.gstatic.com/s/sortsmillgoudy/v9/Qw3AZR9MED_6PSuS_50nEaVrfzgEbH8EirE-9PGLfQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16902,7 +22002,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sourceCodePro({TextStyle textStyle}) {
+  static TextStyle sourceCodePro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt8srztO0rzmmkDQ.ttf',
@@ -16921,7 +22025,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONNXs-cv7Gy0DRzS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16933,7 +22039,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sourceSansPro({TextStyle textStyle}) {
+  static TextStyle sourceSansPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_AkB1v_8CGxg.ttf',
@@ -16950,7 +22060,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklxdr3cWWxg40.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16962,7 +22074,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sourceSerifPro({TextStyle textStyle}) {
+  static TextStyle sourceSerifPro({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sourceserifpro/v7/neIQzD-0qpwxpaWvjeD0X88SAOeaiXM0oSOL2Yw.ttf',
@@ -16970,7 +22086,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/sourceserifpro/v7/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSugxYUvZrI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -16982,7 +22100,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spaceMono({TextStyle textStyle}) {
+  static TextStyle spaceMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/spacemono/v5/i7dPIFZifjKcF5UAWdDRUEZ2RFq7AwU.ttf',
@@ -16991,7 +22113,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/spacemono/v5/i7dSIFZifjKcF5UAWdDRYERE_FeaGy6QZ3WfYg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17003,13 +22127,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle specialElite({TextStyle textStyle}) {
+  static TextStyle specialElite({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0nhncESXFtUsM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17021,7 +22151,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spectral({TextStyle textStyle}) {
+  static TextStyle spectral({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/spectral/v6/rnCs-xNNww_2s0amA9v2s13GY_etWWIJ.ttf',
@@ -17040,7 +22174,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/spectral/v6/rnCu-xNNww_2s0amA9M8qt3AafOPXHIJErY.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17052,7 +22188,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spectralSC({TextStyle textStyle}) {
+  static TextStyle spectralSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/spectralsc/v5/Ktk0ALCRZonmalTgyPmRfs1qwkTXPYeVXJZB.ttf',
@@ -17071,7 +22211,9 @@ class GoogleFonts {
       '800italic' : 'http://fonts.gstatic.com/s/spectralsc/v5/Ktk2ALCRZonmalTgyPmRfsWg28TRN4O3WYZB_sU.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17083,13 +22225,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spicyRice({TextStyle textStyle}) {
+  static TextStyle spicyRice({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/spicyrice/v8/uK_24rSEd-Uqwk4jY1RyGv-2WkowRcc.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17101,13 +22249,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spinnaker({TextStyle textStyle}) {
+  static TextStyle spinnaker({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/spinnaker/v11/w8gYH2oyX-I0_rvR6Hmn3HwLqOqSBg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17119,13 +22273,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle spirax({TextStyle textStyle}) {
+  static TextStyle spirax({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/spirax/v8/buE3poKgYNLy0F3cXktt-Csn-Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17137,13 +22297,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle squadaOne({TextStyle textStyle}) {
+  static TextStyle squadaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/squadaone/v8/BCasqZ8XsOrx4mcOk6MtWaA8WDBkHgs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17155,13 +22321,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sreeKrushnadevaraya({TextStyle textStyle}) {
+  static TextStyle sreeKrushnadevaraya({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sreekrushnadevaraya/v7/R70FjzQeifmPepmyQQjQ9kvwMkWYPfTA_EWb2FhQuXir.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17173,13 +22345,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sriracha({TextStyle textStyle}) {
+  static TextStyle sriracha({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sriracha/v4/0nkrC9D4IuYBgWcI9ObYRQDioeb0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17191,14 +22369,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle srisakdi({TextStyle textStyle}) {
+  static TextStyle srisakdi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/srisakdi/v3/yMJRMIlvdpDbkB0A-jq8fSx5i814.ttf',
       '700' : 'http://fonts.gstatic.com/s/srisakdi/v3/yMJWMIlvdpDbkB0A-gIAUghxoNFxW0Hz.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17210,13 +22394,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle staatliches({TextStyle textStyle}) {
+  static TextStyle staatliches({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/staatliches/v3/HI_OiY8KO6hCsQSoAPmtMbectJG9O9PS.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17228,13 +22418,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stalemate({TextStyle textStyle}) {
+  static TextStyle stalemate({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stalemate/v7/taiIGmZ_EJq97-UfkZRpuqSs8ZQpaQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17246,13 +22442,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stalinistOne({TextStyle textStyle}) {
+  static TextStyle stalinistOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stalinistone/v23/MQpS-WezM9W4Dd7D3B7I-UT7eZ-UPyacPbo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17264,14 +22466,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stardosStencil({TextStyle textStyle}) {
+  static TextStyle stardosStencil({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stardosstencil/v10/X7n94bcuGPC8hrvEOHXOgaKCc2TR71R3tiSx0g.ttf',
       '700' : 'http://fonts.gstatic.com/s/stardosstencil/v10/X7n44bcuGPC8hrvEOHXOgaKCc2TpU3tTvg-t29HSHw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17283,13 +22491,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stintUltraCondensed({TextStyle textStyle}) {
+  static TextStyle stintUltraCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stintultracondensed/v8/-W_gXIrsVjjeyEnPC45qD2NoFPtBE0xCh2A-qhUO2cNvdg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17301,13 +22515,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stintUltraExpanded({TextStyle textStyle}) {
+  static TextStyle stintUltraExpanded({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stintultraexpanded/v7/CSRg4yNNh-GbW3o3JkwoDcdvMKMf0oBAd0qoATQkWwam.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17319,14 +22539,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stoke({TextStyle textStyle}) {
+  static TextStyle stoke({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/stoke/v9/z7NXdRb7aTMfKNvFVgxC_pjcTeWU.ttf',
       'regular' : 'http://fonts.gstatic.com/s/stoke/v9/z7NadRb7aTMfKONpfihK1YTV.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17338,13 +22564,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle strait({TextStyle textStyle}) {
+  static TextStyle strait({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/strait/v7/DtViJxy6WaEr1LZzeDhtkl0U7w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17356,13 +22588,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle stylish({TextStyle textStyle}) {
+  static TextStyle stylish({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/stylish/v8/m8JSjfhPYriQkk7-fo35dLxEdmo.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17374,13 +22612,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sueEllenFrancisco({TextStyle textStyle}) {
+  static TextStyle sueEllenFrancisco({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sueellenfrancisco/v10/wXK3E20CsoJ9j1DDkjHcQ5ZL8xRaxru9ropF2lqk9H4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17392,13 +22636,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle suezOne({TextStyle textStyle}) {
+  static TextStyle suezOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/suezone/v4/taiJGmd_EZ6rqscQgNFJkIqg-I0w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17410,14 +22660,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sumana({TextStyle textStyle}) {
+  static TextStyle sumana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sumana/v4/4UaDrE5TqRBjGj-G8Bji76zR4w.ttf',
       '700' : 'http://fonts.gstatic.com/s/sumana/v4/4UaArE5TqRBjGj--TDfG54fN6ppsKg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17429,7 +22685,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sunflower({TextStyle textStyle}) {
+  static TextStyle sunflower({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/sunflower/v9/RWmPoKeF8fUjqIj7Vc-06MfiqYsGBGBzCw.ttf',
@@ -17437,7 +22697,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/sunflower/v9/RWmPoKeF8fUjqIj7Vc-0-MDiqYsGBGBzCw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17449,13 +22711,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sunshiney({TextStyle textStyle}) {
+  static TextStyle sunshiney({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sunshiney/v10/LDIwapGTLBwsS-wT4vcgE8moUePWkg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17467,13 +22735,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle supermercadoOne({TextStyle textStyle}) {
+  static TextStyle supermercadoOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/supermercadoone/v9/OpNXnpQWg8jc_xps_Gi14kVVEXOn60b3MClBRTs.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17485,14 +22759,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle sura({TextStyle textStyle}) {
+  static TextStyle sura({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/sura/v4/SZc23FL5PbyzFf5UWzXtjUM.ttf',
       '700' : 'http://fonts.gstatic.com/s/sura/v4/SZc53FL5PbyzLUJ7fz3GkUrS8DI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17504,13 +22784,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle suranna({TextStyle textStyle}) {
+  static TextStyle suranna({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/suranna/v7/gokuH6ztGkFjWe58tBRZT2KmgP0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17522,13 +22808,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle suravaram({TextStyle textStyle}) {
+  static TextStyle suravaram({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/suravaram/v6/_gP61R_usiY7SCym4xIAi261Qv9roQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17540,13 +22832,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle suwannaphum({TextStyle textStyle}) {
+  static TextStyle suwannaphum({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/suwannaphum/v13/jAnCgHV7GtDvc8jbe8hXXIWl_8C0Wg2V.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17558,13 +22856,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle swankyandMooMoo({TextStyle textStyle}) {
+  static TextStyle swankyandMooMoo({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/swankyandmoomoo/v9/flUlRrKz24IuWVI_WJYTYcqbEsMUZ3kUtbPkR64SYQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17576,14 +22880,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle syncopate({TextStyle textStyle}) {
+  static TextStyle syncopate({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/syncopate/v11/pe0sMIuPIYBCpEV5eFdyAv2-C99ycg.ttf',
       '700' : 'http://fonts.gstatic.com/s/syncopate/v11/pe0pMIuPIYBCpEV5eFdKvtKaA_Rue1UwVg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17595,7 +22905,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tajawal({TextStyle textStyle}) {
+  static TextStyle tajawal({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l_6gLrZjiLlJ-G0.ttf',
@@ -17607,7 +22921,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l7KmLrZjiLlJ-G0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17619,14 +22935,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tangerine({TextStyle textStyle}) {
+  static TextStyle tangerine({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tangerine/v11/IurY6Y5j_oScZZow4VOBDpxNhLBQ4Q.ttf',
       '700' : 'http://fonts.gstatic.com/s/tangerine/v11/Iurd6Y5j_oScZZow4VO5srNpjJtM6G0t9w.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17638,13 +22960,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle taprom({TextStyle textStyle}) {
+  static TextStyle taprom({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/taprom/v11/UcCn3F82JHycULbFQyk3-0kvHg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17656,13 +22984,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tauri({TextStyle textStyle}) {
+  static TextStyle tauri({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tauri/v8/TwMA-IISS0AM3IpVWHU_TBqO.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17674,7 +23008,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle taviraj({TextStyle textStyle}) {
+  static TextStyle taviraj({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/taviraj/v5/ahcbv8Cj3ylylTXzRIorV8N1jU2gog.ttf',
@@ -17697,7 +23035,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/taviraj/v5/ahcev8Cj3ylylTXzTOwT0-5RhWa8q0v8ag.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17709,7 +23049,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle teko({TextStyle textStyle}) {
+  static TextStyle teko({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/teko/v9/LYjCdG7kmE0gdQhfgCNqqVIuTN4.ttf',
@@ -17719,7 +23063,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/teko/v9/LYjCdG7kmE0gdRhYgCNqqVIuTN4.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17731,13 +23077,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle telex({TextStyle textStyle}) {
+  static TextStyle telex({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/telex/v8/ieVw2Y1fKWmIO9fTB1piKFIf.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17749,13 +23101,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tenaliRamakrishna({TextStyle textStyle}) {
+  static TextStyle tenaliRamakrishna({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tenaliramakrishna/v6/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-8KJXqUFFvtA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17767,13 +23125,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tenorSans({TextStyle textStyle}) {
+  static TextStyle tenorSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tenorsans/v11/bx6ANxqUneKx06UkIXISr3JyC22IyqI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17785,13 +23149,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle textMeOne({TextStyle textStyle}) {
+  static TextStyle textMeOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/textmeone/v7/i7dOIFdlayuLUvgoFvHQFWZcalayGhyV.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17803,7 +23173,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle thasadith({TextStyle textStyle}) {
+  static TextStyle thasadith({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/thasadith/v3/mtG44_1TIqPYrd_f5R1YsEkU0CWuFw.ttf',
@@ -17812,7 +23186,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/thasadith/v3/mtGj4_1TIqPYrd_f5R1osnus3QS2PEpN8zxA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17824,13 +23200,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle theGirlNextDoor({TextStyle textStyle}) {
+  static TextStyle theGirlNextDoor({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/thegirlnextdoor/v10/pe0zMJCIMIsBjFxqYBIcZ6_OI5oFHCYIV7t7w6bE2A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17842,7 +23224,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tienne({TextStyle textStyle}) {
+  static TextStyle tienne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tienne/v12/AYCKpX7pe9YCRP0LkEPHSFNyxw.ttf',
@@ -17850,7 +23236,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/tienne/v12/AYCJpX7pe9YCRP0zFG7jQHhuzvef5Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17862,7 +23250,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tillana({TextStyle textStyle}) {
+  static TextStyle tillana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tillana/v5/VuJxdNvf35P4qJ1OeKbXOIFneRo.ttf',
@@ -17872,7 +23264,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/tillana/v5/VuJ0dNvf35P4qJ1OQAb7HIlMZRNcp0o.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17884,13 +23278,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle timmana({TextStyle textStyle}) {
+  static TextStyle timmana({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/timmana/v4/6xKvdShfL9yK-rvpCmvbKHwJUOM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17902,7 +23302,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tinos({TextStyle textStyle}) {
+  static TextStyle tinos({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tinos/v13/buE4poGnedXvwgX8dGVh8TI-.ttf',
@@ -17911,7 +23315,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/tinos/v13/buEzpoGnedXvwjX-Rt1s0CoV_NxLeiw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17923,13 +23329,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle titanOne({TextStyle textStyle}) {
+  static TextStyle titanOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/titanone/v7/mFTzWbsGxbbS_J5cQcjykzIn2Etikg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17941,7 +23353,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle titilliumWeb({TextStyle textStyle}) {
+  static TextStyle titilliumWeb({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffAzHKIx5YrSYqWM.ttf',
@@ -17957,7 +23373,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffEDBKIx5YrSYqWM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17969,13 +23387,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tradeWinds({TextStyle textStyle}) {
+  static TextStyle tradeWinds({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tradewinds/v8/AYCPpXPpYNIIT7h8-QenM3Jq7PKP5Z_G.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -17987,7 +23411,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle trirong({TextStyle textStyle}) {
+  static TextStyle trirong({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/trirong/v5/7r3EqXNgp8wxdOdOl-go3YRl6ujngw.ttf',
@@ -18010,7 +23438,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/trirong/v5/7r3BqXNgp8wxdOdOn44QWalB4sP7itsB5g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18022,13 +23452,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle trocchi({TextStyle textStyle}) {
+  static TextStyle trocchi({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/trocchi/v8/qWcqB6WkuIDxDZLcDrtUvMeTYD0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18040,7 +23476,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle trochut({TextStyle textStyle}) {
+  static TextStyle trochut({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/trochut/v7/CHyjV-fDDlP9bDIw5nSIfVIPLns.ttf',
@@ -18048,7 +23488,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/trochut/v7/CHymV-fDDlP9bDIw3sinWVokMnIllmA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18060,13 +23502,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle trykker({TextStyle textStyle}) {
+  static TextStyle trykker({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/trykker/v8/KtktALyWZJXudUPzhNnoOd2j22U.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18078,13 +23526,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle tulpenOne({TextStyle textStyle}) {
+  static TextStyle tulpenOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/tulpenone/v9/dFa6ZfeC474skLgesc0CWj0w_HyIRlE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18096,7 +23550,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle turretRoad({TextStyle textStyle}) {
+  static TextStyle turretRoad({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/turretroad/v1/pxidypMgpcBFjE84Zv-fE0ONEdeLYk1Mq3ap.ttf',
@@ -18107,7 +23565,9 @@ class GoogleFonts {
       '800' : 'http://fonts.gstatic.com/s/turretroad/v1/pxidypMgpcBFjE84Zv-fE0PlFteLYk1Mq3ap.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18119,7 +23579,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ubuntu({TextStyle textStyle}) {
+  static TextStyle ubuntu({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzTt2aMH4V_gg.ttf',
@@ -18132,7 +23596,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejZPsmyIPYBvgpUI.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18144,13 +23610,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ubuntuCondensed({TextStyle textStyle}) {
+  static TextStyle ubuntuCondensed({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ubuntucondensed/v10/u-4k0rCzjgs5J7oXnJcM_0kACGMtf-fVqvHoJXw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18162,7 +23634,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ubuntuMono({TextStyle textStyle}) {
+  static TextStyle ubuntuMono({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ubuntumono/v9/KFOjCneDtsqEr0keqCMhbBc9AMX6lJBP.ttf',
@@ -18171,7 +23647,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/ubuntumono/v9/KFO8CneDtsqEr0keqCMhbCc_Mn33tYhkf3O1GVg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18183,13 +23661,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle ultra({TextStyle textStyle}) {
+  static TextStyle ultra({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/ultra/v12/zOLy4prXmrtY-tT6yLOD6NxF.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18201,13 +23685,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle uncialAntiqua({TextStyle textStyle}) {
+  static TextStyle uncialAntiqua({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/uncialantiqua/v7/N0bM2S5WOex4OUbESzoESK-i-PfRS5VBBSSF.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18219,13 +23709,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle underdog({TextStyle textStyle}) {
+  static TextStyle underdog({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/underdog/v8/CHygV-jCElj7diMroVSiU14GN2Il.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18237,13 +23733,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unicaOne({TextStyle textStyle}) {
+  static TextStyle unicaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/unicaone/v7/DPEuYwWHyAYGVTSmalshdtffuEY7FA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18255,13 +23757,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unifrakturCook({TextStyle textStyle}) {
+  static TextStyle unifrakturCook({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '700' : 'http://fonts.gstatic.com/s/unifrakturcook/v11/IurA6Yli8YOdcoky-0PTTdkm56n05Uw13ILXs-h6.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18273,13 +23781,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unifrakturMaguntia({TextStyle textStyle}) {
+  static TextStyle unifrakturMaguntia({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/unifrakturmaguntia/v10/WWXPlieVYwiGNomYU-ciRLRvEmK7oaVun2xNNgNa1A.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18291,14 +23805,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unkempt({TextStyle textStyle}) {
+  static TextStyle unkempt({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/unkempt/v11/2EbnL-Z2DFZue0DSSYYf8z2Yt_c.ttf',
       '700' : 'http://fonts.gstatic.com/s/unkempt/v11/2EbiL-Z2DFZue0DScTow1zWzq_5uT84.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18310,13 +23830,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unlock({TextStyle textStyle}) {
+  static TextStyle unlock({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/unlock/v9/7Au-p_8ykD-cDl7GKAjSwkUVOQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18328,7 +23854,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle unna({TextStyle textStyle}) {
+  static TextStyle unna({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/unna/v13/AYCEpXzofN0NCpgBlGHCWFM.ttf',
@@ -18337,7 +23867,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/unna/v13/AYCJpXzofN0NOpozLGzjQHhuzvef5Q.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18349,13 +23881,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vT323({TextStyle textStyle}) {
+  static TextStyle vT323({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vt323/v11/pxiKyp0ihIEF2hsYHpT2dkNE.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18367,13 +23905,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vampiroOne({TextStyle textStyle}) {
+  static TextStyle vampiroOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vampiroone/v10/gokqH6DoDl5yXvJytFsdLkqnsvhIor3K.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18385,13 +23929,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle varela({TextStyle textStyle}) {
+  static TextStyle varela({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/varela/v10/DPEtYwqExx0AWHXJBBQFfvzDsQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18403,13 +23953,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle varelaRound({TextStyle textStyle}) {
+  static TextStyle varelaRound({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoMGOD9gxZw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18421,13 +23977,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vastShadow({TextStyle textStyle}) {
+  static TextStyle vastShadow({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vastshadow/v9/pe0qMImKOZ1V62ZwbVY9dfe6Kdpickwp.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18439,7 +24001,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vesperLibre({TextStyle textStyle}) {
+  static TextStyle vesperLibre({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vesperlibre/v11/bx6CNxyWnf-uxPdXDHUD_Rd4D0-N2qIWVQ.ttf',
@@ -18448,7 +24014,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/vesperlibre/v11/bx6dNxyWnf-uxPdXDHUD_RdAi2Kp0okKXKvPlw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18460,13 +24028,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vibes({TextStyle textStyle}) {
+  static TextStyle vibes({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vibes/v1/QdVYSTsmIB6tmbd3HpbsuBlh.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18478,13 +24052,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vibur({TextStyle textStyle}) {
+  static TextStyle vibur({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vibur/v10/DPEiYwmEzw0QRjTpLjoJd-Xa.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18496,13 +24076,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vidaloka({TextStyle textStyle}) {
+  static TextStyle vidaloka({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vidaloka/v12/7cHrv4c3ipenMKlEass8yn4hnCci.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18514,13 +24100,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle viga({TextStyle textStyle}) {
+  static TextStyle viga({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/viga/v8/xMQbuFFdSaiX_QIjD4e2OX8.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18532,13 +24124,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle voces({TextStyle textStyle}) {
+  static TextStyle voces({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/voces/v9/-F6_fjJyLyU8d4PBBG7YpzlJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18550,7 +24148,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle volkhov({TextStyle textStyle}) {
+  static TextStyle volkhov({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/volkhov/v11/SlGQmQieoJcKemNeQTIOhHxzcD0.ttf',
@@ -18559,7 +24161,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/volkhov/v11/SlGXmQieoJcKemNecTA8PHFSaBYRagrQrA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18571,7 +24175,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vollkorn({TextStyle textStyle}) {
+  static TextStyle vollkorn({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vollkorn/v10/0yb9GDoxxrvAnPhYGykuYkw2rQg1.ttf',
@@ -18584,7 +24192,9 @@ class GoogleFonts {
       '900italic' : 'http://fonts.gstatic.com/s/vollkorn/v10/0yb4GDoxxrvAnPhYGxksUMw5jBAe-T_34DM.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18596,7 +24206,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle vollkornSC({TextStyle textStyle}) {
+  static TextStyle vollkornSC({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/vollkornsc/v3/j8_v6-zQ3rXpceZj9cqnVhF5NH-iSq_E.ttf',
@@ -18605,7 +24219,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/vollkornsc/v3/j8_y6-zQ3rXpceZj9cqnVin9GVuqYbPN5Yjn.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18617,13 +24233,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle voltaire({TextStyle textStyle}) {
+  static TextStyle voltaire({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/voltaire/v9/1Pttg8PcRfSblAvGvQooYKVnBOif.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18635,13 +24257,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle waitingfortheSunrise({TextStyle textStyle}) {
+  static TextStyle waitingfortheSunrise({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/waitingforthesunrise/v10/WBL1rFvOYl9CEv2i1mO6KUW8RKWJ2zoXoz5JsYZQ9h_ZYk5J.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18653,13 +24281,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle wallpoet({TextStyle textStyle}) {
+  static TextStyle wallpoet({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/wallpoet/v11/f0X10em2_8RnXVVdUNbu7cXP8L8G.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18671,13 +24305,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle walterTurncoat({TextStyle textStyle}) {
+  static TextStyle walterTurncoat({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/walterturncoat/v10/snfys0Gs98ln43n0d-14ULoToe67YB2dQ5ZPqQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18689,13 +24329,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle warnes({TextStyle textStyle}) {
+  static TextStyle warnes({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/warnes/v9/pONn1hc0GsW6sW5OpiC2o6Lkqg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18707,13 +24353,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle wellfleet({TextStyle textStyle}) {
+  static TextStyle wellfleet({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/wellfleet/v7/nuF7D_LfQJb3VYgX6eyT42aLDhO2HA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18725,13 +24377,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle wendyOne({TextStyle textStyle}) {
+  static TextStyle wendyOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/wendyone/v8/2sDcZGJOipXfgfXV5wgDb2-4C7wFZQ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18743,13 +24401,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle wireOne({TextStyle textStyle}) {
+  static TextStyle wireOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/wireone/v10/qFdH35Wah5htUhV75WGiWdrCwwcJ.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18761,7 +24425,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle workSans({TextStyle textStyle}) {
+  static TextStyle workSans({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/worksans/v5/QGYqz_wNahGAdqQ43Rh3H6DstfxA4OD3.ttf',
@@ -18775,7 +24443,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh3_4fMn9JM6fnuKg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18787,7 +24457,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yanoneKaffeesatz({TextStyle textStyle}) {
+  static TextStyle yanoneKaffeesatz({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '200' : 'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YfUPs-tNtKENeNp.ttf',
@@ -18796,7 +24470,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YegOs-tNtKENeNp.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18808,7 +24484,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yantramanav({TextStyle textStyle}) {
+  static TextStyle yantramanav({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '100' : 'http://fonts.gstatic.com/s/yantramanav/v5/flU-Rqu5zY00QEpyWJYWN5-QXeNzDB41rZg.ttf',
@@ -18819,7 +24499,9 @@ class GoogleFonts {
       '900' : 'http://fonts.gstatic.com/s/yantramanav/v5/flUhRqu5zY00QEpyWJYWN59wesNZIhI8tIHh.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18831,13 +24513,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yatraOne({TextStyle textStyle}) {
+  static TextStyle yatraOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/yatraone/v6/C8ch4copsHzj8p7NaF0xw1OBbRDvXw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18849,13 +24537,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yellowtail({TextStyle textStyle}) {
+  static TextStyle yellowtail({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/yellowtail/v10/OZpGg_pnoDtINPfRIlLotlzNwED-b4g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18867,13 +24561,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yeonSung({TextStyle textStyle}) {
+  static TextStyle yeonSung({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/yeonsung/v8/QldMNTpbohAGtsJvUn6xSVNazqx2xg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18885,13 +24585,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yesevaOne({TextStyle textStyle}) {
+  static TextStyle yesevaOne({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/yesevaone/v14/OpNJno4ck8vc-xYpwWWxpipfWhXD00c.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18903,13 +24609,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yesteryear({TextStyle textStyle}) {
+  static TextStyle yesteryear({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/yesteryear/v8/dg4g_p78rroaKl8kRKo1r7wHTwonmyw.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18921,7 +24633,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle yrsa({TextStyle textStyle}) {
+  static TextStyle yrsa({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/yrsa/v5/wlpxgwnQFlxs3af93IQ73W5OcCk.ttf',
@@ -18931,7 +24647,9 @@ class GoogleFonts {
       '700' : 'http://fonts.gstatic.com/s/yrsa/v5/wlpxgwnQFlxs3bf63IQ73W5OcCk.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18943,13 +24661,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zCOOLKuaiLe({TextStyle textStyle}) {
+  static TextStyle zCOOLKuaiLe({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zcoolkuaile/v5/tssqApdaRQokwFjFJjvM6h2WpozzoXhC2g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18961,13 +24685,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zCOOLQingKeHuangYou({TextStyle textStyle}) {
+  static TextStyle zCOOLQingKeHuangYou({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mRIi_28c8bHWA.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18979,13 +24709,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zCOOLXiaoWei({TextStyle textStyle}) {
+  static TextStyle zCOOLXiaoWei({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zcoolxiaowei/v5/i7dMIFFrTRywPpUVX9_RJyM1YFKQHwyVd3U.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -18997,13 +24733,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zeyada({TextStyle textStyle}) {
+  static TextStyle zeyada({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zeyada/v9/11hAGpPTxVPUbgZDNGatWKaZ3g.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -19015,13 +24757,19 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zhiMangXing({TextStyle textStyle}) {
+  static TextStyle zhiMangXing({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g0actfektIJ0.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -19033,7 +24781,11 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zillaSlab({TextStyle textStyle}) {
+  static TextStyle zillaSlab({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       '300' : 'http://fonts.gstatic.com/s/zillaslab/v5/dFa5ZfeM_74wlPZtksIFYpEY2HSjWlhzbaw.ttf',
@@ -19048,7 +24800,9 @@ class GoogleFonts {
       '700italic' : 'http://fonts.gstatic.com/s/zillaslab/v5/dFanZfeM_74wlPZtksIFaj8CRHGpXnp2fazkfg.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
@@ -19060,14 +24814,20 @@ class GoogleFonts {
     );
   }
 
-  static TextStyle zillaSlabHighlight({TextStyle textStyle}) {
+  static TextStyle zillaSlabHighlight({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       'regular' : 'http://fonts.gstatic.com/s/zillaslabhighlight/v7/gNMbW2BrTpK8-inLtBJgMMfbm6uNVDvRxhtIY2DwSXlM.ttf',
       '700' : 'http://fonts.gstatic.com/s/zillaslabhighlight/v7/gNMUW2BrTpK8-inLtBJgMMfbm6uNVDvRxiP0TET4YmVF0Mb6.ttf',
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }

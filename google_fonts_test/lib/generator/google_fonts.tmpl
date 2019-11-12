@@ -11,7 +11,11 @@ import 'src/google_fonts_base.dart';
 
 class GoogleFonts {
   {{#method}}
-  static TextStyle {{methodName}}({TextStyle textStyle}) {
+  static TextStyle {{methodName}}({
+    TextStyle textStyle,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
     textStyle ??= TextStyle();
     const fontUrls = <String, String>{
       {{#fontUrls}}
@@ -19,7 +23,9 @@ class GoogleFonts {
       {{/fontUrls}}
     };
 
-    String key = fontUrlKey(textStyle);
+    String key = fontUrlKey(
+      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
+    );
     if (!fontUrls.containsKey(key)) {
       key = 'regular';
     }
