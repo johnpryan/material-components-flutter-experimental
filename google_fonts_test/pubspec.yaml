@@ -17,30 +17,3 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-flutter:
-   fonts:
-     - family: Lato
-       fonts:
-         - asset: fonts/Lato-Regular.ttf
-         - asset: fonts/Lato-Italic.ttf
-           style: italic
-         - asset: fonts/Lato-Bold.ttf
-           weight: 700
-     - family: OpenSans
-       fonts:
-         - asset: fonts/OpenSans-Regular.ttf
-         - asset: fonts/OpenSans-Italic.ttf
-           style: italic
-         - asset: fonts/OpenSans-Bold.ttf
-           weight: 700
-     - family: Roboto
-       fonts:
-         - asset: fonts/Roboto-Regular.ttf
-         - asset: fonts/Roboto-Italic.ttf
-           style: italic
-         - asset: fonts/Roboto-Bold.ttf
-           weight: 700
-
-  # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
